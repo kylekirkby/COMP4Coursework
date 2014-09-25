@@ -50,7 +50,7 @@ Finally, Dan writes out an invoice using a standard invoice book purchased from 
 \section{Investigation}
 
 \subsection{The current system}
-% Interview - Insert the photocopied interview here.
+% Interview - Insert the transcript of the interview here.
 
 \subsubsection{Data sources and destinations}
 
@@ -58,8 +58,7 @@ Finally, Dan writes out an invoice using a standard invoice book purchased from 
 
 \begin{flushleft}
 % Overview of the data sources and destinations
-	There are 
-
+	There are four main data sources within the current system - The plasterer, the client, the builders merchant and visting the clients job. A client contacts Dan through a phone call placed to Dan's mobile. Sometimes a client may leave Dan a voicemail message if he is too busy to answer the call at that given moment. If this is the case then Dan will get back to the client as soon as possible. Most of the data in the current system will come from the client or the clients job - this data will be the job measurements and the clients contact information. The main data destinations are the forms given to the client i.e the quote and the invoice document.
 
 
 
@@ -102,7 +101,7 @@ Visiting Job Site &
 
 Measurements of Job Size and Materials that need to be purchased &
 
-4m x 5m x 3m = 60m\textsuperscript{2} 10 Bags of Plaster &
+4m x 5m x 3m = $60m^2$ 10 Bags of Plaster &
 
 Work Notebook 
 
@@ -157,6 +156,57 @@ Client.
 
 \subsubsection{Algorithms}
 %Algorithms - Agreeing a price for the job - Calculating Job Price - Has the job been paid for yet.
+
+There are three main algorithms utilised in the current system. The first is an algorithm to agree the price of the job with the client.
+
+\begin{algorithm}[H]
+\label{fig:algorithm_example_1}
+	\caption{Agreeing a price Algorithm}
+\begin{algorithmic}[1]
+
+	\SET{$agreed$}{$false$}
+	
+	\While{agreed = False}
+		\If{$Client does not agree with quoted price$}
+			Discuss price and change quote if new price is agreed upon.\;
+		\Else 
+			\SET{$agreed$}{$true$}
+			Arrange a date for the work to be started on.\;
+		\EndIf
+	\EndWhile
+
+\end{algorithmic}
+\end{algorithm}
+
+
+The second algorithm currently being used in the system is an algorithm used to clculate the price for the job.
+
+
+\begin{algorithm}[H]
+	\label{fig:algorithm_calculate_price}
+		\caption{Calculating the price }
+	\begin{algorithmic}[1]
+		\SET{$pricePerSquareMeter$}{$10$}
+		\SET{$calculated$}{$false$}
+		\While{calculated = false}
+			\SEND{$"Please enter the measurements of the job."$}
+			\RECEIVE{$measurements$}
+			Calculate the square meter figure of the job using measurements \;
+			\SET{$calculatedMeterPrice$}{$squareMeterFigure * pricePerSquareMeter$}
+				
+				
+				
+		\EndWhile
+
+	\end{algorithmic}
+
+
+
+
+\end{algorithm}
+
+
+
 
 
 \subsubsection{Data flow diagram}
