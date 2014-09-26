@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.9.25)  25 SEP 2014 10:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.9.11)  25 SEP 2014 16:18
 entering extended mode
-**U:/git/COMP4Coursework/coursework.tex
-(U:/git/COMP4Coursework/coursework.tex
+**C:/Users/Kyle/git/COMP4Coursework/coursework.tex
+(C:/Users/Kyle/git/COMP4Coursework/coursework.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -32,7 +32,7 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \bibindent=\dimen102
 )
 \@input{settings.aux}
-(U:\git\COMP4Coursework\settings.tex
+(C:\Users\Kyle\git\COMP4Coursework\settings.tex
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
@@ -250,7 +250,7 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(C:\Users\30710\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
@@ -268,18 +268,18 @@ Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \lst@lineno=\count93
 \lst@maxwidth=\dimen106
 
-(C:\Users\30710\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 \c@lstnumber=\count94
 \lst@skipnumbers=\count95
 \lst@framebox=\box27
 )
-(C:\Users\30710\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
 File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
 Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
-(C:\Users\30710\AppData\Roaming\MiKTeX\2.9\tex\latex\fancybox\fancybox.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancybox\fancybox.sty"
 Package: fancybox 2010/05/15 1.4
 
 Style option: `fancybox' v1.4 <2010/05/15> (tvz)
@@ -323,27 +323,780 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\parskip.sty"
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mathtools\mathtools.sty"
+Package: mathtools 2014/07/16 v1.15 mathematical typesetting tools
 
-! LaTeX Error: File `mathtools.sty' not found.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count97
+\calc@Bcount=\count98
+\calc@Adimen=\dimen110
+\calc@Bdimen=\dimen111
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count99
+\calc@Cskip=\skip45
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mathtools\mhsetup.sty"
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip46
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
+For additional information on amsmath, use the `?' option.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
 
-Enter file name: 
-! Emergency stop.
-<read *> 
-         
-l.7 \usepackage
-               {hyperref}
-End of file on the terminal!
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks22
+\ex@=\dimen112
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen113
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count100
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count101
+\leftroot@=\count102
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count103
+\DOTSCASE@=\count104
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box30
+\strutbox@=\box31
+\big@size=\dimen114
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count105
+\c@MaxMatrixCols=\count106
+\dotsspace@=\muskip10
+\c@parentequation=\count107
+\dspbrk@lvl=\count108
+\tag@help=\toks23
+\row@=\count109
+\column@=\count110
+\maxfields@=\count111
+\andhelp@=\toks24
+\eqnshift@=\dimen115
+\alignsep@=\dimen116
+\tagshift@=\dimen117
+\tagwidth@=\dimen118
+\totwidth@=\dimen119
+\lineht@=\dimen120
+\@envbody=\toks25
+\multlinegap=\skip47
+\multlinetaggap=\skip48
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count112
+\l_MT_multwidth_dim=\dimen121
+\origjot=\skip49
+\l_MT_shortvdotswithinadjustabove_dim=\dimen122
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen123
+\l_MT_above_intertext_sep=\dimen124
+\l_MT_below_intertext_sep=\dimen125
+\l_MT_above_shortintertext_sep=\dimen126
+\l_MT_below_shortintertext_sep=\dimen127
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
- 
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen128
+\Hy@linkcounter=\count113
+\Hy@pagecounter=\count114
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count115
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count116
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen129
+\Fld@menulength=\count117
+\Field@Width=\dimen130
+\Fld@charsize=\dimen131
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count118
+\c@Item=\count119
+\c@Hfootnote=\count120
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count121
+\c@bookmark@seq@number=\count122
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip50
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\marvosym\marvosym.sty"
+Package: marvosym 2011/07/20 v2.2 Martin Vogel's Symbols font definitions
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\enumitem\enumitem.sty"
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip51
+\enit@outerparindent=\dimen132
+\enit@toks=\toks27
+\enit@inbox=\box32
+\enitdp@description=\count123
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count124
+\float@exts=\toks28
+\float@box=\box33
+\@float@everytoks=\toks29
+\@floatcapt=\box34
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithmicx\algpseudocode.sty"
+Package: algpseudocode 
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithmicx\algorithmicx.sty"
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count125
+\c@ALG@rem=\count126
+\c@ALG@nested=\count127
+\ALG@tlm=\skip52
+\ALG@thistlm=\skip53
+\c@ALG@Lnr=\count128
+\c@ALG@blocknr=\count129
+\c@ALG@storecount=\count130
+\c@ALG@tmpcounter=\count131
+\ALG@tmplength=\skip54
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+\@float@every@algorithm=\toks30
+\c@algorithm=\count132
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\comment\comment.sty"
+\CommentStream=\write4
+
+Excluding comment 'comment')
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip55
+\LTright=\skip56
+\LTpre=\skip57
+\LTpost=\skip58
+\LTchunksize=\count133
+\LTcapwidth=\dimen133
+\LT@head=\box35
+\LT@firsthead=\box36
+\LT@foot=\box37
+\LT@lastfoot=\box38
+\LT@cols=\count134
+\LT@rows=\count135
+\c@LT@tables=\count136
+\c@LT@chunks=\count137
+\LT@p@ftn=\toks31
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
+Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+\fancy@headwidth=\skip59
+\f@ncyO@elh=\skip60
+\f@ncyO@erh=\skip61
+\f@ncyO@olh=\skip62
+\f@ncyO@orh=\skip63
+\f@ncyO@elf=\skip64
+\f@ncyO@erf=\skip65
+\f@ncyO@olf=\skip66
+\f@ncyO@orf=\skip67
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+(C:\Users\Kyle\git\COMP4Coursework\coursework.aux
+(C:\Users\Kyle\git\COMP4Coursework\Analysis\analysis.aux)
+(C:\Users\Kyle\git\COMP4Coursework\Design\design.aux)
+(C:\Users\Kyle\git\COMP4Coursework\Testing\testing.aux)
+(C:\Users\Kyle\git\COMP4Coursework\Maintenance\maintenance.aux)
+(C:\Users\Kyle\git\COMP4Coursework\Manual\manual.aux)
+(C:\Users\Kyle\git\COMP4Coursework\Evaluation\evaluation.aux))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+\c@lstlisting=\count138
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count139
+\scratchdimen=\dimen134
+\scratchbox=\box39
+\nofMPsegments=\count140
+\nofMParguments=\count141
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count142
+\MPscratchDim=\dimen135
+\MPnumerator=\count143
+\makeMPintoPDFobject=\count144
+\everyMPtoPDFconversion=\toks33
+)
+\AtBeginShipoutBox=\box40
+Package hyperref Info: Link coloring OFF on input line 3.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count145
+)
+LaTeX Info: Redefining \ref on input line 3.
+LaTeX Info: Redefining \pageref on input line 3.
+LaTeX Info: Redefining \nameref on input line 3.
+
+(C:\Users\Kyle\git\COMP4Coursework\coursework.out)
+(C:\Users\Kyle\git\COMP4Coursework\coursework.out)
+\@outlinefile=\write5
+ [1
+
+
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] (C:\Users\Kyle\git\COMP4C
+oursework\coursework.tocpdfTeX warning (ext4): destination with the same identi
+fier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.43 ...ter}{\numberline {2}Design}{10}{chapter.2}
+                                                   [1
+
+] [2] [3])
+\tf@toc=\write6
+ [4]
+(C:\Users\Kyle\git\COMP4Coursework\Analysis\analysis.tex
+Chapter 1.
+[5
+
+
+] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+[]\OT1/cmr/m/n/10 Client Con-tact
+ []
+
+
+Underfull \hbox (badness 6708) in paragraph at lines 80--81
+\OT1/cmr/m/n/10 in-for-ma-tion First-
+ []
+
+
+Overfull \hbox (100.72551pt too wide) in paragraph at lines 80--81
+\OT1/cmr/m/n/10 name,Lastname,PhoneNumber,AddrLine1,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+\OT1/cmr/m/n/10 Ad-dr-
+ []
+
+
+Overfull \hbox (151.42007pt too wide) in paragraph at lines 80--81
+\OT1/cmr/m/n/10 Line2,AddrLine3,AddrLine4,PostCode,Email,JobType| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
+[]\OT1/cmr/m/n/10 John, Smith,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
+\OT1/cmr/m/n/10 07809726812, 15,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
+\OT1/cmr/m/n/10 Crow-ley Road,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
+\OT1/cmr/m/n/10 Haver-hill, Suf-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
+\OT1/cmr/m/n/10 folk, CB90DJ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
+\OT1/cmr/m/n/10 john@gmail.com
+ []
+
+
+Underfull \hbox (badness 2790) in paragraph at lines 83--83
+\OT1/cmr/m/n/10 , Plas-ter-ing Bed-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+[]\OT1/cmr/m/n/10 Appointment and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--102
+[]\OT1/cmr/m/n/10 Measurements of
+ []
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 104--104
+$\OT1/cmr/m/n/10 60\OML/cmm/m/it/10 m[]$ \OT1/cmr/m/n/10 10 Bags of
+ []
+
+
+Underfull \hbox (badness 5288) in paragraph at lines 112--112
+\OT1/cmr/m/n/10 that needs do-ing
+ []
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.114 £
+       600, 1 Day, 15th October &
+? 
+
+Underfull \hbox (badness 1253) in paragraph at lines 114--114
+[]\OT1/cmr/m/n/10 600, 1 Day, 15th
+ []
+
+
+Underfull \hbox (badness 3803) in paragraph at lines 121--121
+[]\OT1/cmr/m/n/10 Plasterers cal-cu-la-
+ []
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135 £
+       350 for the bags of plaster and angle beading &
+? 
+
+Underfull \hbox (badness 2689) in paragraph at lines 135--135
+[]\OT1/cmr/m/n/10 350 for the bags
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
+\OT1/cmr/m/n/10 of parts,labouring
+ []
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.147 £
+       600 - £350 materials - £50 VAT - 14/08/14 &
+? 
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.147 £600 - £
+              350 materials - £50 VAT - 14/08/14 &
+? 
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.147 £600 - £350 materials - £
+                               50 VAT - 14/08/14 &
+? 
+
+Underfull \hbox (badness 3942) in paragraph at lines 147--147
+[]\OT1/cmr/m/n/10 600 - 350 ma-te-
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 147--147
+\OT1/cmr/m/n/10 ri-als - 50 VAT -
+ []
+
+
+Overfull \hbox (44.43304pt too wide) in paragraph at lines 72--155
+ [] 
+ []
+
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 165.
+
+Underfull \hbox (badness 2150) in paragraph at lines 171--173
+[] \OT1/cmr/bx/n/10 IF $\OML/cmm/m/it/10 Clientdoesnotagreewithquotedprice$ \OT
+1/cmr/bx/n/10 THEN \OT1/cmr/m/n/10 Dis-cuss price and
+ []
+
+[7]
+Underfull \hbox (badness 1062) in paragraph at lines 194--196
+[] \OT1/cmr/bx/n/10 RE-CEIVE $\OML/cmm/m/it/10 measurements$ \OT1/cmr/bx/n/10 F
+ROM KEY-BOARD \OT1/cmr/m/n/10 Cal-cu-late the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+[] \OT1/cmr/bx/n/10 SET $\OML/cmm/m/it/10 calculatedMeterPrice$ \OT1/cmr/bx/n/1
+0 TO $\OML/cmm/m/it/10 squareMeterFigure \OMS/cmsy/m/n/10 $
+ []
+
+) [8]
+Overfull \vbox (328.77711pt too high) has occurred while \output is active []
+
+
+[9] (C:\Users\Kyle\git\COMP4Coursework\Design\design.tex
+Chapter 2.
+[10
+
+
+
+]
+Overfull \vbox (434.71611pt too high) has occurred while \output is active []
+
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+[]|\OT1/cmr/bx/n/10 Purpose of
+ []
+
+
+Underfull \hbox (badness 5475) in paragraph at lines 71--71
+[]|\OT1/cmr/bx/n/10 Test Data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+\OT1/cmr/bx/n/10 mal/ Er-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+\OT1/cmr/bx/n/10 ro-neous/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+[]|\OT1/cmr/bx/n/10 Expected
+ []
+
+
+Overfull \hbox (15.4704pt too wide) in alignment at lines 69--73
+ [] [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 73
+ []
+
+[12
+
+]) (C:\Users\Kyle\git\COMP4Coursework\Testing\testing.tex
+Chapter 3.
+[13
+
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|\OT1/cmr/bx/n/10 Purpose of
+ []
+
+
+Underfull \hbox (badness 5475) in paragraph at lines 31--31
+[]|\OT1/cmr/bx/n/10 Test Data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+\OT1/cmr/bx/n/10 mal/ Er-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+\OT1/cmr/bx/n/10 ro-neous/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|\OT1/cmr/bx/n/10 Expected
+ []
+
+
+Overfull \hbox (15.4704pt too wide) in alignment at lines 29--33
+ [] [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 33
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]|\OT1/cmr/bx/n/10 Purpose of
+ []
+
+
+Underfull \hbox (badness 5475) in paragraph at lines 41--41
+[]|\OT1/cmr/bx/n/10 Test Data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\OT1/cmr/bx/n/10 mal/ Er-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\OT1/cmr/bx/n/10 ro-neous/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]|\OT1/cmr/bx/n/10 Expected
+ []
+
+
+Overfull \hbox (15.4704pt too wide) in alignment at lines 39--43
+ [] [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 43
+ []
+
+[14
+
+] [15]) [16
+
+] (C:\Users\Kyle\git\COMP4Coursework\Maintenance\maintenance.tex
+Chapter 4.
+Excluding 'comment' comment. [17
+
+
+
+]
+Overfull \vbox (349.24393pt too high) has occurred while \output is active []
+
+
+[18] Excluding 'comment' comment. [19
+
+])
+(C:\Users\Kyle\git\COMP4Coursework\Manual\manual.tex
+Chapter 5.
+) [20
+
+
+
+
+]
+Overfull \vbox (248.63841pt too high) has occurred while \output is active []
+
+
+[21] (C:\Users\Kyle\git\COMP4Coursework\Evaluation\evaluation.tex
+Chapter 6.
+) [22
+
+
+
+]
+Overfull \vbox (6.61086pt too high) has occurred while \output is active []
+
+
+[23]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 18.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 18.
+ (C:\Users\Kyle\git\COMP4Coursework\coursework.aux
+(C:\Users\Kyle\git\COMP4Coursework\Analysis\analysis.aux)
+(C:\Users\Kyle\git\COMP4Coursework\Design\design.aux)
+(C:\Users\Kyle\git\COMP4Coursework\Testing\testing.aux)
+(C:\Users\Kyle\git\COMP4Coursework\Maintenance\maintenance.aux)
+(C:\Users\Kyle\git\COMP4Coursework\Manual\manual.aux)
+(C:\Users\Kyle\git\COMP4Coursework\Evaluation\evaluation.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 18.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 18.
+Package rerunfilecheck Info: File `coursework.out' has not changed.
+(rerunfilecheck)             Checksum: AF04DE689420F304039AA052D94A1FF4;9540.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 18.
+ ) 
 Here is how much of TeX's memory you used:
- 2389 strings out of 493921
- 32587 string characters out of 3144876
- 84924 words of memory out of 3000000
- 5709 multiletter control sequences out of 15000+200000
- 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 10115 strings out of 493921
+ 145500 string characters out of 3144879
+ 251449 words of memory out of 3000000
+ 13051 multiletter control sequences out of 15000+200000
+ 10235 words of font info for 37 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 31i,0n,34p,284b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 37i,12n,45p,741b,548s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on coursework.pdf (24 pages, 235706 bytes).
+PDF statistics:
+ 884 PDF objects out of 1000 (max. 8388607)
+ 182 named destinations out of 1000 (max. 500000)
+ 1089 words of extra memory for PDF output out of 10000 (max. 10000000)
+
