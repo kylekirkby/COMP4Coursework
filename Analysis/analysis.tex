@@ -45,6 +45,21 @@ Finally, Dan writes out an invoice using a standard invoice book purchased from 
 	
 	\end{flushleft}
 
+\begin{flushleft}
+	\textbf{Interview with client}
+\end{flushleft}
+
+
+\begin{enumerate}
+	\item \textbf{What system are you currently using?}
+		\\ \\ I've got a Toshiba laptop with Windows 8, 6GB RAM and a dual core processor
+	\item \textbf{Are there any issues with the system currently being employed?}
+		\\ \\Just organisational issues when it comes to finding clients information etc. Would be good to have a database which I could search for info with.
+	\item \textbf{What data do you record at the moment?}
+		\\ \\ The clients name, address, phone number, job information like measurements of the rooms etc.
+\end{enumerate}
+
+
 \subsection{Section appendix}
 
 \section{Investigation}
@@ -52,20 +67,18 @@ Finally, Dan writes out an invoice using a standard invoice book purchased from 
 \subsection{The current system}
 % Interview - Insert the transcript of the interview here.
 
-\subsubsection{Data sources and destinations}
 
+
+
+
+\subsubsection{Data sources and destinations}
 
 
 \begin{flushleft}
 % Overview of the data sources and destinations
 	There are four main data sources within the current system - The plasterer, the client, the builders merchant and visting the clients job. A client contacts Dan through a phone call placed to Dan's mobile. Sometimes a client may leave Dan a voicemail message if he is too busy to answer the call at that given moment. If this is the case then Dan will get back to the client as soon as possible. Most of the data in the current system will come from the client or the clients job - this data will be the job measurements and the clients contact information. The main data destinations are the forms given to the client i.e the quote and the invoice document.
 
-
-
-
 \end{flushleft}
-
-
 
 \begin{center}
 	
@@ -167,11 +180,11 @@ There are three main algorithms utilised in the current system. The first is an 
 	\SET{$agreed$}{$false$}
 	
 	\While{agreed = False}
-		\If{$Client does not agree with quoted price$}
-			Discuss price and change quote if new price is agreed upon.\;
+		\If{"Client does not agree with quoted price"} 
+					\\ Discuss price and change quote if new price is agreed upon.\;
 		\Else 
 			\SET{$agreed$}{$true$}
-			Arrange a date for the work to be started on.\;
+			  \\ Arrange a date for the work to be started on.\;
 		\EndIf
 	\EndWhile
 
@@ -179,7 +192,7 @@ There are three main algorithms utilised in the current system. The first is an 
 \end{algorithm}
 
 
-The second algorithm currently being used in the system is an algorithm used to clculate the price for the job.
+The second algorithm currently being used in the system is an algorithm used to calculate the price for the job.
 
 
 \begin{algorithm}[H]
@@ -189,7 +202,7 @@ The second algorithm currently being used in the system is an algorithm used to 
 		\SET{$pricePerSquareMeter$}{$10$}
 		\SET{$calculated$}{$false$}
 		\While{calculated = false}
-			\SEND{$"Please enter the measurements of the job."$}
+			\SEND{"Please enter the measurements of the job."}
 			\RECEIVE{$measurements$}
 			Calculate the square meter figure of the job using measurements \;
 			\SET{$calculatedMeterPrice$}{$squareMeterFigure * pricePerSquareMeter$}
@@ -200,11 +213,7 @@ The second algorithm currently being used in the system is an algorithm used to 
 
 	\end{algorithmic}
 
-
-
-
 \end{algorithm}
-
 
 
 
