@@ -57,7 +57,37 @@ Finally, Dan writes out an invoice using a standard invoice book purchased from 
 		\\ \\Just organisational issues when it comes to finding clients information etc. Would be good to have a database which I could search for info with.
 	\item \textbf{What data do you record at the moment?}
 		\\ \\ The clients name, address, phone number, job information like measurements of the rooms etc.
+	\item \textbf{How often do you record data in the current system and how much data is stored each time?}
+		\\ \\ A few times a week and not much, a few lines in the workbook I use.
+	\item \textbf{What happens to older client information?}
+		\\ \\ Normally gets lost as and when I replace any of my books I write the details down in.
+	\item \textbf{Are there any storage issues when it comes to storing data manually?}
+		\\ \\ No, nothing really as I only need room for a book or two.
+	\item \textbf{Are changes often made to existing records of client data or job info?}
+		\\ \\ Occasionally when a client gives me a new contact number but nothing major.
+	\item \textbf{What is the typical routine when it comes to gaining a new client or job?}
+		\\ \\ Normally I get a call from a colleague who gives me the details about a job which I can take on or not depending on the time I have available. Sometimes clients will find my number through my website dnaplastering.co.uk or through word of mouth and will ask me to give them a quote on a job. Then I will go to the job and work out any costs involved and the time it would take to complete. Then I can arrange a time to do the job and after the job is completed I will usually write out an invoice for the client telling them about the cost for materials,labouring and profit etc.
+	\item \textbf{What does the client recieve in terms of invoices?}
+		\\ \\ I write out an invoice and give it to them in person after the job is completed.
+	\item \textbf{What format should the outputs be in within the new system?}
+		\\ \\ It would be good to be able to print the clients invoices out with minimal effort involved and possibly email the clients the invoice.
+	\item \textbf{Will you need to print reports and invoices or will it be sent entirely digitally to the client via email?}
+		\\ \\ I definitely need to print out some of the invoices as most of my work is done face to face so it is easier to give it to them in person. It might be useful to email it to them as well.
+	\item \textbf{Is there a security issue in regards to the data you store in the current system?}
+		\\ \\ Not much of an issues as it is just client information  but added security would be a bonus.
+	\item \textbf{Are there any foreseeable constraints required in the proposed system?}
+		\\ \\ None that I am aware of.
+	\item \textbf{Do you have a picture in mind of what the new system could look like?}
+		\\ \\ Not really bothered about the look of it too much anything that works as expected would be brilliant.
 \end{enumerate}
+
+\begin{flushleft}
+	\textbf{Signed:}
+\end{flushleft}
+		
+%Insert signature picture here.
+
+
 
 
 \subsection{Section appendix}
@@ -192,27 +222,42 @@ There are three main algorithms utilised in the current system. The first is an 
 \end{algorithm}
 
 
-The second algorithm currently being used in the system is an algorithm used to calculate the price for the job.
+The second algorithm currently being used in the system is an algorithm used to see whether the work is completed.
 
 
 \begin{algorithm}[H]
-	\label{fig:algorithm_calculate_price}
-		\caption{Calculating the price }
+	\label{fig:algorithm_work_complete}
+		\caption{Checking whether work is complete or not.}
 	\begin{algorithmic}[1]
-		\SET{$pricePerSquareMeter$}{$10$}
-		\SET{$calculated$}{$false$}
-		\While{calculated = false}
-			\SEND{"Please enter the measurements of the job."}
-			\RECEIVE{$measurements$}
-			Calculate the square meter figure of the job using measurements \;
-			\SET{$calculatedMeterPrice$}{$squareMeterFigure * pricePerSquareMeter$}
-				
-				
-				
+		\SET{$Complete$}{$False$}
+		\While{Complete = False}
+			\If{"Issue/problem not fixed."}
+			 \\ Check the current problem and fix issue.
+			\Else
+				\SET{$Complete$}{$True$}
+			\EndIf
 		\EndWhile
-
+		\\Create and send invoice
 	\end{algorithmic}
+\end{algorithm}
 
+The third algorithm being used in the system is an algorithm used to see whether the work has been paid for completely.
+
+
+\begin{algorithm}[H]
+	\label{fig:algorithm_paid}
+		\caption{Checking whether work has been paid for yet.}
+	\begin{algorithmic}[1]
+		\SET{$Paid$}{$False$}
+		\While{Paid = False}
+			\If{"Money has not been given."}
+			 \\ Send invoice and contact client
+			\Else
+				\SET{$Paid$}{$True$}
+			\EndIf
+		\EndWhile
+		\\Update job to paid for in book.
+	\end{algorithmic}
 \end{algorithm}
 
 
