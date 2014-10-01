@@ -83,9 +83,13 @@ Finally, Dan writes out an invoice using a standard invoice book purchased from 
 
 \begin{flushleft}
 	\textbf{Signed:}
+\begin{figure}[H]
+    \includegraphics{./Analysis/images/signature.jpg}
+\end{figure}
+
 \end{flushleft}
 		
-%Insert signature picture here.
+
 
 
 
@@ -196,7 +200,7 @@ Client.
     \end{tabular}
 \end{center}
 
-
+\pagebreak
 \subsubsection{Algorithms}
 %Algorithms - Agreeing a price for the job - Calculating Job Price - Has the job been paid for yet.
 
@@ -263,43 +267,150 @@ The third algorithm being used in the system is an algorithm used to see whether
 
 
 
-\subsubsection{Data flow diagram}
+\subsubsection{Data flow diagrams}
+
+\textbf{Key}
+\begin{figure}[H]
+\includegraphics[width=\textwidth]{./Analysis/images/key.pdf}
+    \caption{This is the Key to be used for the following data flow diagrams.} \label{fig:data_flow_diagram_key}
+\end{figure}
+
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{./Analysis/images/ClientInformation.pdf}
+    \caption{This diagram shows the flow of data when gaining a new clients information.} \label{fig:client_information_data_flow_diagram}
+\end{figure}
+
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{./Analysis/images/AppointmentDFD.pdf}
+    \caption{The signifies the flow of data when making an appoint for a job.} \label{fig:appointment_data_flow_diagram}
+\end{figure}
+
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{./Analysis/images/GettingMeasurements.pdf}
+    \caption{This diagram shows the flow of data when collecting the measurements for a job.} \label{fig:getting_measurements_data_flow_diagram}
+\end{figure}
+
+
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{./Analysis/images/GeneratingQuote.pdf}
+    \caption{The flow of data when generating a quote for the client.} \label{fig:generating_quote_data_flow_diagram}
+\end{figure}
+
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{./Analysis/images/GettingQuoteFromBuildersMerchant.pdf}
+    \caption{This shows the data flow when getting a quote for the materials.} \label{fig:getting_materials_data_flow_diagram}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{./Analysis/images/GivingAnInvoiceToClient.pdf}
+    \caption{The Data flow when an invoice is given to the client.} \label{fig:invoice_data_flow_diagram}
+\end{figure}
+
+
+
+
 
 \subsubsection{Input Forms, Output Forms, Report Formats}
+
+\pagebreak
+
+
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{./Analysis/images/workbookPage.jpg}
+    \caption{This is a page from a work book used to store details about jobs.} \label{fig:work_book_page}
+\end{figure}
+
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{./Analysis/images/invoice.jpg}
+    \caption{This is an example of an invoice output form which is given to clients.} \label{fig:invoice}
+\end{figure}
+
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{./Analysis/images/invoice2.jpg}
+    \caption{Here is an illustration of the type of information which goes on an invoice to the client.} \label{fig:invoice}
+\end{figure}
+
+
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{./Analysis/images/invoice3.jpg}
+    \caption{This is also another example of an invoice which is given to a client.} \label{fig:invoice}
+\end{figure}
 
 \subsection{The proposed system}
 
 \subsubsection{Data sources and destinations}
 
+
+
 \subsubsection{Data flow diagram}
+
+
 
 \subsubsection{Data dictionary}
 
+
+
 \subsubsection{Volumetrics}
+
+\begin{flushleft}
+
+	In the current system Dan only has a few regular clients but it is possible to receive up to 4-5 additional clients each week (mentioned in interviequestion 8). Therefore using the guidline of around 4 clients a week and a trial period for the application of 3 months, there could be upto 48 new clients (4 clients a week x 4 weeks in month x 3 months = 48) added into the database. It would also be useful to add the existing clients from paper so another 50 clients could be added from what is already stored manually. So around 100 clients may be added to the new system. This size can be increased later if necessary. \par
+
+In the job details table each client may have up to 10 or more jobs. Some clients will only have one and some will be recurring customers so will have a few more. In the calculations for minimum storage space I will say that each field takes up 1KB of hard disk space and all together there will be around 50 related fields for each client so:
+
+\begin{itemize}
+    \item 100 x 50KB = 5000 KB
+	 \item 5000 KB / 1024 = 
+\end{itemize}
+
+\end{flushleft}
+
+
 
 \section{Objectives}
 
 \subsection{General Objectives}
 
+
+
+
 \subsection{Specific Objectives}
+
+
 
 \subsection{Core Objectives}
 
+
+
 \subsection{Other Objectives}
+
+
 
 \section{ER Diagrams and Descriptions}
 
 \subsection{ER Diagram}
 
+
+
 \subsection{Entity Descriptions}
+
+
 
 \section{Object Analysis}
 
 \subsection{Object Listing}
 
+
+
 \subsection{Relationship diagrams}
 
+
+
 \subsection{Class definitions}
+
+
 
 \section{Other Abstractions and Graphs}
 
@@ -307,22 +418,141 @@ The third algorithm being used in the system is an algorithm used to see whether
 
 \subsection{Hardware}
 
+\begin{flushleft}
+	Dan currently has a Toshiba Laptop with the following hardware components:
+	
+	\begin{itemize}
+		\item 6GB DDR3 RAM
+		\item Intel 2.0ghz Dual Core Processor
+		\item High Resolution 1920 x 1080 Display
+		\item 1 TB HDD
+		\item Intel Onboard Integrated Graphics
+	\end{itemize}
+
+	The specification of Dan's laptop is more than powerful enough and has enough RAM to run the proposed python application alongside multiple other programs that he regularly uses (such as a Web Browser and Media Player). The hard drive has enough storage space to install the application (which will only be around 10MB) so storage is not a problem. The only possible complication when it comes to hardware may be the screen resolution as the application will have to keep within the resolution and be optimized for this screen size and many more to keep the software versatile.
+\end{flushleft}
+
 \subsection{Software}
+
+\begin{flushleft}
+	Dan is running the Windows 8 operating system on his laptop. The proposed system will need to be able to run on this operating system which is not a problem as the proposed system can easily be packaged into a installation executable which he will be able to run and install the proposed system. This will remove the constraint of not having python natively installed on the system.
+
+\end{flushleft}
 
 \subsection{Time}
 
+\begin{flushleft}
+ 	Dan is very flexible when it comes to time as he is a freelancer and is in no rush for a replacement to his old system. He does not mind how long the new system takes to be implemented just that it works and functions as expected. Therefore the only time constraint for the proposed system would be the coursework deadline which is Friday 27th March 2015.
+\end{flushleft}
+
 \subsection{User Knowledge}
 
+\begin{flushleft}
+	Dan has no formal qualifications in IT and has never performed complex computerised tasks. Browsing the internet, watching films and playing music is the extent to which Dan currently uses his laptop. Therefore user knowledge is a possible constraint and the proposed system will need to be easy to navigate and use. This may be achieved by providing a simple non-complex GUI and detailed tutorials/documentation.
+\end{flushleft}
+
 \subsection{Access restrictions}
+
+\begin{flushleft}
+
+	The proposed system will not need additional security measures as no one else will be using the system and Dan is the only person that will use the application so different user accounts will not be needed. 
+
+\end{flushleft}
 
 \section{Limitations}
 
 \subsection{Areas which will not be included in computerisation}
 
+
+
 \subsection{Areas considered for future computerisation}
 
+
+\pagebreak
 \section{Solutions}
 
 \subsection{Alternative solutions}
 
+\pagebreak
+\begin{flushleft}
+\begin{longtable}{|p{3cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{Solution} & \textbf{Advantages} & \textbf{Disadvantages} \\ \hline
+
+Web Application &
+
+{Can be accessed on multiple devices where theres is an internet connection.
+Only a web browser required (already installed in most cases).
+Can be easier to make it look "pretty" as there are many graphical libraries for the web.
+Can use different server side languages to program the backend of the website. (Python (Django),Ruby(RoR)
+\linebreak
+,PHP(Zend,Magneto)).}&
+
+{Need an internet connection to visit site if not hosted locally.
+A web host may need to be purchased.
+Need to optimize for different browsers (Internet Explorer, Chrome, Firefox, Safari).
+Problems may happen with host which means the client may not be able to access their application (site may be subject to DDOS (may need to purchase Cloudflare or similiar service))}.
+
+\\ \hline
+
+Mobile Phone Application &
+
+Can mean the application is extremely mobile so the client will be able to take the app wherever he goes which may useful to take to jobs.
+Client is familiar with using a mobile phone so may be easier for them to use.&
+
+Will take longer to complete.
+It is more complex and can be solved easier with a different method.
+Client may lose phone which would then result in loss of application.
+
+\\ \hline
+
+Command-Line Application &
+
+No long waiting time for GUI to load.
+System resources are not used up as much. &
+
+
+Can be more complicated, so it seems to the client.
+Interface would be less effective and harder to use for the non-technical client.
+Errors may occur and look unfamiliar to client.
+If laptop is lost/stolen the the program may be lost too so backups need to be kept online (not so much a problem with a web application).
+
+\\ \hline
+
+Spreadsheet &
+
+Can be faster than a application with a GUI to load.
+Data can be exported easily.
+Queries are easy to run and execute fast. &
+
+No abstraction from the data.
+Client would have to familiarise themselves with the syntax for queries.
+You can add a lot more features in PyQt and Python Applications.
+No GUI to make it easier for the client to control the functions and run queries. 
+
+\\ \hline
+
+PyQt4 GUI and Python3 Application &
+
+Python is easy to write and can therefore get the project done quicker leaving more time for debugging and testing.
+The GUI will make it a lot easier for the client to use the application.
+With this form of application it can be packaged for Mac,Windows and Linux Systems.
+GUI gives a clear visual representation of the applications features. &
+
+Uses python which needs to be packaged with the program as windows does not have Python natively installed but Mac and Linux do.
+Writing a GUI is a lot more work than other solutions. 
+
+\\ \hline
+
+\end{longtable}
+\label{tab:Alternative Solutions to the problem}
+\end{flushleft}
+
+
+
 \subsection{Justification of chosen solution}
+
+\begin{flushleft}
+	I have
+
+\end{flushleft}
