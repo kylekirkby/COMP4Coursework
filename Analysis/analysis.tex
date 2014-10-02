@@ -45,6 +45,15 @@ Finally, Dan writes out an invoice using a standard invoice book purchased from 
 	
 	\end{flushleft}
 
+		
+
+
+
+
+
+\subsection{Section appendix}
+
+
 \begin{flushleft}
 	\textbf{Interview with client}
 \end{flushleft}
@@ -88,13 +97,8 @@ Finally, Dan writes out an invoice using a standard invoice book purchased from 
 \end{figure}
 
 \end{flushleft}
-		
 
 
-
-
-
-\subsection{Section appendix}
 
 \section{Investigation}
 
@@ -344,7 +348,18 @@ The third algorithm being used in the system is an algorithm used to see whether
 
 
 
-\subsubsection{Data flow diagram}
+\subsubsection{Data flow diagrams}
+
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{./Analysis/images/proposedSystemGainingClientInfo.pdf}
+    \caption{This data flow diagram signifies the flow of data in the proposed system when gaining a new clients info.} \label{fig:proposed_system_dfd_1}
+\end{figure}
+
+
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{./Analysis/images/proposedSystemGettingMeasurements.pdf}
+    \caption{This data flow diagram signifies the flow of data in the proposed system when collecting the measurements from the job site.} \label{fig:proposed_system_dfd_2}
+\end{figure}
 
 
 
@@ -362,8 +377,11 @@ In the job details table each client may have up to 10 or more jobs. Some client
 
 \begin{itemize}
     \item 100 x 50KB = 5000 KB
-	 \item 5000 KB / 1024 = 
+	 \item 5000 KB / 1024 = 4.8MB
 \end{itemize}
+s
+If the application took up around 5MB itself then the total space required for the proposed system would be around 9.8MB (4.8MB + 5MB = 9.8MB). Dans computer has plenty of hard disk space that could be used when installing the application. This proposed system would therefore have enough storage space for 100 clients to be added to the client database.
+
 
 \end{flushleft}
 
@@ -467,13 +485,13 @@ Below are the entity descriptions for the various entites in the proposed system
 \textbf{Client entity}
 
 \begin{center}
-	Client(\underline{ClientID},ClientTitle,ClientFirstName,ClientSurname,ClientAddrLine1,ClientAddrLine2,ClientAddrLine3,ClientAddrLine4,ClientEmail,ClientPhoneNumber)
+	Client(\underline{ClientID}, ClientTitle, ClientFirstName, ClientSurname, ClientAddrLine1, ClientAddrLine2, ClientAddrLine3, ClientAddrLine4, ClientEmail, ClientPhoneNumber)
 \end{center}
 
 \textbf{Jobs entity}
 
 \begin{center}
-Job(\underline{JobID},\emph{ClientID},JobDescription,JobAddrLine1,JobAddrLine2,JobAddrLine3,JobAddrLine4,JobComplete,JobPaid)
+Job(\underline{JobID}, \emph{ClientID}, JobDescription, JobAddrLine1, JobAddrLine2, JobAddrLine3, JobAddrLine4, JobComplete, JobPaid)
 \end{center}
 
 \textbf{Materials entity}
@@ -485,13 +503,13 @@ Materials(\underline{MaterialsID},MaterialName,MaterialPrice)
 \textbf{JobsMaterials entity}
 
 \begin{center}
-JobsMaterials(\underline{JobMaterialsID},\emph{JobID},\emph{MaterialsID},JobMaterialsQuantity)
+JobsMaterials(\underline{JobMaterialsID}, \emph{JobID}, \emph{MaterialsID}, JobMaterialsQuantity)
 \end{center}
 
 \textbf{Invoices entity}
 
 \begin{center}
-Client(\underline{InvoiceID},\emph{ClientID},\emph{JobID},InvoiceAmountPreTax,InvoiceAmountAfterTax,InvoiceReceived,InvoiceDateSent)
+Client(\underline{InvoiceID}, \emph{ClientID}, \emph{JobID}, InvoiceAmountPreTax, InvoiceAmountAfterTax, InvoiceReceived, InvoiceDateSent)
 \end{center}
 
 
@@ -501,7 +519,14 @@ Client(\underline{InvoiceID},\emph{ClientID},\emph{JobID},InvoiceAmountPreTax,In
 
 \subsection{Object Listing}
 
-
+\textbf{Objects}
+	\begin{itemize}
+		\item Client
+		\item Jobs
+		\item Materials
+		\item JobsMaterials
+		\item Invoices
+	\end{itemize}
 
 \subsection{Relationship diagrams}
 
@@ -562,10 +587,15 @@ Client(\underline{InvoiceID},\emph{ClientID},\emph{JobID},InvoiceAmountPreTax,In
 
 \subsection{Areas which will not be included in computerisation}
 
-
+	\begin{itemize}
+		\item The collection of the measurements from the job site will still have to be done manually so will not be included in computerisation.
+		\item
+	\end{itemize}
 
 \subsection{Areas considered for future computerisation}
-
+	\begin{itemize}
+		\item The collection of the measurements, which is currently being done manually, may be implemented using a space aware device which can scan a room and pick up the measurements of it using just a phone for example. This might be possible 
+	\end{itemize}}
 
 \pagebreak
 \section{Solutions}
