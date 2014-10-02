@@ -316,7 +316,7 @@ The third algorithm being used in the system is an algorithm used to see whether
 
 \pagebreak
 
-
+%scale the diagrams ?
 \begin{figure}[H]
     \includegraphics[width=\textwidth]{./Analysis/images/workbookPage.jpg}
     \caption{This is a page from a work book used to store details about jobs.} \label{fig:work_book_page}
@@ -440,9 +440,60 @@ In the job details table each client may have up to 10 or more jobs. Some client
 
 \subsection{ER Diagram}
 
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{./Analysis/images/entityRelationshipDiagram.pdf}
+    \caption{This is the entity relationship diagram for the sqlite3 database.} \label{fig:Entity_Relationship_Diagram}
+\end{figure}
 
 
 \subsection{Entity Descriptions}
+
+\textbf{Entities}
+	\begin{itemize}
+		\item Client
+		\item Jobs
+		\item Materials
+		\item JobsMaterials
+		\item Invoices
+	\end{itemize}
+
+\begin{flushleft}
+
+Below are the entity descriptions for the various entites in the proposed system. An \underline{underlined} attribute denotes a primary key and a \emph{emphasised}	attribute signifies a foreign key in the entity.
+
+\end{flushleft}
+
+
+\textbf{Client entity}
+
+\begin{center}
+	Client(\underline{ClientID},ClientTitle,ClientFirstName,ClientSurname,ClientAddrLine1,ClientAddrLine2,ClientAddrLine3,ClientAddrLine4,ClientEmail,ClientPhoneNumber)
+\end{center}
+
+\textbf{Jobs entity}
+
+\begin{center}
+Job(\underline{JobID},\emph{ClientID},JobDescription,JobAddrLine1,JobAddrLine2,JobAddrLine3,JobAddrLine4,JobComplete,JobPaid)
+\end{center}
+
+\textbf{Materials entity}
+
+\begin{center}
+Materials(\underline{MaterialsID},MaterialName,MaterialPrice)
+\end{center}
+
+\textbf{JobsMaterials entity}
+
+\begin{center}
+JobsMaterials(\underline{JobMaterialsID},\emph{JobID},\emph{MaterialsID},JobMaterialsQuantity)
+\end{center}
+
+\textbf{Invoices entity}
+
+\begin{center}
+Client(\underline{InvoiceID},\emph{ClientID},\emph{JobID},InvoiceAmountPreTax,InvoiceAmountAfterTax,InvoiceReceived,InvoiceDateSent)
+\end{center}
+
 
 
 
@@ -601,6 +652,6 @@ Writing a GUI is a lot more work than other solutions.
 \subsection{Justification of chosen solution}
 
 \begin{flushleft}
-	I have
+	I have chosen to use Python 3 alongside the Qt Framework (PyQt4) to create a standalone application. This is due to the versatility which Python and PyQt4 offers. Using this method to program a solution to my clients problem I will be able to get it done effeciently due to my existing knowledge of Python and I will be able to generate different executables for different operating systems which may be beneficial to the client as he is looking to buy a Apple System. It will also offer a visual representation through the use of GUI as opposed to hard to use Console application approach; which would not be suitable for the client as he does not have enough technical knowledge with computers to understand and use it easily - therefore going for something with a GUI would be a good choice. A web application may have been good but sometimes Dan takes his laptop where there is no internet connection and hosting the site locally would not be feasible. Also there are hidden costs involved with purhcasing a domain and hosting if a web application solution was chosen. A mobile application may have also been good but would have taken longer to accomplish due to the time it takes to develop complex mobile phone applications. A spreadsheet would also not have been the perfect solution as it requires knowledge of writing queries which, due to Dan's lack of technical computer knowledge, he does not have. Therefore I believe that a Python and PyQt4 application would be the best solution to go for.
 
 \end{flushleft}
