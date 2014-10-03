@@ -392,19 +392,22 @@ Plasterer & AppointmentAddr1 & String/text & Appointment Records \\ \hline
 Plasterer & AppointmentAddr2 & String/text & Appointment Records \\ \hline
 Plasterer & AppointmentAddr3 & String/text & Appointment Records \\ \hline
 Plasterer & AppointmentAddr4 & String/text & Appointment Records \\ \hline
-
-
-
-
-
+Plasterer & InvoiceID & Integer & Invoice Records \\ \hline
+Plasterer & ClientID	& Integer & Invoice Records \\ \hline
+Plasterer & JobID & Integer & Invoice Records \\ \hline
+Plasterer & PlastererID & Integer & Invoice Records \\ \hline
+Plasterer & InvoiceAmountPreTax & Currency & Invoice Records \\ \hline
+Plasterer & InvoiceAmountAfterTax & Currency & Invoice Records \\ \hline
+Plasterer & InvoiceReceived & Boolean & Invoice Records \\ \hline
+Plasterer & InvoiceDate & DateTime & Invoice Records \\ \hline
+Plasterer & InvoiceText & Text & Invoice Records \\ \hline
+Plasterer & JobMaterialsID & Integer & JobMaterials Records \\ \hline
+Plasterer & JobID & Integer & JobMaterials Records \\ \hline
+Plasterer & MaterialsID & Integer & JobMaterials Records \\ \hline
+Plasterer & JobMaterialsQuantity & Integer & JobMaterials Records \\ \hline
 
 
 \end{longtable}
-
-
-
-
-
 \end{flushleft}
 
 
@@ -445,7 +448,24 @@ Plasterer & AppointmentAddr4 & String/text & Appointment Records \\ \hline
 \subsubsection{Data dictionary}
 
 
+\begin{flushleft}
+\begin{longtable}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+\hline
+\textbf{Name} & \textbf{Data Type} & \textbf{Length} & \textbf{Validation} & \textbf{Example Data} & \textbf{Comment} \\ \hline
+ClientID & Integer & 6 Digits & Presence Check (Primary Key must exist) & 1, 2, 45 & Primary Key \\ \hline
+ClientID & Integer & 6 Digits & Presence Check (Primary Key must exist) & 1, 2, 45 & Primary Key \\ \hline 
+ClientID & Integer & 6 Digits & Presence Check (Primary Key must exist) & 1, 2, 45 & Primary Key \\ \hline 
+ClientID & Integer & 6 Digits & Presence Check (Primary Key must exist) & 1, 2, 45 & Primary Key \\ \hline 
+ClientID & Integer & 6 Digits & Presence Check (Primary Key must exist) & 1, 2, 45 & Primary Key \\ \hline 
+ClientID & Integer & 6 Digits & Presence Check (Primary Key must exist) & 1, 2, 45 & Primary Key \\ \hline 
+ClientID & Integer & 6 Digits & Presence Check (Primary Key must exist) & 1, 2, 45 & Primary Key \\ \hline 
+ClientID & Integer & 6 Digits & Presence Check (Primary Key must exist) & 1, 2, 45 & Primary Key \\ \hline 
+ClientID & Integer & 6 Digits & Presence Check (Primary Key must exist) & 1, 2, 45 & Primary Key \\ \hline 
+ClientID & Integer & 6 Digits & Presence Check (Primary Key must exist) & 1, 2, 45 & Primary Key \\ \hline  
 
+
+\end{longtable}
+\end{flushleft}
 
 
 \subsubsection{Volumetrics}
@@ -569,7 +589,7 @@ Below are the entity descriptions for the various entites in the proposed system
 
 
 \begin{center}
-\textbf{Job}(\underline{JobID}, \emph{ClientID}, \emph{PlastererID}, JobDescription, JobAddrLine1, JobAddrLine2, JobAddrLine3, JobDaysWorked JobAddrLine4, JobComplete, JobPaid, \emph{InvoiceID})
+\textbf{Job}(\underline{JobID}, \emph{ClientID}, \emph{PlastererID}, JobDescription, JobAddrLine1, JobAddrLine2, JobAddrLine3, JobAddrLine4, JobDaysWorked,  JobComplete, JobPaid, \emph{InvoiceID})
 \end{center}
 
 
@@ -612,9 +632,128 @@ Below are the entity descriptions for the various entites in the proposed system
 
 \subsection{Relationship diagrams}
 
+\begin{figure}[H]
+\includegraphics[width=\textwidth]{./Analysis/images/relationshipDiagramObjectAnalysis.pdf}
+    \caption{Relationship Diagram for the entities in the proposed system.} \label{fig:proposed_system_relationship_diagram}
+\end{figure}
 
 
-\subsection{Class definitions}
+
+\subsection{Class definitions} 
+
+\begin{flushleft}
+
+\begin{tabular}{|p{4cm}|}
+	\hline
+	\textbf{Key:} \\ \hline
+	Label \\ \hline
+	Attributes \\ \hline	
+	Behavious \\ \hline
+\end{tabular}
+
+
+\end{flushleft}
+
+
+\begin{tabular}{|p{5cm}|}
+	\hline
+	\textbf{Client:} \\ \hline
+		ClientID \\
+		ClientTitle \\
+		ClientFirstName \\
+		ClientSurname \\
+		ClientAddrLine1 \\
+		ClientAddrLine2 \\
+		ClientAddrLine3 \\
+		ClientAddrLine4 \\
+		ClientEmail \\
+		ClientPhoneNumber \\ \hline
+		AddClientTitle \\
+		AddClientFirstName \\
+		AddClientSurname \\
+		AddClientAddrLine1 \\
+		AddClientAddrLine2 \\
+		AddClientAddrLine3 \\
+		AddClientAddrLine4 \\
+		AddClientEmail \\
+		AddClientPhoneNumber \\ \hline
+\end{tabular}
+
+
+\begin{tabular}{|p{5cm}|}
+	\hline
+	\textbf{Plasterer:} \\ \hline
+		PlastererID \\
+		PlastererFirstName \\
+		PlastererSurname \\
+		PlastererAddrLine1 \\
+		PlastererAddrLine2 \\
+		PlastererAddrLine3 \\
+		PlastererAddrLine4 \\
+		PlastererEmail \\
+		PlastererPhoneNumber \\
+		PlastererDailyRate \\ \hline
+		AddPlastererFirstName \\
+		AddPlastererSurname \\
+		AddPlastererAddrLine1 \\
+		AddPlastererAddrLine2 \\
+		AddPlastererAddrLine3 \\
+		AddPlastererAddrLine4 \\
+		AddPlastererEmail \\
+		AddPlastererPhoneNumber \\
+		AddPlastererDailyRate \\ \hline
+\end{tabular}
+
+\begin{tabular}{|p{5cm}|}
+	\hline
+	\textbf{Job:} \\ \hline
+		JobID \\
+		ClientID \\
+		PlastererID \\
+		JobDescription \\
+		JobAddrLine1 \\
+		JobAddrLine2 \\
+		JobAddrLine3 \\
+		JobAddrLine4 \\
+		JobDaysWorked \\
+		JobComplete \\
+		JobPaid \\ 
+		InvoiceID \\ \hline
+		AddJobDescription\\
+		AddJobAddrLine1 \\
+		AddJobAddrLine2 \\
+		AddJobAddrLine3 \\
+		AddJobAddrLine4 \\
+		AddJobDaysWorked \\
+		EditJobComplete \\
+		EditJobPaid \\ \hline
+\end{tabular}
+
+
+\begin{tabular}{|p{5cm}|}
+	\hline
+	\textbf{Job:} \\ \hline
+		JobID \\
+		ClientID \\
+		PlastererID \\
+		JobDescription \\
+		JobAddrLine1 \\
+		JobAddrLine2 \\
+		JobAddrLine3 \\
+		JobAddrLine4 \\
+		JobDaysWorked \\
+		JobComplete \\
+		JobPaid \\ 
+		InvoiceID \\ \hline
+		AddJobDescription\\
+		AddJobAddrLine1 \\
+		AddJobAddrLine2 \\
+		AddJobAddrLine3 \\
+		AddJobAddrLine4 \\
+		AddJobDaysWorked \\
+		EditJobComplete \\
+		EditJobPaid \\ \hline
+\end{tabular}
 
 
 
