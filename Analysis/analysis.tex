@@ -323,7 +323,7 @@ The third algorithm being used in the system is an algorithm used to see whether
 %scale the diagrams ?
 \begin{figure}[H]
     \includegraphics[width=\textwidth]{./Analysis/images/workbookPage.jpg}
-    \caption{This is a page from a work book used to store details about jobs.} \label{fig:work_book_page}
+    \caption{This is an example of an input form where data is put into the system and is a page from a work book used to store details about jobs.} \label{fig:work_book_page}
 \end{figure}
 
 \begin{figure}[H]
@@ -348,22 +348,103 @@ The third algorithm being used in the system is an algorithm used to see whether
 
 
 
+\begin{flushleft}
+\begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
+\hline
+\textbf{Source} & \textbf{Data} & \textbf{Data Type} & \textbf{Destination}  \\ \hline
+Client & Firstname & String/text & Plasterer \\ \hline 
+Client & Surname   & String/text & Plasterer \\ \hline
+Client & AddrLine1 & String/text & Plasterer \\ \hline
+Client & AddrLine2 & String/text & Plasterer \\ \hline
+Client & AddrLine3 & String/text & Plasterer \\ \hline
+Client & AddrLine4 & String/text & Plasterer \\ \hline
+Client & PostCode  & String/text & Plasterer \\ \hline
+Client & Email     & String/text & Plasterer \\ \hline
+Client & MobNumber & String/text & Plasterer \\ \hline   
+Plasterer & ClientID & Integer & Client Records \\ \hline
+Plasterer & Firstname & String/text & Client Records \\ \hline 
+Plasterer & Surname   & String/text & Client Records \\ \hline
+Plasterer & AddrLine1 & String/text & Client Records \\ \hline
+Plasterer & AddrLine2 & String/text & Client Records \\ \hline
+Plasterer & AddrLine3 & String/text & Client Records \\ \hline
+Plasterer & AddrLine4 & String/text & Client Records \\ \hline
+Plasterer & PostCode  & String/text & Client Records \\ \hline
+Plasterer & Email     & String/text & Client Records \\ \hline
+Plasterer & MobNumber & String/text & Client Records \\ \hline   
+Job site & JobID & Integer & Job Records \\ \hline
+Job site & ClientID & Integer & Job Records \\ \hline
+Job site & Job Desc & Text & Job Records \\ \hline
+Job site & AddrLine1 & String/text & Job Records \\ \hline
+Job site & AddrLine2 & String/text & Job Records \\ \hline
+Job site & AddrLine3 & String/text & Job Records \\ \hline
+Job site & AddrLine4 & String/text & Job Records \\ \hline
+Job site & PostCode  & String/text & Job Records \\ \hline
+Job site & Job Total Price & Currency & Job Records \\ \hline
+Job site & JobPaid     & Boolean & Job Records \\ \hline
+Job site & JobDaysWorked & Integer & Job Records \\ \hline
+Job site & JobComplete & Boolean & Job Records \\ \hline   
+Plasterer & AppointmentID & Integer & Appointment Records \\ \hline
+Plasterer & ClientID & String/text & Appointment Records \\ \hline 
+Plasterer & PlastererID & String/text & Appointment Records \\ \hline
+Plasterer & AppointmentDate & String/text & Appointment Records \\ \hline
+Plasterer & AppointmentTime & String/text & Appointment Records \\ \hline
+Plasterer & AppointmentAddr1 & String/text & Appointment Records \\ \hline
+Plasterer & AppointmentAddr2 & String/text & Appointment Records \\ \hline
+Plasterer & AppointmentAddr3 & String/text & Appointment Records \\ \hline
+Plasterer & AppointmentAddr4 & String/text & Appointment Records \\ \hline
+
+
+
+
+
+
+
+\end{longtable}
+
+
+
+
+
+\end{flushleft}
+
+
+
 \subsubsection{Data flow diagrams}
 
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{./Analysis/images/proposedSystemGainingClientInfo.pdf}
+\includegraphics[width=\textwidth]{./Analysis/images/proposedSystemGainingClientInfo.pdf}
     \caption{This data flow diagram signifies the flow of data in the proposed system when gaining a new clients info.} \label{fig:proposed_system_dfd_1}
 \end{figure}
 
 
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{./Analysis/images/proposedSystemGettingMeasurements.pdf}
+\includegraphics[width=\textwidth]{./Analysis/images/proposedSystemGettingMeasurements.pdf}
     \caption{This data flow diagram signifies the flow of data in the proposed system when collecting the measurements from the job site.} \label{fig:proposed_system_dfd_2}
 \end{figure}
 
 
+\begin{figure}[H]
+\includegraphics[width=\textwidth]{./Analysis/images/proposedSystemGivingClientAppointmentTime.pdf}
+    \caption{This diagram shows the flow of the data in the proposed system when a client is given an appointment time.} \label{fig:proposed_system_dfd_3}
+\end{figure}
+
+
+\begin{figure}[H]
+\includegraphics[width=\textwidth]{./Analysis/images/proposedSystemGettingQuoteFromBuildersMerchant.pdf}
+    \caption{This diagram shows the flow of the data in the proposed system when the plasterer gets a quote for the materials from the builders merchants.} \label{fig:proposed_system_dfd_4}
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[width=\textwidth]{./Analysis/images/proposedSystemGeneratingQuoteForClient.pdf}
+    \caption{This diagram shows the flow of the data in the proposed system when a quote is generated for the client and given to them.} \label{fig:proposed_system_dfd_5}
+\end{figure}
+
+
+
 
 \subsubsection{Data dictionary}
+
+
 
 
 
@@ -459,21 +540,12 @@ If the application took up around 5MB itself then the total space required for t
 \subsection{ER Diagram}
 
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{./Analysis/images/entityRelationshipDiagram.pdf}
+    \includegraphics[width=\textwidth]{./Analysis/images/ER-Diagram.pdf}
     \caption{This is the entity relationship diagram for the sqlite3 database.} \label{fig:Entity_Relationship_Diagram}
 \end{figure}
 
 
 \subsection{Entity Descriptions}
-
-\textbf{Entities}
-	\begin{itemize}
-		\item Client
-		\item Jobs
-		\item Materials
-		\item JobsMaterials
-		\item Invoices
-	\end{itemize}
 
 \begin{flushleft}
 
@@ -482,36 +554,44 @@ Below are the entity descriptions for the various entites in the proposed system
 \end{flushleft}
 
 
-\textbf{Client entity}
+
 
 \begin{center}
-	Client(\underline{ClientID}, ClientTitle, ClientFirstName, ClientSurname, ClientAddrLine1, ClientAddrLine2, ClientAddrLine3, ClientAddrLine4, ClientEmail, ClientPhoneNumber)
+	\textbf{Client}(\underline{ClientID}, ClientTitle, ClientFirstName, ClientSurname, ClientAddrLine1, ClientAddrLine2, ClientAddrLine3, ClientAddrLine4, ClientEmail, ClientPhoneNumber, \emph{PlastererID})
 \end{center}
 
-\textbf{Jobs entity}
+
 
 \begin{center}
-Job(\underline{JobID}, \emph{ClientID}, JobDescription, JobAddrLine1, JobAddrLine2, JobAddrLine3, JobAddrLine4, JobComplete, JobPaid)
+	\textbf{Plasterer}(\underline{PlastererID}, PlastererFirstName, PlastererSurname, PlastererAddrLine1, PlastererAddrLine2, PlastererAddrLine3, PlastererAddrLine4, PlastererEmail,PlastererPhoneNumber, PlastererDailyRate)
 \end{center}
 
-\textbf{Materials entity}
+
 
 \begin{center}
-Materials(\underline{MaterialsID},MaterialName,MaterialPrice)
+\textbf{Job}(\underline{JobID}, \emph{ClientID}, \emph{PlastererID}, JobDescription, JobAddrLine1, JobAddrLine2, JobAddrLine3, JobDaysWorked JobAddrLine4, JobComplete, JobPaid, \emph{InvoiceID})
 \end{center}
 
-\textbf{JobsMaterials entity}
 
 \begin{center}
-JobsMaterials(\underline{JobMaterialsID}, \emph{JobID}, \emph{MaterialsID}, JobMaterialsQuantity)
+\textbf{Material}(\underline{MaterialID},MaterialName,MaterialPrice)
 \end{center}
 
-\textbf{Invoices entity}
 
 \begin{center}
-Client(\underline{InvoiceID}, \emph{ClientID}, \emph{JobID}, InvoiceAmountPreTax, InvoiceAmountAfterTax, InvoiceReceived, InvoiceDateSent)
+\textbf{JobMaterials}(\underline{JobMaterialsID}, \emph{JobID}, \emph{MaterialsID}, JobMaterialsQuantity)
 \end{center}
 
+
+\begin{center}
+\textbf{Invoice}(\underline{InvoiceID}, \emph{ClientID}, \emph{JobID}, \emph{PlastererID} InvoiceAmountPreTax, InvoiceAmountAfterTax, InvoiceReceived, InvoiceDate, InvoiceText)
+\end{center}
+
+
+
+\begin{center}
+\textbf{Appointment}(\underline{AppointmentID}, \emph{ClientID}, \emph{PlastererID}, AppointmentDate, AppointmentTime, AppointmentAddrLine1, AppointmentAddrLine2, AppointmentAddrLine3, AppointmentAddrLine4)
+\end{center}
 
 
 
@@ -526,6 +606,8 @@ Client(\underline{InvoiceID}, \emph{ClientID}, \emph{JobID}, InvoiceAmountPreTax
 		\item Materials
 		\item JobsMaterials
 		\item Invoices
+		\item Appointment
+		\item Plasterer
 	\end{itemize}
 
 \subsection{Relationship diagrams}
@@ -533,6 +615,8 @@ Client(\underline{InvoiceID}, \emph{ClientID}, \emph{JobID}, InvoiceAmountPreTax
 
 
 \subsection{Class definitions}
+
+
 
 
 
@@ -589,13 +673,13 @@ Client(\underline{InvoiceID}, \emph{ClientID}, \emph{JobID}, InvoiceAmountPreTax
 
 	\begin{itemize}
 		\item The collection of the measurements from the job site will still have to be done manually so will not be included in computerisation.
-		\item
+		\item Getting the quote for the price of the materials will still be done manually as it will be difficult to computerise as you have to visit the Builders Merchants in person.
 	\end{itemize}
 
 \subsection{Areas considered for future computerisation}
 	\begin{itemize}
-		\item The collection of the measurements, which is currently being done manually, may be implemented using a space aware device which can scan a room and pick up the measurements of it using just a phone for example. This might be possible 
-	\end{itemize}}
+		\item The collection of the measurements, which is currently being done manually, may be implemented using a device which has kinect like sensors, you could scan a room and pick up the measurements of it using just a phone for example. This might be possible.
+	\end{itemize}
 
 \pagebreak
 \section{Solutions}
