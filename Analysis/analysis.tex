@@ -318,9 +318,16 @@ The third algorithm being used in the system is an algorithm used to see whether
 
 \subsubsection{Input Forms, Output Forms, Report Formats}
 
+\begin{flushleft}
+	
+	In the system currently being used there are two main forms - the work book input form and the invoice output form. Below are a few examples of these forms as they are currently being used in the system:
+
+\end{flushleft}
+
+
 \pagebreak
 
-%scale the diagrams ?
+
 \begin{figure}[H]
     \includegraphics[width=\textwidth]{./Analysis/images/workbookPage.jpg}
     \caption{This is an example of an input form where data is put into the system and is a page from a work book used to store details about jobs.} \label{fig:work_book_page}
@@ -349,9 +356,9 @@ The third algorithm being used in the system is an algorithm used to see whether
 
 
 \begin{flushleft}
-\begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
+\begin{longtable}{|p{3cm}|p{4cm}|p{3cm}|p{3cm}|}
 \hline
-\textbf{Source} & \textbf{Data} & \textbf{Data Type} & \textbf{Destination}  \\ \hline
+\textbf{Source} & \textbf{Data} & \t                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       extbf{Data Type} & \textbf{Destination}  \\ \hline
 Client & Firstname & String/text & Plasterer \\ \hline 
 Client & Surname   & String/text & Plasterer \\ \hline
 Client & AddrLine1 & String/text & Plasterer \\ \hline
@@ -449,20 +456,75 @@ Plasterer & JobMaterialsQuantity & Integer & JobMaterials Records \\ \hline
 
 
 \begin{flushleft}
-\begin{longtable}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+\begin{longtable}{|p{4cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
 \hline
 \textbf{Name} & \textbf{Data Type} & \textbf{Length} & \textbf{Validation} & \textbf{Example Data} & \textbf{Comment} \\ \hline
-ClientID & Integer & 6 Digits & Presence Check (Primary Key must exist) & 1, 2, 45 & Primary Key \\ \hline
-ClientID & Integer & 6 Digits & Presence Check (Primary Key must exist) & 1, 2, 45 & Primary Key \\ \hline 
-ClientID & Integer & 6 Digits & Presence Check (Primary Key must exist) & 1, 2, 45 & Primary Key \\ \hline 
-ClientID & Integer & 6 Digits & Presence Check (Primary Key must exist) & 1, 2, 45 & Primary Key \\ \hline 
-ClientID & Integer & 6 Digits & Presence Check (Primary Key must exist) & 1, 2, 45 & Primary Key \\ \hline 
-ClientID & Integer & 6 Digits & Presence Check (Primary Key must exist) & 1, 2, 45 & Primary Key \\ \hline 
-ClientID & Integer & 6 Digits & Presence Check (Primary Key must exist) & 1, 2, 45 & Primary Key \\ \hline 
-ClientID & Integer & 6 Digits & Presence Check (Primary Key must exist) & 1, 2, 45 & Primary Key \\ \hline 
-ClientID & Integer & 6 Digits & Presence Check (Primary Key must exist) & 1, 2, 45 & Primary Key \\ \hline 
-ClientID & Integer & 6 Digits & Presence Check (Primary Key must exist) & 1, 2, 45 & Primary Key \\ \hline  
 
+
+
+ClientID & Integer & 1 - 1000 & Range & 1, 200, 45 & Primary Key \\ \hline
+ClientTitle & String & 2 - 10 Chars & Length & Mr,Mrs,Sir &  \\ \hline 
+ClientFirstName & String & 3 - 25 Chars & Length & Dan, kyle &  \\ \hline 
+ClientSurname & String & 3 - 35 Chars & Length & Austin, Kirkby &  \\ \hline 
+ClientAddrLine1 & String & 5 - 30 Chars & Length & 15 Crowley Road &  Street name \\ \hline 
+ClientAddrLine2 & String & 5 - 30 Chars & Length & Haverhill & Town / City \\ \hline 
+ClientAddrLine3 & String & 5 - 30 Chars & Length & Suffolk & County  \\ \hline 
+ClientAddrLine4 & String & 6 - 7 Chars & Length and Format Check & CB9 0DJ & Post Code\\ \hline 
+ClientEmail & String & 7 - 50 Chars & Length and format check & dan@ gmail.com &  \\ \hline 
+ClientPhoneNumber & String & 11 Chars & Length & 07809 726 812 &  \\ \hline \hline
+
+
+
+PlastererID & Integer & 1 - 50  & Range  & 1, 2, 45 & Primary Key \\ \hline
+PlastererFirstName & String & 3 - 30 Chars & Length & Dan, Kyle & \\ \hline
+PlastererSurname & String & 3 - 30 Chars & Length & Austin, Kirkby & \\ \hline
+PlastererAddrLine1 & String & 5 - 30 Chars & Length & 15 Long Road & Street Name \\ \hline
+PlastererAddrLine2 & String & 5 - 30 Chars & Length & Cambridge & Town / City \\ \hline
+PlastererAddrLine3 & String & 5 - 30 Chars & Length & Essex & County \\ \hline
+PlastererAddrLine4 & String & 6 - 7 Chars & Length and Format Check & CB2 5HD & Post Code \\ \hline
+PlastererEmail & String & 7 - 50 Chars & Length and Format Check & dan@ gmail.com  &  \\ \hline
+PlastererPhoneNumber & String & 11 Chars & Length & 07710 300 678 & \\ \hline
+PlastererDailyRate & Currency & 40 - 250 & Range Check & 70, 150, 200 & \\ \hline \hline
+
+
+
+JobID & Integer & 1 - 2000 & Range Check & 1, 3, 5 & Primary Key \\ \hline
+JobDescription & Text & 10 - 1000 Chars & Range Check & 5m x 4m x 3m Living Room to be plastered. & Description of job. \\ \hline
+JobAddrLine1 & String & 5 - 30 Chars & Length & 15 Long Road & Street Name \\ \hline
+JobAddrLine2 & String & 5 - 30 Chars & Length & Cambridge & Town / City \\ \hline
+JobAddrLine3 & String & 5 - 30 Chars & Length & Essex & County \\ \hline
+JobAddrLine4 & String & 6 - 7 Chars & Length and Format Check & CB2 5HD & Post Code \\ \hline
+JobDaysWorked & Integer & 0 - 30 & Range Check & 1, 7 14 &  \\ \hline
+JobComplete & Boolean &  & Presence Check & TRUE, FALSE &  \\ \hline
+JobPaid & Boolean &  & Presence Check & TRUE, FALSE &  \\ \hline \hline
+
+
+
+MaterialID & Integer & 1 - 50 & Range Check & 3, 4, 29 & Primary Key \\ \hline
+MaterialName & String & 3 - 50 & Length & Angle Beading &  \\ \hline  
+MaterialPrice & Currency & 1 - 1000 & Range Check & 1, 3, 20 &  \\ \hline \hline
+
+
+JobMaterialsID & Integer & 1 - 4000 & Range Check & 1, 300, 3563 & Primary Key \\ \hline
+JobMaterialsQuantity & Integer & 1 - 500 & Range Check & 59, 245, 309 & \\ \hline \hline 
+
+
+InvoiceID & Integer & 1 - 2000 & Range Check & 1, 2, 45 & Primary Key \\ \hline
+InvoiceAmountPreTax & Currency & 50 - 7000 & Range Check & 140, 890, 1050 &  \\ \hline
+InvoiceAmountAfterTax & Currency & 50 - 7000 & Range Check & 100, 800, 900 &  \\ \hline
+InvoiceReceived & Boolean &  & Presence Check & TRUE, FALSE &  \\ \hline
+InvoiceDate & DateTime &  & Presence Check & 14/12/2013 14:20 &  \\ \hline
+InvoiceText & Text & 1 - 1000 & Length & 5 Days Worked &  \\ \hline \hline
+
+
+
+AppointmentID & Integer & 1 - 2500 & Range Check & 1, 2, 45 & Primary Key \\ \hline
+AppointmentDate & Date & & Presence Check  & 07/12/2013  & \\ \hline
+AppointmentTime & Time &  & Presence Check  & 16:10 & \\ \hline
+AppointmentAddrLine1 & String & 5 - 30 Chars & Length & 15 Long Road & Street Name \\ \hline
+AppointmentAddrLine2 & String & 5 - 30 Chars & Length & Cambridge & Town / City \\ \hline
+AppointmentAddrLine3 & String & 5 - 30 Chars & Length & Essex & County \\ \hline
+AppointmentAddrLine4 & String & 6 - 7 Chars & Length and Format Check & CB2 5HD & Post Code \\ \hline
 
 \end{longtable}
 \end{flushleft}
@@ -642,10 +704,9 @@ Below are the entity descriptions for the various entites in the proposed system
 \subsection{Class definitions} 
 
 \begin{flushleft}
-
+\textbf{Key:}
 \begin{tabular}{|p{4cm}|}
 	\hline
-	\textbf{Key:} \\ \hline
 	Label \\ \hline
 	Attributes \\ \hline	
 	Behavious \\ \hline
@@ -676,7 +737,16 @@ Below are the entity descriptions for the various entites in the proposed system
 		AddClientAddrLine3 \\
 		AddClientAddrLine4 \\
 		AddClientEmail \\
-		AddClientPhoneNumber \\ \hline
+		AddClientPhoneNumber \\ 
+		EditClientTitle \\
+		EditClientFirstName \\
+		EditClientSurname \\
+		EditClientAddrLine1 \\
+		EditClientAddrLine2 \\
+		EditClientAddrLine3 \\
+		EditClientAddrLine4 \\
+		EditClientEmail \\
+		EditClientPhoneNumber \\ \hline
 \end{tabular}
 
 
@@ -701,7 +771,17 @@ Below are the entity descriptions for the various entites in the proposed system
 		AddPlastererAddrLine4 \\
 		AddPlastererEmail \\
 		AddPlastererPhoneNumber \\
-		AddPlastererDailyRate \\ \hline
+		AddPlastererDailyRate \\
+ 		
+		EditPlastererFirstName \\
+		EditPlastererSurname \\
+		EditPlastererAddrLine1 \\
+		EditPlastererAddrLine2 \\
+		EditPlastererAddrLine3 \\
+		EditPlastererAddrLine4 \\
+		EditPlastererEmail \\
+		EditPlastererPhoneNumber \\
+		EditPlastererDailyRate \\ \hline
 \end{tabular}
 
 \begin{tabular}{|p{5cm}|}
@@ -726,35 +806,90 @@ Below are the entity descriptions for the various entites in the proposed system
 		AddJobAddrLine4 \\
 		AddJobDaysWorked \\
 		EditJobComplete \\
-		EditJobPaid \\ \hline
+		EditJobPaid \\
+		EditJobDescription\\
+		EditJobAddrLine1 \\
+		EditJobAddrLine2 \\
+		EditJobAddrLine3 \\
+		EditJobAddrLine4 \\
+		EditJobDaysWorked \\ \hline
+\end{tabular}
+
+\begin{tabular}{|p{5cm}|}
+	\hline
+	\textbf{Material:} \\ \hline
+		MaterialID \\
+		MaterialName \\
+		MaterialPrice \\ \hline
+		AddMaterialName\\
+		AddMaterialPrice \\ \hline	
+		EditMaterialName \\
+		EditMaterialPrice \\ \hline
+\end{tabular}
+
+\begin{tabular}{|p{5cm}|}
+	\hline
+	\textbf{JobMaterials:} \\ \hline
+		JobMaterialsID \\
+		JobID \\
+		MaterialsID \\ 
+		JobMaterialsQuantity \\ \hline
+		AddJobMaterialsQuantity \\
+		EditJobMaterialsQuantity \\ \hline
 \end{tabular}
 
 
 \begin{tabular}{|p{5cm}|}
 	\hline
-	\textbf{Job:} \\ \hline
-		JobID \\
+	\textbf{Invoice:} \\ \hline
+		InvoiceID \\
 		ClientID \\
-		PlastererID \\
-		JobDescription \\
-		JobAddrLine1 \\
-		JobAddrLine2 \\
-		JobAddrLine3 \\
-		JobAddrLine4 \\
-		JobDaysWorked \\
-		JobComplete \\
-		JobPaid \\ 
-		InvoiceID \\ \hline
-		AddJobDescription\\
-		AddJobAddrLine1 \\
-		AddJobAddrLine2 \\
-		AddJobAddrLine3 \\
-		AddJobAddrLine4 \\
-		AddJobDaysWorked \\
-		EditJobComplete \\
-		EditJobPaid \\ \hline
+		JobID \\
+		PlastererID\\
+		InvoiceAmountPreTax \\
+		InvoiceAmountAfterTax \\
+		InvoiceReceived \\
+		InvoiceDate \\
+		InvoiceText \\ \hline
+		AddInvoiceAmountPreTax \\ 
+		AddInvoiceAmountAfterTax \\
+		AddInvoiceReceived \\
+		AddInvoiceDate \\
+		AddInvoiceText \\ 
+		EditInvoiceAmountPreTax \\ 
+		EditInvoiceAmountAfterTax \\
+		EditInvoiceReceived \\
+		EditInvoiceDate \\
+		EditInvoiceText \\ \hline
+		
 \end{tabular}
 
+\begin{tabular}{|p{5cm}|}
+	\hline
+	\textbf{Appointment:} \\ \hline
+		AppointmentID \\
+		ClientID \\
+		PlastererID \\
+		AppointmentDate\\
+		AppointmentTime \\
+		AppointmentAddrLine1 \\
+		AppointmentAddrLine2 \\
+		AppointmentAddrLine3 \\
+		AppointmentAddrLine4 \\ \hline
+		AddAppointmentDate\\
+		AddAppointmentTime \\
+		AddAppointmentAddrLine1 \\
+		AddAppointmentAddrLine2 \\
+		AddAppointmentAddrLine3 \\
+		AddAppointmentAddrLine4 \\
+		EditAppointmentDate\\
+		EditAppointmentTime \\
+		EditAppointmentAddrLine1 \\
+		EditAppointmentAddrLine2 \\
+		EditAppointmentAddrLine3 \\
+		EditAppointmentAddrLine4 \\ \hline
+
+\end{tabular}
 
 
 
