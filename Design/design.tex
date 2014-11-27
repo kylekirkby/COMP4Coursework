@@ -38,11 +38,258 @@
 
 \subsection{Normalisation}
 
+\pagebreak
 \subsubsection{ER Diagrams}
+
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{./Analysis/images/ERDiagram.pdf}
+    \caption{This is the entity relationship diagram for the sqlite3 database.} \label{fig:Entity_Relationship_Diagram}
+\end{figure}
 
 \subsubsection{Entity Descriptions}
 
+\begin{flushleft}
+
+Below are the entity descriptions for the various entites in the proposed system. An \underline{underlined} attribute denotes a primary key and a \emph{emphasised}	attribute signifies a foreign key in the entity.
+
+\end{flushleft}
+
+
+
+
+\begin{flushleft}
+	\textbf{Client}(\underline{ClientID}, ClientTitle, ClientFirstName, ClientSurname, ClientAddrLine1, ClientAddrLine2, ClientAddrLine3, ClientAddrLine4, ClientEmail, ClientPhoneNumber, \emph{PlastererID})
+\end{flushleft}
+
+
+
+\begin{flushleft}
+	\textbf{Plasterer}(\underline{PlastererID}, PlastererFirstName, PlastererSurname, PlastererAddrLine1, PlastererAddrLine2, PlastererAddrLine3, PlastererAddrLine4, PlastererEmail,PlastererPhoneNumber, PlastererDailyRate)
+\end{flushleft}
+
+
+
+\begin{flushleft}
+\textbf{Job}(\underline{JobID}, \emph{ClientID}, \emph{PlastererID}, JobDescription, JobAddrLine1, JobAddrLine2, JobAddrLine3, JobAddrLine4, JobDaysWorked,  JobComplete, JobPaid, \emph{InvoiceID})
+\end{flushleft}
+
+
+\begin{flushleft}
+\textbf{Material}(\underline{MaterialID},MaterialName,MaterialPrice)
+\end{flushleft}
+
+
+\begin{flushleft}
+\textbf{JobMaterials}(\underline{JobMaterialsID}, \emph{JobID}, \emph{MaterialsID}, JobMaterialsQuantity)
+\end{flushleft}
+
+
+\begin{flushleft}
+\textbf{Invoice}(\underline{InvoiceID}, \emph{ClientID}, \emph{JobID}, \emph{PlastererID} InvoiceAmountPreTax, InvoiceAmountAfterTax, InvoiceReceived, InvoiceDate, InvoiceText)
+\end{flushleft}
+
+
+
+\begin{flushleft}
+\textbf{Appointment}(\underline{AppointmentID}, \emph{ClientID}, \emph{PlastererID}, AppointmentDate, AppointmentTime, AppointmentAddrLine1, AppointmentAddrLine2, AppointmentAddrLine3, AppointmentAddrLine4)
+\end{flushleft}
+
 \subsubsection{1NF to 3NF}
+\begin{flushleft}
+    \begin{longtable}{|p{12cm}|}
+        \hline
+			 \textbf{1NF} \\ \hline
+         \textbf{Non-Repeating Attributes} \\ \hline
+			PersonID (Primary Key) \\ 
+         ClientTitle \\
+			ClientFirstName \\
+			ClientSurname \\
+			ClientAddrLine1 \\
+			ClientAddrLine2 \\
+			ClientAddrLine3 \\
+			ClientAddrLine4 \\
+			ClientEmail \\
+			ClientPhoneNumber \\
+			PlastererTitle \\
+			PlastererFirstName \\
+			PlastererSurname \\
+			PlastererAddrLine1 \\
+			PlastererAddrLine2 \\
+			PlastererAddrLine3 \\
+			PlastererAddrLine4 \\
+			PlastererEmail \\
+			PlastererPhoneNumber \\
+			PlastererDailyRate \\ \hline
+
+			\textbf{Repeating Attributes} \\ \hline
+			JobID (Primary Key) \\
+			PersonID (Composite Key) \\
+          JobDescription \\
+			JobAddrLine1 \\
+			JobAddrLine2 \\
+			JobAddrLine3 \\
+			JobAddrLine4 \\
+			JobDaysWorked \\
+			JobComplete \\
+			JobPaid \\
+			MaterialName \\
+			MaterialPrice \\
+			JobMaterialsQuantity \\
+			InvoiceAmountAfterTax \\
+			InvoiceAmountPreTax \\
+			InvoiceReceived \\
+			InvoiceDate \\
+			InvoiceText \\
+			AppointmentDate \\
+			AppointmentTime \\
+			AppointmentAddrLine1 \\
+			AppointmentAddrLine2 \\
+			AppointmentAddrLine3	\\
+			AppointmentAddrLine4 \\ \hline
+			
+    \end{longtable}
+\end{flushleft}
+
+\begin{flushleft}
+    \begin{longtable}{|p{12cm}|}
+        \hline
+			 \textbf{2NF} \\ \hline
+         \textbf{Group} \\ \hline
+			PersonID (Primary Key) \\ 
+          ClientTitle \\
+			ClientFirstName \\
+			ClientSurname \\
+			ClientAddrLine1 \\
+			ClientAddrLine2 \\
+			ClientAddrLine3 \\
+			ClientAddrLine4 \\
+			ClientEmail \\
+			ClientPhoneNumber \\
+			PlastererTitle \\
+			PlastererFirstName \\
+			PlastererSurname \\
+			PlastererAddrLine1 \\
+			PlastererAddrLine2 \\
+			PlastererAddrLine3 \\
+			PlastererAddrLine4 \\
+			PlastererEmail \\
+			PlastererPhoneNumber \\
+			PlastererDailyRate \\ \hline
+
+			\textbf{Group} \\ \hline
+			JobID (Primary Key) \\
+			PersonID (Composite Key) \\
+         JobDescription \\
+			JobAddrLine1 \\
+			JobAddrLine2 \\
+			JobAddrLine3 \\
+			JobAddrLine4 \\
+			JobDaysWorked \\
+			JobComplete \\
+			JobPaid \\ \hline
+		
+			\textbf{Group} \\ \hline
+			JobID (Primary Key) \\ 
+			MaterialName \\
+			MaterialPrice \\
+			JobMaterialsQuantity \\
+
+			\textbf{Group} \\ \hline
+			PersonID (Primary Key) \\
+			InvoiceAmountAfterTax \\
+			InvoiceAmountPreTax \\
+			InvoiceReceived \\
+			InvoiceDate \\
+			InvoiceText \\
+			AppointmentDate \\
+			AppointmentTime \\
+			AppointmentAddrLine1 \\
+			AppointmentAddrLine2 \\
+			AppointmentAddrLine3	\\
+			AppointmentAddrLine4 \\ \hline
+
+
+    \end{longtable}
+\end{flushleft}
+\begin{flushleft}
+    \begin{longtable}{|p{12cm}|}
+                \hline
+ 			\textbf{3NF} \\ \hline
+         \textbf{Group} \\ \hline
+			PersonID (Primary Key) \\ 
+         ClientTitle \\
+			ClientFirstName \\
+			ClientSurname \\
+			ClientAddrLine1 \\
+			ClientAddrLine2 \\
+			ClientAddrLine3 \\
+			ClientAddrLine4 \\
+			ClientEmail \\
+			ClientPhoneNumber \\
+			PlastererTitle \\
+			PlastererFirstName \\
+			PlastererSurname \\
+			PlastererAddrLine1 \\
+			PlastererAddrLine2 \\
+			PlastererAddrLine3 \\
+			PlastererAddrLine4 \\
+			PlastererEmail \\
+			PlastererPhoneNumber \\
+			PlastererDailyRate \\ \hline
+
+			\textbf{Group} \\ \hline
+			JobID (Primary Key) \\
+			PersonID (Composite Key) \\
+         JobDescription \\
+			JobAddrLine1 \\
+			JobAddrLine2 \\
+			JobAddrLine3 \\
+			JobAddrLine4 \\
+			JobDaysWorked \\
+			JobComplete \\
+			JobPaid \\ \hline
+		
+			\textbf{Group} \\ \hline
+			JobID (Primary Key) \\ 
+			MaterialID (Foreign Key) \\
+			JobMaterialsQuantity \\ \hline
+
+
+			\textbf{Group} \\ \hline
+			MaterialID (Primary Key) \\
+			MaterialName \\
+			MaterialPrice \\ \hline
+
+
+			\textbf{Group} \\ \hline
+			InvoiceID (Primary Key) \\
+			InvoiceAmountAfterTax \\
+			InvoiceAmountPreTax \\
+			InvoiceReceived \\
+			InvoiceDate \\ 
+			InvoiceText \\	\hline
+
+		\textbf{Group} \\ \hline 
+			AppointmentID (Primary Key) \\
+			AppointmentDate \\
+			AppointmentTime \\
+			AppointmentAddrLine1 \\
+			AppointmentAddrLine2 \\
+			AppointmentAddrLine3	\\
+			AppointmentAddrLine4 \\ \hline
+
+
+			\textbf{Group} \\ \hline
+			PersonID (Primary Key) \\
+			AppointmentID (Foreign Key) \\
+			InvoiceID (Foreign Key) \\ \hline
+
+			
+    \end{longtable}
+\end{flushleft}
+
+
+
 
 \section{Security and Integrity of the System and Data}
 

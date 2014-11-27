@@ -37,7 +37,14 @@ Finally, Dan writes out an invoice using a standard invoice book purchased from 
 
 	\begin{flushleft}
 	
-	Problems are plentiful in the current system. One of the main problems is keeping valuable client data from being lost or damaged as there is only one hard copy made in a notebook. Another problem with the notebook is not being able to easily search through the details of all the clients to find specific phone numbers or contact details. Using a computer based system would allow Dan to search through his clients efficiently and allow him to make backups of the valuable client and job data. \par 
+	One of the main problems in the current system is the ability to keep valuable client data from being lost or damaged as there is only one hard copy made in a notebook. The notebook is also partial to an occasional coffee stain and would not be the case if they data is stored digitally.\par
+
+
+Another problem with the current system is the inability to easily search through the details of all the clients to find specific phone numbers or contact details. Dan often has to find client data to get in contact with them and without an easy way to search through it all he has to go through each contact to find details needed.\par
+
+Being able to generate an invoice is currently a lot harder than it needs to be as all the client information and job information can be in different locations(i.e multiple workbooks or paper etc) and hard to locate.\par 
+
+With the proposed computer based system, it would allow Dan to search through his clients efficiently and allow him to make backups of the valuable client and job data which is otherwise hard to acheive, due to it all being stored manually in the notebook, in the current system. \par 
 		
 
 
@@ -60,6 +67,7 @@ Finally, Dan writes out an invoice using a standard invoice book purchased from 
 
 
 \begin{enumerate}
+\label{fig:interview}
 	\item \textbf{What system are you currently using?}
 		\\ \\ I've got a Toshiba laptop with Windows 8, 6GB RAM and a dual core processor
 	\item \textbf{Are there any issues with the system currently being employed?}
@@ -88,6 +96,7 @@ Finally, Dan writes out an invoice using a standard invoice book purchased from 
 		\\ \\ None that I am aware of.
 	\item \textbf{Do you have a picture in mind of what the new system could look like?}
 		\\ \\ Not really bothered about the look of it too much anything that works as expected would be brilliant.
+
 \end{enumerate}
 
 \begin{flushleft}
@@ -148,9 +157,9 @@ Client Calendar or Diary
 
 \\
 \hline
-Visiting Job Site &
+Plasterer &
 
-Measurements of Job Size and Materials that need to be purchased &
+Measurements of Job site and Materials that need to be purchased &
 
 4m x 5m x 3m = $60m^2$ 10 Bags of Plaster &
 
@@ -158,7 +167,7 @@ Work Notebook
 
 \\
 \hline
-Plasterers Calculations &
+Plasterer &
 
 Quote for the work that needs doing and agree a date it can be done. &
 
@@ -169,7 +178,7 @@ Quote written out on paper or agree in person.
 \\
 \hline
 
-Plasterers calculations for the materials needed for the job &
+Plasterer &
 
 Quantity of materials needed for the job &
 
@@ -193,7 +202,7 @@ Plasterer
 
 Plasterer &
 
-Total cost of the job broken down - cost of parts,labouring and vat. Date of Job &
+Invoice - Total cost of the job broken down - cost of parts,labouring and vat. Date of Job &
 
 \pounds 600 - \pounds 350 materials - \pounds 50 VAT - 14/08/14 &
 
@@ -208,7 +217,7 @@ Client.
 \subsubsection{Algorithms}
 %Algorithms - Agreeing a price for the job - Calculating Job Price - Has the job been paid for yet.
 
-There are three main algorithms utilised in the current system. The first is an algorithm to agree the price of the job with the client.
+There are four main algorithms utilised in the current system. The first is an algorithm to agree the price of the job with the client.
 
 \begin{algorithm}[H]
 \label{fig:algorithm_example_1}
@@ -268,19 +277,37 @@ The third algorithm being used in the system is an algorithm used to see whether
 	\end{algorithmic}
 \end{algorithm}
 
+The fourth algorithm being used in the system is an algorithm which helps to generate a quote for the client.
+
+\begin{algorithm}[H]
+	\label{fig:algorithm_quote}
+		\caption{Generating a quote for the client.}
+	\begin{algorithmic}[1]
+		\RECEIVE{$NumberOfWorkingDaysNeeded$}
+		\RECEIVE{$CostOfMaterials$}
+		\RECEIVE{$DailyRateOfCharge$}
+		
+		\SET{$QuoteCost$}{$NumberOfWorkingDaysNeeded * DailyRateOfCharge$}
+
+		\SET{$QuoteCost$}{$QuoteCost + CostOfMaterials$}
+
+	\end{algorithmic}
+\end{algorithm}
 
 
 
+
+\pagebreak
 \subsubsection{Data flow diagrams}
 
 \textbf{Key}
 \begin{figure}[H]
-\includegraphics[width=\textwidth]{./Analysis/images/key.pdf}
+\includegraphics[scale=0.5]{./Analysis/images/key.pdf}
     \caption{This is the Key to be used for the following data flow diagrams.} \label{fig:data_flow_diagram_key}
 \end{figure}
 
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{./Analysis/images/ClientInformation.pdf}
+    \includegraphics[scale=0.5]{./Analysis/images/ClientInformation.pdf}
     \caption{This diagram shows the flow of data when gaining a new clients information.} \label{fig:client_information_data_flow_diagram}
 \end{figure}
 
@@ -323,29 +350,24 @@ The third algorithm being used in the system is an algorithm used to see whether
 	In the system currently being used there are two main forms - the work book input form and the invoice output form. Below are a few examples of these forms as they are currently being used in the system:
 
 \end{flushleft}
-
-
-\pagebreak
-
-
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{./Analysis/images/workbookPage.jpg}
+    \includegraphics[scale=0.4]{./Analysis/images/workbookPage.jpg}
     \caption{This is an example of an input form where data is put into the system and is a page from a work book used to store details about jobs.} \label{fig:work_book_page}
 \end{figure}
 
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{./Analysis/images/invoice.jpg}
+    \includegraphics[scale=0.5]{./Analysis/images/invoice.jpg}
     \caption{This is an example of an invoice output form which is given to clients.} \label{fig:invoice}
 \end{figure}
 
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{./Analysis/images/invoice2.jpg}
+    \includegraphics[scale=0.5]{./Analysis/images/invoice2.jpg}
     \caption{Here is an illustration of the type of information which goes on an invoice to the client.} \label{fig:invoice}
 \end{figure}
 
 
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{./Analysis/images/invoice3.jpg}
+    \includegraphics[scale=0.5]{./Analysis/images/invoice3.jpg}
     \caption{This is also another example of an invoice which is given to a client.} \label{fig:invoice}
 \end{figure}
 
@@ -456,7 +478,7 @@ Plasterer & JobMaterialsQuantity & Integer & JobMaterials Records \\ \hline
 
 
 \begin{flushleft}
-\begin{longtable}{|p{4cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+\begin{longtable}{|p{3.6cm}|p{1.5cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
 \hline
 \textbf{Name} & \textbf{Data Type} & \textbf{Length} & \textbf{Validation} & \textbf{Example Data} & \textbf{Comment} \\ \hline
 
@@ -534,16 +556,51 @@ AppointmentAddrLine4 & String & 6 - 7 Chars & Length and Format Check & CB2 5HD 
 
 \begin{flushleft}
 
-	In the current system Dan only has a few regular clients but it is possible to receive up to 4-5 additional clients each week (mentioned in interviequestion 8). Therefore using the guidline of around 4 clients a week and a trial period for the application of 3 months, there could be upto 48 new clients (4 clients a week x 4 weeks in month x 3 months = 48) added into the database. It would also be useful to add the existing clients from paper so another 50 clients could be added from what is already stored manually. So around 100 clients may be added to the new system. This size can be increased later if necessary. \par
+	In the current system Dan only has a few regular clients but it is possible to receive up to 4-5 additional clients each week (mentioned in interview question 4 \pageref{fig:interview}). Therefore using the guidline of around 4 clients a week and a trial period for the application of 3 months, there could be upto 48 new clients (4 clients a week x 4 weeks in month x 3 months = 48) added into the database. It would also be useful to add the existing clients from paper so another 50 clients could be added from what is already stored manually. So around 100 clients may be added to the new system. This size can be increased later if necessary. \par
 
-In the job details table each client may have up to 10 or more jobs. Some clients will only have one and some will be recurring customers so will have a few more. In the calculations for minimum storage space I will say that each field takes up 1KB of hard disk space and all together there will be around 50 related fields for each client so:
+Below I have established the various attribute types and the relative storage space required to store them.
+
+Attribute sizes for proposed SQL database in project:
+\begin{itemize}
+    \item 	Boolean - 1 Byte (Stored as 0 or 1 in sqlite3)
+	 \item Integer - 1 - 8 Bytes depending on size of number (we will use the middle value for calculations - 4)
+	\item Real - 8 Byte Floating point number
+	\item Text - Depends on size of text (1 Byte per character)
+\end{itemize}
+
+\begin{flushleft}
+In the interview (\pageref{fig:interview}) Dan said that only a few lines of text are put in the workbook each time data is entered. A few lines may be roughly 50 Characters on average, give or take a few characters. So in the calculations below Text attributes will be 50 Bytes, Boolean attributes will be 1 Byte, Integer attributes will be 4 Bytes(average) and Real/Currency attributes will be 8 Bytes.
+\end{flushleft}
 
 \begin{itemize}
-    \item 100 x 50KB = 5000 KB
-	 \item 5000 KB / 1024 = 4.8MB
+    \item Integers = 9 Attributes
+	\item Booleans = 3 Attributes
+	\item Real/Currency = 4 Attributes
+	\item String/Text = 31 Attributes (Including date and time)
 \end{itemize}
-s
-If the application took up around 5MB itself then the total space required for the proposed system would be around 9.8MB (4.8MB + 5MB = 9.8MB). Dans computer has plenty of hard disk space that could be used when installing the application. This proposed system would therefore have enough storage space for 100 clients to be added to the client database.
+
+From the above values I can calculate an average attribute/field size to use in calculations:
+
+\begin{itemize}
+    \item Total number of attributes = 47
+		\item Calculating the average attribute size:
+\item = (9 * 4 B) + (3 * 1B) + (4 * 8 B) + (31 * 30B)
+\item = 1001
+\item = 1001 / 47 
+\item = 21.3 Bytes
+
+\end{itemize}
+In the job details table each client may have up to 10 or more jobs. Some clients will only have one and some will be recurring customers so will have a few more. All together there are 37 attributes (minimum) per client that will need to be added and some clients have more than one job with Dan. So for each client lets say there are 100 fields at 21.3 Bytes each added to the database. Below are the calculations to find out the required storage space for the proposed system.
+
+\begin{itemize}
+    \item 100 x 21.3 B = 2130 Bytes
+	\item 2130 / 1024 = 2 KB
+	\item 2KB * 100 = 200 KB
+	\item 200 KB + 200KB(Additional fields and database structure) = 400KB
+\end{itemize}
+
+
+If the application took up around 10MB itself then the total space required for the proposed system would be around (10MB + 0.4MB = 10.4MB). Dans computer has plenty of hard disk space that could be used when installing the application. This proposed system would therefore have enough storage space for 100 clients to be added to the client database.
 
 
 \end{flushleft}
@@ -612,17 +669,13 @@ If the application took up around 5MB itself then the total space required for t
 		\item The application may be able to print an invoice for the client.
 		\item The application may be able to send quotes for jobs via email.
 		\item The application may be able to print a report for the amount earned within a time period.
-	
 	\end{itemize}
-
-
-
 \section{ER Diagrams and Descriptions}
 
 \subsection{ER Diagram}
 
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{./Analysis/images/ER-Diagram.pdf}
+    \includegraphics[width=\textwidth]{./Analysis/images/ERDiagram.pdf}
     \caption{This is the entity relationship diagram for the sqlite3 database.} \label{fig:Entity_Relationship_Diagram}
 \end{figure}
 
@@ -638,64 +691,64 @@ Below are the entity descriptions for the various entites in the proposed system
 
 
 
-\begin{center}
+\begin{flushleft}
 	\textbf{Client}(\underline{ClientID}, ClientTitle, ClientFirstName, ClientSurname, ClientAddrLine1, ClientAddrLine2, ClientAddrLine3, ClientAddrLine4, ClientEmail, ClientPhoneNumber, \emph{PlastererID})
-\end{center}
+\end{flushleft}
 
 
 
-\begin{center}
+\begin{flushleft}
 	\textbf{Plasterer}(\underline{PlastererID}, PlastererFirstName, PlastererSurname, PlastererAddrLine1, PlastererAddrLine2, PlastererAddrLine3, PlastererAddrLine4, PlastererEmail,PlastererPhoneNumber, PlastererDailyRate)
-\end{center}
+\end{flushleft}
 
 
 
-\begin{center}
+\begin{flushleft}
 \textbf{Job}(\underline{JobID}, \emph{ClientID}, \emph{PlastererID}, JobDescription, JobAddrLine1, JobAddrLine2, JobAddrLine3, JobAddrLine4, JobDaysWorked,  JobComplete, JobPaid, \emph{InvoiceID})
-\end{center}
+\end{flushleft}
 
 
-\begin{center}
+\begin{flushleft}
 \textbf{Material}(\underline{MaterialID},MaterialName,MaterialPrice)
-\end{center}
+\end{flushleft}
 
 
-\begin{center}
+\begin{flushleft}
 \textbf{JobMaterials}(\underline{JobMaterialsID}, \emph{JobID}, \emph{MaterialsID}, JobMaterialsQuantity)
-\end{center}
+\end{flushleft}
 
 
-\begin{center}
+\begin{flushleft}
 \textbf{Invoice}(\underline{InvoiceID}, \emph{ClientID}, \emph{JobID}, \emph{PlastererID} InvoiceAmountPreTax, InvoiceAmountAfterTax, InvoiceReceived, InvoiceDate, InvoiceText)
-\end{center}
+\end{flushleft}
 
 
 
-\begin{center}
+\begin{flushleft}
 \textbf{Appointment}(\underline{AppointmentID}, \emph{ClientID}, \emph{PlastererID}, AppointmentDate, AppointmentTime, AppointmentAddrLine1, AppointmentAddrLine2, AppointmentAddrLine3, AppointmentAddrLine4)
-\end{center}
+\end{flushleft}
 
 
-
+\pagebreak
 \section{Object Analysis}
 
 \subsection{Object Listing}
-
+\begin{flushleft}
 \textbf{Objects}
 	\begin{itemize}
 		\item Client
 		\item Jobs
 		\item Materials
-		\item JobsMaterials
 		\item Invoices
-		\item Appointment
+		\item Appointments
 		\item Plasterer
 	\end{itemize}
+\end{flushleft}
 
 \subsection{Relationship diagrams}
 
 \begin{figure}[H]
-\includegraphics[width=\textwidth]{./Analysis/images/relationshipDiagramObjectAnalysis.pdf}
+\includegraphics[scale=0.5]{./Analysis/images/relationshipDiagramObjectAnalysis.pdf}
     \caption{Relationship Diagram for the entities in the proposed system.} \label{fig:proposed_system_relationship_diagram}
 \end{figure}
 
@@ -715,72 +768,52 @@ Below are the entity descriptions for the various entites in the proposed system
 
 \end{flushleft}
 
+\begin{tabular}{|p{4cm}|}
+	\hline
+	\textbf{Member} \\ \hline
+	MemberID \\
+	MemberTitle \\
+	MembeFirstName \\
+	MemberSurname \\
+	MemberAddrLine1 \\
+	MemberAddrLine2 \\
+	MemberAddrLine3 \\
+	MemberAddrLine4 \\
+	MemberEmail \\
+	MemberPhoneNumber \\ \hline	
+		AddMemberTitle \\
+		AddMemberFirstName \\
+		AddMemberSurname \\
+		AddMemberAddrLine1 \\
+		AddMemberAddrLine2 \\
+		AddMemberAddrLine3 \\
+		AddMemberAddrLine4 \\
+		AddMemberEmail \\
+		AddMemberPhoneNumber \\ 
+		EditMemberTitle \\
+		EditMemberFirstName \\
+		EditMemberSurname \\
+		EditMemberAddrLine1 \\
+		EditMemberAddrLine2 \\
+		EditMemberAddrLine3 \\
+		EditMemberAddrLine4 \\
+		EditMemberEmail \\
+		EditMemberPhoneNumber \\ \hline
+\end{tabular}
 
 \begin{tabular}{|p{5cm}|}
 	\hline
-	\textbf{Client:} \\ \hline
-		ClientID \\
-		ClientTitle \\
-		ClientFirstName \\
-		ClientSurname \\
-		ClientAddrLine1 \\
-		ClientAddrLine2 \\
-		ClientAddrLine3 \\
-		ClientAddrLine4 \\
-		ClientEmail \\
-		ClientPhoneNumber \\ \hline
-		AddClientTitle \\
-		AddClientFirstName \\
-		AddClientSurname \\
-		AddClientAddrLine1 \\
-		AddClientAddrLine2 \\
-		AddClientAddrLine3 \\
-		AddClientAddrLine4 \\
-		AddClientEmail \\
-		AddClientPhoneNumber \\ 
-		EditClientTitle \\
-		EditClientFirstName \\
-		EditClientSurname \\
-		EditClientAddrLine1 \\
-		EditClientAddrLine2 \\
-		EditClientAddrLine3 \\
-		EditClientAddrLine4 \\
-		EditClientEmail \\
-		EditClientPhoneNumber \\ \hline
+	\textbf{Client:} extends \textbf{Member} \\ \hline
+		 \\ \hline
+		 \\ \hline
 \end{tabular}
 
 
 \begin{tabular}{|p{5cm}|}
 	\hline
-	\textbf{Plasterer:} \\ \hline
-		PlastererID \\
-		PlastererFirstName \\
-		PlastererSurname \\
-		PlastererAddrLine1 \\
-		PlastererAddrLine2 \\
-		PlastererAddrLine3 \\
-		PlastererAddrLine4 \\
-		PlastererEmail \\
-		PlastererPhoneNumber \\
+	\textbf{Plasterer:} extends \textbf{Member} \\ \hline
 		PlastererDailyRate \\ \hline
-		AddPlastererFirstName \\
-		AddPlastererSurname \\
-		AddPlastererAddrLine1 \\
-		AddPlastererAddrLine2 \\
-		AddPlastererAddrLine3 \\
-		AddPlastererAddrLine4 \\
-		AddPlastererEmail \\
-		AddPlastererPhoneNumber \\
 		AddPlastererDailyRate \\
- 		
-		EditPlastererFirstName \\
-		EditPlastererSurname \\
-		EditPlastererAddrLine1 \\
-		EditPlastererAddrLine2 \\
-		EditPlastererAddrLine3 \\
-		EditPlastererAddrLine4 \\
-		EditPlastererEmail \\
-		EditPlastererPhoneNumber \\
 		EditPlastererDailyRate \\ \hline
 \end{tabular}
 
@@ -829,61 +862,52 @@ Below are the entity descriptions for the various entites in the proposed system
 
 \begin{tabular}{|p{5cm}|}
 	\hline
-	\textbf{JobMaterials:} \\ \hline
-		JobMaterialsID \\
-		JobID \\
-		MaterialsID \\ 
-		JobMaterialsQuantity \\ \hline
-		AddJobMaterialsQuantity \\
-		EditJobMaterialsQuantity \\ \hline
+	\textbf{Document:} \\ \hline
+		DocumentID \\
+		DocumentDate \\
+		DocumentTime \\
+		DocumentText \\ \hline
+		AddDocumentDate \\
+		AddDocumentTime \\
+		AddDocumentText \\
+		EditDocumentDate \\
+		EditDocumentTime \\
+		EditDocumentText \\ \hline
+		
 \end{tabular}
 
 
 \begin{tabular}{|p{5cm}|}
 	\hline
-	\textbf{Invoice:} \\ \hline
-		InvoiceID \\
+	\textbf{Invoice:} extends \textbf{Document} \\ \hline
 		ClientID \\
 		JobID \\
 		PlastererID\\
 		InvoiceAmountPreTax \\
 		InvoiceAmountAfterTax \\
-		InvoiceReceived \\
-		InvoiceDate \\
-		InvoiceText \\ \hline
+		InvoiceReceived \\ \hline
 		AddInvoiceAmountPreTax \\ 
 		AddInvoiceAmountAfterTax \\
 		AddInvoiceReceived \\
-		AddInvoiceDate \\
-		AddInvoiceText \\ 
 		EditInvoiceAmountPreTax \\ 
 		EditInvoiceAmountAfterTax \\
-		EditInvoiceReceived \\
-		EditInvoiceDate \\
-		EditInvoiceText \\ \hline
+		EditInvoiceReceived \\ \hline
 		
 \end{tabular}
 
 \begin{tabular}{|p{5cm}|}
 	\hline
-	\textbf{Appointment:} \\ \hline
-		AppointmentID \\
+	\textbf{Appointment:} extends \textbf{Document} \\ \hline
 		ClientID \\
 		PlastererID \\
-		AppointmentDate\\
-		AppointmentTime \\
 		AppointmentAddrLine1 \\
 		AppointmentAddrLine2 \\
 		AppointmentAddrLine3 \\
 		AppointmentAddrLine4 \\ \hline
-		AddAppointmentDate\\
-		AddAppointmentTime \\
 		AddAppointmentAddrLine1 \\
 		AddAppointmentAddrLine2 \\
 		AddAppointmentAddrLine3 \\
 		AddAppointmentAddrLine4 \\
-		EditAppointmentDate\\
-		EditAppointmentTime \\
 		EditAppointmentAddrLine1 \\
 		EditAppointmentAddrLine2 \\
 		EditAppointmentAddrLine3 \\
@@ -895,6 +919,11 @@ Below are the entity descriptions for the various entites in the proposed system
 
 
 \section{Other Abstractions and Graphs}
+
+\begin{flushleft}
+Due to the nature of this project there are no graphs that could represent the current or proposed systems.
+
+\end{flushleft}
 
 \section{Constraints}
 
@@ -917,28 +946,27 @@ Below are the entity descriptions for the various entites in the proposed system
 \subsection{Software}
 
 \begin{flushleft}
-	Dan is running the Windows 8 operating system on his laptop. The proposed system will need to be able to run on this operating system which is not a problem as the proposed system can easily be packaged into a installation executable which he will be able to run and install the proposed system. This will remove the constraint of not having python natively installed on the system.
+	Dan is running the Windows 8 operating system on his laptop which does not have Python 3 installed. The proposed system will need to be able to run on this operating system therefore it is a software constraint that will need to be addressed. This could be achieved by building an installer for the python application so it can be installed on Windows 8 as pythons libraries are included.
 
 \end{flushleft}
 
 \subsection{Time}
 
 \begin{flushleft}
- 	Dan is very flexible when it comes to time as he is a freelancer and is in no rush for a replacement to his old system. He does not mind how long the new system takes to be implemented just that it works and functions as expected. Therefore the only time constraint for the proposed system would be the coursework deadline which is Friday 27th March 2015.
+ 	Dan is very flexible when it comes to time as he is a freelancer and is in no rush for a replacement to his old system. He does not mind how long the new system takes to be implemented just that it works and functions as expected. Therefore the only time constraint for the proposed system would be the implementation deadline which is Friday 13th February 2015.
 \end{flushleft}
 
 \subsection{User Knowledge}
 
 \begin{flushleft}
-	Dan has no formal qualifications in IT and has never performed complex computerised tasks. Browsing the internet, watching films and playing music is the extent to which Dan currently uses his laptop. Therefore user knowledge is a possible constraint and the proposed system will need to be easy to navigate and use. This may be achieved by providing a simple non-complex GUI and detailed tutorials/documentation.
+	Dan has no formal qualifications in IT and has never performed complex computerised tasks. Browsing the internet, watching films and playing music is the extent to which Dan currently uses his laptop. Therefore user knowledge is a possible constraint and the proposed system will need to be easy to navigate and use. This may be achieved by providing a simple non-complex GUI and detailed tutorials/documentation. Also any errors must be handled correctly as Dan does not know Python and the erros would be useless in that format to him. This can be handled with user friendly exceptions put in throughout the program.
+
 \end{flushleft}
 
 \subsection{Access restrictions}
 
 \begin{flushleft}
-
-	The proposed system will not need additional security measures as no one else will be using the system and Dan is the only person that will use the application so different user accounts will not be needed. 
-
+	The proposed system does not have any specific requirements when it comes to security however it needs to conform to the Data Protection Act 1998 which requires personal information to be stored securely, accurately and up to date. This is a possible constraint when it comes to access restrictions and will need to be addressed in order to not breach the UK legislation on this. The database may need to also be encrypted to not reveal personal information in plain text to any malicious threats.
 \end{flushleft}
 
 \section{Limitations}
@@ -946,13 +974,14 @@ Below are the entity descriptions for the various entites in the proposed system
 \subsection{Areas which will not be included in computerisation}
 
 	\begin{itemize}
-		\item The collection of the measurements from the job site will still have to be done manually so will not be included in computerisation.
-		\item Getting the quote for the price of the materials will still be done manually as it will be difficult to computerise as you have to visit the Builders Merchants in person.
+			\item The collection of the measurements, which is currently being done manually, may be implemented using a device which has kinect like sensors, you could scan a room and pick up the measurements of it using just a phone for example. This might be possible.
+
 	\end{itemize}
 
 \subsection{Areas considered for future computerisation}
 	\begin{itemize}
-		\item The collection of the measurements, which is currently being done manually, may be implemented using a device which has kinect like sensors, you could scan a room and pick up the measurements of it using just a phone for example. This might be possible.
+
+		\item Getting the quote for the price of the materials will still be done manually as it will be difficult to computerise as you would have to visit the Builders Merchants in person. But in the future an API might be available from selected builders merchants to get live quotes for materials.
 	\end{itemize}
 
 \pagebreak
@@ -960,7 +989,6 @@ Below are the entity descriptions for the various entites in the proposed system
 
 \subsection{Alternative solutions}
 
-\pagebreak
 \begin{flushleft}
 \begin{longtable}{|p{3cm}|p{4cm}|p{4cm}|}
 \hline
@@ -1036,7 +1064,7 @@ Writing a GUI is a lot more work than other solutions.
 \end{flushleft}
 
 
-
+\pagebreak
 \subsection{Justification of chosen solution}
 
 \begin{flushleft}
