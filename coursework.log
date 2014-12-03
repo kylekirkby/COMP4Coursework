@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.9.11)  9 NOV 2014 17:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.9.11)  2 DEC 2014 08:50
 entering extended mode
 **C:/Users/Kyle/git/COMP4Coursework3/coursework.tex
 (C:/Users/Kyle/git/COMP4Coursework3/coursework.tex
@@ -787,7 +787,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
 
-<./Analysis/images/signature.jpg, id=733, 93.34875pt x 60.97781pt>
+<./Analysis/images/signature.jpg, id=738, 93.34875pt x 60.97781pt>
 File: ./Analysis/images/signature.jpg Graphic file (type jpg)
 
 <use ./Analysis/images/signature.jpg>
@@ -898,14 +898,14 @@ Overfull \hbox (44.43304pt too wide) in paragraph at lines 132--214
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 224.
  [11] [12]
-<./Analysis/images/key.pdf, id=771, 597.23125pt x 845.1575pt>
+<./Analysis/images/key.pdf, id=776, 597.23125pt x 845.1575pt>
 File: ./Analysis/images/key.pdf Graphic file (type pdf)
 
 <use ./Analysis/images/key.pdf>
 Package pdftex.def Info: ./Analysis/images/key.pdf used on input line 305.
 (pdftex.def)             Requested size: 298.61488pt x 422.57771pt.
 
-<./Analysis/images/ClientInformation.pdf, id=772, 597.23125pt x 845.1575pt>
+<./Analysis/images/ClientInformation.pdf, id=777, 597.23125pt x 845.1575pt>
 File: ./Analysis/images/ClientInformation.pdf Graphic file (type pdf)
 
 <use ./Analysis/images/ClientInformation.pdf>
@@ -919,7 +919,7 @@ line 310.
                                                   \fi \fi 
 l.313 
        <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/key.pdf>]
-<./Analysis/images/AppointmentDFD.pdf, id=788, 597.23125pt x 845.1575pt>
+<./Analysis/images/AppointmentDFD.pdf, id=793, 597.23125pt x 845.1575pt>
 File: ./Analysis/images/AppointmentDFD.pdf Graphic file (type pdf)
 
 <use ./Analysis/images/AppointmentDFD.pdf>
@@ -934,7 +934,7 @@ e 315.
 l.318 
        <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/ClientInformation.pd
 f>]
-<./Analysis/images/GettingMeasurements.pdf, id=803, 597.23125pt x 845.1575pt>
+<./Analysis/images/GettingMeasurements.pdf, id=808, 597.23125pt x 845.1575pt>
 File: ./Analysis/images/GettingMeasurements.pdf Graphic file (type pdf)
 
 <use ./Analysis/images/GettingMeasurements.pdf>
@@ -948,7 +948,7 @@ t line 320.
                                                   \fi \fi 
 l.323 
        <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/AppointmentDFD.pdf>]
-<./Analysis/images/GeneratingQuote.pdf, id=818, 597.23125pt x 845.1575pt>
+<./Analysis/images/GeneratingQuote.pdf, id=823, 597.23125pt x 845.1575pt>
 File: ./Analysis/images/GeneratingQuote.pdf Graphic file (type pdf)
 
 <use ./Analysis/images/GeneratingQuote.pdf>
@@ -963,7 +963,7 @@ ne 326.
 l.329 
        <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/GettingMeasurements.
 pdf>]
-<./Analysis/images/GettingQuoteFromBuildersMerchant.pdf, id=833, 597.23125pt x 
+<./Analysis/images/GettingQuoteFromBuildersMerchant.pdf, id=838, 597.23125pt x 
 845.1575pt>
 File: ./Analysis/images/GettingQuoteFromBuildersMerchant.pdf Graphic file (type
  pdf)
@@ -980,7 +980,7 @@ Package pdftex.def Info: ./Analysis/images/GettingQuoteFromBuildersMerchant.pdf
 l.334 
        <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/GeneratingQuote.pdf>
 ]
-<./Analysis/images/GivingAnInvoiceToClient.pdf, id=848, 597.23125pt x 845.1575p
+<./Analysis/images/GivingAnInvoiceToClient.pdf, id=853, 597.23125pt x 845.1575p
 t>
 File: ./Analysis/images/GivingAnInvoiceToClient.pdf Graphic file (type pdf)
  <use ./Analysis/images/GivingAnInvoiceToClient.pdf>
@@ -1001,7 +1001,7 @@ er (name{figure.1.7}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.351 
        <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/GivingAnInvoiceToCli
-ent.pdf>] <./Analysis/images/workbookPage.jpg, id=878, 542.025pt x 963.6pt>
+ent.pdf>] <./Analysis/images/workbookPage.jpg, id=883, 542.025pt x 963.6pt>
 File: ./Analysis/images/workbookPage.jpg Graphic file (type jpg)
 
 <use ./Analysis/images/workbookPage.jpg>
@@ -1009,7 +1009,7 @@ Package pdftex.def Info: ./Analysis/images/workbookPage.jpg used on input line
 354.
 (pdftex.def)             Requested size: 216.80615pt x 385.43317pt.
 
-<./Analysis/images/invoice.jpg, id=879, 542.025pt x 963.6pt>
+<./Analysis/images/invoice.jpg, id=884, 542.025pt x 963.6pt>
 File: ./Analysis/images/invoice.jpg Graphic file (type jpg)
 
 <use ./Analysis/images/invoice.jpg>
@@ -1022,7 +1022,7 @@ Package pdftex.def Info: ./Analysis/images/invoice.jpg used on input line 359.
                                                   \fi \fi 
 l.362 
        <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/workbookPage.jpg>]
-<./Analysis/images/invoice2.jpg, id=886, 542.025pt x 963.6pt>
+<./Analysis/images/invoice2.jpg, id=891, 542.025pt x 963.6pt>
 File: ./Analysis/images/invoice2.jpg Graphic file (type jpg)
 
 <use ./Analysis/images/invoice2.jpg>
@@ -1036,7 +1036,7 @@ Package pdftex.def Info: ./Analysis/images/invoice2.jpg used on input line 364.
                                                   \fi \fi 
 l.367 
        <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/invoice.jpg>]
-<./Analysis/images/invoice3.jpg, id=892, 542.025pt x 963.6pt>
+<./Analysis/images/invoice3.jpg, id=897, 542.025pt x 963.6pt>
 File: ./Analysis/images/invoice3.jpg Graphic file (type jpg)
 
 <use ./Analysis/images/invoice3.jpg>
@@ -1150,7 +1150,7 @@ Overfull \hbox (72.8858pt too wide) in alignment at lines 422--439
  []
 
 [24]
-<./Analysis/images/proposedSystemGainingClientInfo.pdf, id=910, 597.23125pt x 8
+<./Analysis/images/proposedSystemGainingClientInfo.pdf, id=915, 597.23125pt x 8
 45.1575pt>
 File: ./Analysis/images/proposedSystemGainingClientInfo.pdf Graphic file (type 
 pdf)
@@ -1170,7 +1170,7 @@ Overfull \vbox (15.5658pt too high) has occurred while \output is active []
 l.450 
        <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/proposedSystemGainin
 gClientInfo.pdf>]
-<./Analysis/images/proposedSystemGettingMeasurements.pdf, id=930, 597.23125pt x
+<./Analysis/images/proposedSystemGettingMeasurements.pdf, id=935, 597.23125pt x
  845.1575pt>
 File: ./Analysis/images/proposedSystemGettingMeasurements.pdf Graphic file (typ
 e pdf)
@@ -1179,7 +1179,7 @@ Package pdftex.def Info: ./Analysis/images/proposedSystemGettingMeasurements.pd
 f used on input line 453.
 (pdftex.def)             Requested size: 345.0pt x 488.2186pt.
 
-<./Analysis/images/proposedSystemGivingClientAppointmentTime.pdf, id=931, 597.2
+<./Analysis/images/proposedSystemGivingClientAppointmentTime.pdf, id=936, 597.2
 3125pt x 845.1575pt>
 File: ./Analysis/images/proposedSystemGivingClientAppointmentTime.pdf Graphic f
 ile (type pdf)
@@ -1196,7 +1196,7 @@ tTime.pdf used on input line 459.
 l.462 
        <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/proposedSystemGettin
 gMeasurements.pdf>]
-<./Analysis/images/proposedSystemGettingQuoteFromBuildersMerchant.pdf, id=946, 
+<./Analysis/images/proposedSystemGettingQuoteFromBuildersMerchant.pdf, id=951, 
 597.23125pt x 845.1575pt>
 File: ./Analysis/images/proposedSystemGettingQuoteFromBuildersMerchant.pdf Grap
 hic file (type pdf)
@@ -1214,7 +1214,7 @@ rsMerchant.pdf used on input line 465.
 l.468 
        <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/proposedSystemGiving
 ClientAppointmentTime.pdf>]
-<./Analysis/images/proposedSystemGeneratingQuoteForClient.pdf, id=961, 597.2312
+<./Analysis/images/proposedSystemGeneratingQuoteForClient.pdf, id=966, 597.2312
 5pt x 845.1575pt>
 File: ./Analysis/images/proposedSystemGeneratingQuoteForClient.pdf Graphic file
  (type pdf)
@@ -1485,7 +1485,7 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 565.
 
-[33] [34] <./Analysis/images/ERDiagram.pdf, id=1008, 597.23125pt x 845.1575pt>
+[33] [34] <./Analysis/images/ERDiagram.pdf, id=1013, 597.23125pt x 845.1575pt>
 File: ./Analysis/images/ERDiagram.pdf Graphic file (type pdf)
 
 <use ./Analysis/images/ERDiagram.pdf>
@@ -1504,7 +1504,7 @@ Overfull \vbox (33.85742pt too high) has occurred while \output is active []
 l.681 
        <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/ERDiagram.pdf>]
 [38]
-<./Analysis/images/relationshipDiagramObjectAnalysis.pdf, id=1035, 597.23125pt 
+<./Analysis/images/relationshipDiagramObjectAnalysis.pdf, id=1040, 597.23125pt 
 x 845.1575pt>
 File: ./Analysis/images/relationshipDiagramObjectAnalysis.pdf Graphic file (typ
 e pdf)
@@ -1690,127 +1690,123 @@ Chapter 2.
 
 
 
-]
-Overfull \vbox (185.91629pt too high) has occurred while \output is active []
-
-
-[50]
+] [50] [51]
 File: ./Analysis/images/ERDiagram.pdf Graphic file (type pdf)
  <use ./Analysis/images/ERDiagram.pdf>
-Package pdftex.def Info: ./Analysis/images/ERDiagram.pdf used on input line 43.
+Package pdftex.def Info: ./Analysis/images/ERDiagram.pdf used on input line 94.
 
 (pdftex.def)             Requested size: 345.0pt x 488.2186pt.
 
 Overfull \vbox (3.5658pt too high) has occurred while \output is active []
 
 
-[51pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+[52pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.46 
+l.97 
      ]
-Overfull \hbox (8.43306pt too wide) in alignment at lines 97--119
+Overfull \hbox (8.43306pt too wide) in alignment at lines 148--170
  [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 119
+Underfull \vbox (badness 10000) detected at line 170
  []
 
 
-Overfull \hbox (8.43306pt too wide) in alignment at lines 119--140
- [] 
- []
-
-[52]
-Overfull \hbox (8.43306pt too wide) in alignment at lines 140--148
- [] 
- []
-
-
-Overfull \hbox (8.43306pt too wide) in alignment at lines 152--174
- [] 
- []
-
-
-Underfull \vbox (badness 10000) detected at line 174
- []
-
-
-Overfull \hbox (8.43306pt too wide) in alignment at lines 174--197
+Overfull \hbox (8.43306pt too wide) in alignment at lines 170--191
  [] 
  []
 
 [53]
-Overfull \hbox (8.43306pt too wide) in alignment at lines 197--210
+Overfull \hbox (8.43306pt too wide) in alignment at lines 191--199
  [] 
  []
 
 
-Overfull \hbox (8.43306pt too wide) in alignment at lines 213--235
+Overfull \hbox (8.43306pt too wide) in alignment at lines 203--225
  [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 235
+Underfull \vbox (badness 10000) detected at line 225
  []
 
 
-Overfull \hbox (8.43306pt too wide) in alignment at lines 235--259
+Overfull \hbox (8.43306pt too wide) in alignment at lines 225--248
  [] 
  []
 
 [54]
-Overfull \hbox (8.43306pt too wide) in alignment at lines 259--283
+Overfull \hbox (8.43306pt too wide) in alignment at lines 248--261
  [] 
  []
 
 
-Overfull \hbox (8.43306pt too wide) in alignment at lines 283--286
+Overfull \hbox (8.43306pt too wide) in alignment at lines 264--286
  [] 
  []
 
-[55] [56]
-Underfull \hbox (badness 10000) in paragraph at lines 318--318
+
+Underfull \vbox (badness 10000) detected at line 286
+ []
+
+
+Overfull \hbox (8.43306pt too wide) in alignment at lines 286--310
+ [] 
+ []
+
+[55]
+Overfull \hbox (8.43306pt too wide) in alignment at lines 310--334
+ [] 
+ []
+
+
+Overfull \hbox (8.43306pt too wide) in alignment at lines 334--337
+ [] 
+ []
+
+[56] [57]
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
 []|\OT1/cmr/bx/n/10 Purpose of
  []
 
 
-Underfull \hbox (badness 5475) in paragraph at lines 318--318
+Underfull \hbox (badness 5475) in paragraph at lines 369--369
 []|\OT1/cmr/bx/n/10 Test Data
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--318
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
 \OT1/cmr/bx/n/10 mal/ Er-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--318
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
 \OT1/cmr/bx/n/10 ro-neous/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--318
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
 []|\OT1/cmr/bx/n/10 Expected
  []
 
 
-Overfull \hbox (15.4704pt too wide) in alignment at lines 316--320
+Overfull \hbox (15.4704pt too wide) in alignment at lines 367--371
  [] [] [] [] [] [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 320
+Underfull \vbox (badness 10000) detected at line 371
  []
 
-[57
+[58
 
 ]) (C:\Users\Kyle\git\COMP4Coursework3\Testing\testing.tex
 Chapter 3.
-[58
+[59
 
 
 
@@ -1883,13 +1879,13 @@ Overfull \hbox (15.4704pt too wide) in alignment at lines 39--43
 Underfull \vbox (badness 10000) detected at line 43
  []
 
-[59
+[60
 
-] [60]) [61
+] [61]) [62
 
 ] (C:\Users\Kyle\git\COMP4Coursework3\Maintenance\maintenance.tex
 Chapter 4.
-Excluding 'comment' comment. [62
+Excluding 'comment' comment. [63
 
 
 
@@ -1897,12 +1893,12 @@ Excluding 'comment' comment. [62
 Overfull \vbox (349.24393pt too high) has occurred while \output is active []
 
 
-[63] Excluding 'comment' comment. [64
+[64] Excluding 'comment' comment. [65
 
 ])
 (C:\Users\Kyle\git\COMP4Coursework3\Manual\manual.tex
 Chapter 5.
-) [65
+) [66
 
 
 
@@ -1911,9 +1907,9 @@ Chapter 5.
 Overfull \vbox (248.63841pt too high) has occurred while \output is active []
 
 
-[66] (C:\Users\Kyle\git\COMP4Coursework3\Evaluation\evaluation.tex
+[67] (C:\Users\Kyle\git\COMP4Coursework3\Evaluation\evaluation.tex
 Chapter 6.
-) [67
+) [68
 
 
 
@@ -1921,7 +1917,7 @@ Chapter 6.
 Overfull \vbox (6.61086pt too high) has occurred while \output is active []
 
 
-[68]
+[69]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 19.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 19.
  (C:\Users\Kyle\git\COMP4Coursework3\coursework.aux
@@ -1934,7 +1930,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 19.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 19.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 19.
 Package rerunfilecheck Info: File `coursework.out' has not changed.
-(rerunfilecheck)             Checksum: AF04DE689420F304039AA052D94A1FF4;9540.
+(rerunfilecheck)             Checksum: BB4E36EABE22D5064CA924468AEF76DC;9616.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1942,10 +1938,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 19.
  ) 
 Here is how much of TeX's memory you used:
- 10387 strings out of 493921
- 151983 string characters out of 3144879
- 293010 words of memory out of 3000000
- 13208 multiletter control sequences out of 15000+200000
+ 10390 strings out of 493921
+ 152020 string characters out of 3144879
+ 293011 words of memory out of 3000000
+ 13209 multiletter control sequences out of 15000+200000
  10876 words of font info for 39 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  37i,12n,45p,1588b,548s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1960,9 +1956,9 @@ iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files
 6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmu10.pfb>
-Output written on coursework.pdf (69 pages, 742804 bytes).
+Output written on coursework.pdf (70 pages, 745097 bytes).
 PDF statistics:
- 1280 PDF objects out of 1440 (max. 8388607)
- 268 named destinations out of 1000 (max. 500000)
- 1184 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1289 PDF objects out of 1440 (max. 8388607)
+ 270 named destinations out of 1000 (max. 500000)
+ 1192 words of extra memory for PDF output out of 10000 (max. 10000000)
 
