@@ -1,18 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.9.11)  2 DEC 2014 08:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.1)  3 DEC 2014 10:01
 entering extended mode
-**C:/Users/Kyle/git/COMP4Coursework3/coursework.tex
-(C:/Users/Kyle/git/COMP4Coursework3/coursework.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
+**U:/git/COMP4Coursework5/coursework.tex
+(U:/git/COMP4Coursework5/coursework.tex
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 68 languages loaded.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
@@ -32,9 +23,9 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \bibindent=\dimen102
 )
 \@input{settings.aux}
-(C:\Users\Kyle\git\COMP4Coursework3\settings.tex
+(U:\git\COMP4Coursework5\settings.tex
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
-Package: inputenc 2008/03/30 v1.1d Input encoding file
+Package: inputenc 2014/04/30 v1.2b Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
@@ -252,7 +243,7 @@ Now handling font encoding U ...
 ))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
 \lst@mode=\count88
@@ -293,7 +284,7 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \Verbatim@Outfile=\write3
 \Verbatim@Infile=\read1
 ) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
@@ -334,8 +325,8 @@ Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Bdimen=\dimen111
 \calc@Askip=\skip43
 \calc@Bskip=\skip44
-LaTeX Info: Redefining \setlength on input line 76.
-LaTeX Info: Redefining \addtolength on input line 77.
+LaTeX Info: Redefining \setlength on input line 75.
+LaTeX Info: Redefining \addtolength on input line 76.
 \calc@Ccount=\count99
 \calc@Cskip=\skip45
 )
@@ -570,13 +561,12 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip54
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
+) (C:\Users\30710\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 \@float@every@algorithm=\toks30
 \c@algorithm=\count132
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\comment\comment.sty"
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\comment\comment.sty"
 \CommentStream=\write4
 
 Excluding comment 'comment')
@@ -634,22 +624,22 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 ))
-(C:\Users\Kyle\git\COMP4Coursework3\coursework.aux
-(C:\Users\Kyle\git\COMP4Coursework3\Analysis\analysis.aux
+(U:\git\COMP4Coursework5\coursework.aux
+(U:\git\COMP4Coursework5\Analysis\analysis.aux
 
 LaTeX Warning: Label `fig:invoice' multiply defined.
 
 
 LaTeX Warning: Label `fig:invoice' multiply defined.
 
-) (C:\Users\Kyle\git\COMP4Coursework3\Design\design.aux
+) (U:\git\COMP4Coursework5\Design\design.aux
 
 LaTeX Warning: Label `fig:Entity_Relationship_Diagram' multiply defined.
 
-) (C:\Users\Kyle\git\COMP4Coursework3\Testing\testing.aux)
-(C:\Users\Kyle\git\COMP4Coursework3\Maintenance\maintenance.aux)
-(C:\Users\Kyle\git\COMP4Coursework3\Manual\manual.aux)
-(C:\Users\Kyle\git\COMP4Coursework3\Evaluation\evaluation.aux))
+) (U:\git\COMP4Coursework5\Testing\testing.aux)
+(U:\git\COMP4Coursework5\Maintenance\maintenance.aux)
+(U:\git\COMP4Coursework5\Manual\manual.aux)
+(U:\git\COMP4Coursework5\Evaluation\evaluation.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
@@ -666,7 +656,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 \c@lstlisting=\count138
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(C:\Users\30710\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count139
 \scratchdimen=\dimen134
@@ -694,16 +684,16 @@ LaTeX Info: Redefining \ref on input line 4.
 LaTeX Info: Redefining \pageref on input line 4.
 LaTeX Info: Redefining \nameref on input line 4.
 
-(C:\Users\Kyle\git\COMP4Coursework3\coursework.out)
-(C:\Users\Kyle\git\COMP4Coursework3\coursework.out)
+(U:\git\COMP4Coursework5\coursework.out)
+(U:\git\COMP4Coursework5\coursework.out)
 \@outlinefile=\write5
  [1
 
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] (C:\Users\Kyle\git\COMP4C
-oursework3\coursework.tocpdfTeX warning (ext4): destination with the same ident
-ifier (name{page.1}) has been already used, duplicate ignored
+{C:/Users/30710/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (U:\git\COM
+P4Coursework5\coursework.tocpdfTeX warning (ext4): destination with the same id
+entifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.43 ...ter}{\numberline {2}Design}{49}{chapter.2}
@@ -712,7 +702,7 @@ l.43 ...ter}{\numberline {2}Design}{49}{chapter.2}
 ] [2] [3])
 \tf@toc=\write6
  [4]
-(C:\Users\Kyle\git\COMP4Coursework3\Analysis\analysis.tex
+(U:\git\COMP4Coursework5\Analysis\analysis.tex
 Chapter 1.
 [5
 
@@ -794,7 +784,7 @@ File: ./Analysis/images/signature.jpg Graphic file (type jpg)
 Package pdftex.def Info: ./Analysis/images/signature.jpg used on input line 105
 .
 (pdftex.def)             Requested size: 93.34851pt x 60.97765pt.
- [8 <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/signature.jpg>]
+ [8 <U:/git/COMP4Coursework5/Analysis/images/signature.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 140--141
 []\OT1/cmr/m/n/10 Client Con-tact
  []
@@ -918,7 +908,7 @@ line 310.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.313 
-       <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/key.pdf>]
+       <U:/git/COMP4Coursework5/Analysis/images/key.pdf>]
 <./Analysis/images/AppointmentDFD.pdf, id=793, 597.23125pt x 845.1575pt>
 File: ./Analysis/images/AppointmentDFD.pdf Graphic file (type pdf)
 
@@ -932,8 +922,7 @@ e 315.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.318 
-       <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/ClientInformation.pd
-f>]
+       <U:/git/COMP4Coursework5/Analysis/images/ClientInformation.pdf>]
 <./Analysis/images/GettingMeasurements.pdf, id=808, 597.23125pt x 845.1575pt>
 File: ./Analysis/images/GettingMeasurements.pdf Graphic file (type pdf)
 
@@ -947,7 +936,7 @@ t line 320.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.323 
-       <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/AppointmentDFD.pdf>]
+       <U:/git/COMP4Coursework5/Analysis/images/AppointmentDFD.pdf>]
 <./Analysis/images/GeneratingQuote.pdf, id=823, 597.23125pt x 845.1575pt>
 File: ./Analysis/images/GeneratingQuote.pdf Graphic file (type pdf)
 
@@ -961,8 +950,7 @@ ne 326.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.329 
-       <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/GettingMeasurements.
-pdf>]
+       <U:/git/COMP4Coursework5/Analysis/images/GettingMeasurements.pdf>]
 <./Analysis/images/GettingQuoteFromBuildersMerchant.pdf, id=838, 597.23125pt x 
 845.1575pt>
 File: ./Analysis/images/GettingQuoteFromBuildersMerchant.pdf Graphic file (type
@@ -978,8 +966,7 @@ Package pdftex.def Info: ./Analysis/images/GettingQuoteFromBuildersMerchant.pdf
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.334 
-       <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/GeneratingQuote.pdf>
-]
+       <U:/git/COMP4Coursework5/Analysis/images/GeneratingQuote.pdf>]
 <./Analysis/images/GivingAnInvoiceToClient.pdf, id=853, 597.23125pt x 845.1575p
 t>
 File: ./Analysis/images/GivingAnInvoiceToClient.pdf Graphic file (type pdf)
@@ -993,15 +980,15 @@ input line 338.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.341 
-       <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/GettingQuoteFromBuil
-dersMerchant.pdf>] [19pdfTeX warning (ext4): destination with the same identifi
-er (name{figure.1.7}) has been already used, duplicate ignored
+       <U:/git/COMP4Coursework5/Analysis/images/GettingQuoteFromBuildersMerchan
+t.pdf>] [19pdfTeX warning (ext4): destination with the same identifier (name{fi
+gure.1.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.351 
-       <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/GivingAnInvoiceToCli
-ent.pdf>] <./Analysis/images/workbookPage.jpg, id=883, 542.025pt x 963.6pt>
+       <U:/git/COMP4Coursework5/Analysis/images/GivingAnInvoiceToClient.pdf>]
+<./Analysis/images/workbookPage.jpg, id=883, 542.025pt x 963.6pt>
 File: ./Analysis/images/workbookPage.jpg Graphic file (type jpg)
 
 <use ./Analysis/images/workbookPage.jpg>
@@ -1021,7 +1008,7 @@ Package pdftex.def Info: ./Analysis/images/invoice.jpg used on input line 359.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.362 
-       <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/workbookPage.jpg>]
+       <U:/git/COMP4Coursework5/Analysis/images/workbookPage.jpg>]
 <./Analysis/images/invoice2.jpg, id=891, 542.025pt x 963.6pt>
 File: ./Analysis/images/invoice2.jpg Graphic file (type jpg)
 
@@ -1035,7 +1022,7 @@ Package pdftex.def Info: ./Analysis/images/invoice2.jpg used on input line 364.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.367 
-       <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/invoice.jpg>]
+       <U:/git/COMP4Coursework5/Analysis/images/invoice.jpg>]
 <./Analysis/images/invoice3.jpg, id=897, 542.025pt x 963.6pt>
 File: ./Analysis/images/invoice3.jpg Graphic file (type jpg)
 
@@ -1049,7 +1036,7 @@ Package pdftex.def Info: ./Analysis/images/invoice3.jpg used on input line 370.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.373 
-       <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/invoice2.jpg>]
+       <U:/git/COMP4Coursework5/Analysis/images/invoice2.jpg>]
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 383.
 
 
@@ -1069,8 +1056,8 @@ Overfull \hbox (72.8858pt too wide) in alignment at lines 381--402
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.402 ... & String/text & Client Records \\ \hline
-                                                   <C:/Users/Kyle/git/COMP4Cour
-sework3/Analysis/images/invoice3.jpg>]
+                                                   <U:/git/COMP4Coursework5/Ana
+lysis/images/invoice3.jpg>]
 Underfull \vbox (badness 10000) detected at line 402
  []
 
@@ -1168,8 +1155,8 @@ Overfull \vbox (15.5658pt too high) has occurred while \output is active []
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.450 
-       <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/proposedSystemGainin
-gClientInfo.pdf>]
+       <U:/git/COMP4Coursework5/Analysis/images/proposedSystemGainingClientInfo
+.pdf>]
 <./Analysis/images/proposedSystemGettingMeasurements.pdf, id=935, 597.23125pt x
  845.1575pt>
 File: ./Analysis/images/proposedSystemGettingMeasurements.pdf Graphic file (typ
@@ -1194,8 +1181,8 @@ tTime.pdf used on input line 459.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.462 
-       <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/proposedSystemGettin
-gMeasurements.pdf>]
+       <U:/git/COMP4Coursework5/Analysis/images/proposedSystemGettingMeasuremen
+ts.pdf>]
 <./Analysis/images/proposedSystemGettingQuoteFromBuildersMerchant.pdf, id=951, 
 597.23125pt x 845.1575pt>
 File: ./Analysis/images/proposedSystemGettingQuoteFromBuildersMerchant.pdf Grap
@@ -1212,8 +1199,8 @@ rsMerchant.pdf used on input line 465.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.468 
-       <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/proposedSystemGiving
-ClientAppointmentTime.pdf>]
+       <U:/git/COMP4Coursework5/Analysis/images/proposedSystemGivingClientAppoi
+ntmentTime.pdf>]
 <./Analysis/images/proposedSystemGeneratingQuoteForClient.pdf, id=966, 597.2312
 5pt x 845.1575pt>
 File: ./Analysis/images/proposedSystemGeneratingQuoteForClient.pdf Graphic file
@@ -1229,8 +1216,8 @@ nt.pdf used on input line 470.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.473 
-       <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/proposedSystemGettin
-gQuoteFromBuildersMerchant.pdf>]
+       <U:/git/COMP4Coursework5/Analysis/images/proposedSystemGettingQuoteFromB
+uildersMerchant.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 483--483
 []|\OT1/cmr/bx/n/10 Data
  []
@@ -1326,8 +1313,8 @@ Overfull \hbox (99.73122pt too wide) in alignment at lines 481--508
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.508 ...hars & Length & 07710 300 678 & \\ \hline
-                                                   <C:/Users/Kyle/git/COMP4Cour
-sework3/Analysis/images/proposedSystemGeneratingQuoteForClient.pdf>]
+                                                   <U:/git/COMP4Coursework5/Ana
+lysis/images/proposedSystemGeneratingQuoteForClient.pdf>]
 Underfull \vbox (badness 10000) detected at line 508
  []
 
@@ -1502,8 +1489,7 @@ Overfull \vbox (33.85742pt too high) has occurred while \output is active []
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.681 
-       <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/ERDiagram.pdf>]
-[38]
+       <U:/git/COMP4Coursework5/Analysis/images/ERDiagram.pdf>] [38]
 <./Analysis/images/relationshipDiagramObjectAnalysis.pdf, id=1040, 597.23125pt 
 x 845.1575pt>
 File: ./Analysis/images/relationshipDiagramObjectAnalysis.pdf Graphic file (typ
@@ -1519,8 +1505,8 @@ e.1.18}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.769 \end{flushleft}
-                      <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/relat
-ionshipDiagramObjectAnalysis.pdf>]
+                      <U:/git/COMP4Coursework5/Analysis/images/relationshipDiag
+ramObjectAnalysis.pdf>]
 Overfull \hbox (3.32813pt too wide) in paragraph at lines 792--793
 []\OT1/cmr/m/n/10 AddMemberPhoneNumber| 
  []
@@ -1684,7 +1670,7 @@ Overfull \hbox (3.9803pt too wide) in alignment at lines 993--1062
 Underfull \vbox (badness 10000) detected at line 1062
  []
 
-[46] [47]) [48] (C:\Users\Kyle\git\COMP4Coursework3\Design\design.tex
+[46] [47]) [48] (U:\git\COMP4Coursework5\Design\design.tex
 Chapter 2.
 [49
 
@@ -1804,7 +1790,7 @@ Underfull \vbox (badness 10000) detected at line 371
 
 [58
 
-]) (C:\Users\Kyle\git\COMP4Coursework3\Testing\testing.tex
+]) (U:\git\COMP4Coursework5\Testing\testing.tex
 Chapter 3.
 [59
 
@@ -1883,7 +1869,7 @@ Underfull \vbox (badness 10000) detected at line 43
 
 ] [61]) [62
 
-] (C:\Users\Kyle\git\COMP4Coursework3\Maintenance\maintenance.tex
+] (U:\git\COMP4Coursework5\Maintenance\maintenance.tex
 Chapter 4.
 Excluding 'comment' comment. [63
 
@@ -1896,7 +1882,7 @@ Overfull \vbox (349.24393pt too high) has occurred while \output is active []
 [64] Excluding 'comment' comment. [65
 
 ])
-(C:\Users\Kyle\git\COMP4Coursework3\Manual\manual.tex
+(U:\git\COMP4Coursework5\Manual\manual.tex
 Chapter 5.
 ) [66
 
@@ -1907,7 +1893,7 @@ Chapter 5.
 Overfull \vbox (248.63841pt too high) has occurred while \output is active []
 
 
-[67] (C:\Users\Kyle\git\COMP4Coursework3\Evaluation\evaluation.tex
+[67] (U:\git\COMP4Coursework5\Evaluation\evaluation.tex
 Chapter 6.
 ) [68
 
@@ -1920,13 +1906,13 @@ Overfull \vbox (6.61086pt too high) has occurred while \output is active []
 [69]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 19.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 19.
- (C:\Users\Kyle\git\COMP4Coursework3\coursework.aux
-(C:\Users\Kyle\git\COMP4Coursework3\Analysis\analysis.aux)
-(C:\Users\Kyle\git\COMP4Coursework3\Design\design.aux)
-(C:\Users\Kyle\git\COMP4Coursework3\Testing\testing.aux)
-(C:\Users\Kyle\git\COMP4Coursework3\Maintenance\maintenance.aux)
-(C:\Users\Kyle\git\COMP4Coursework3\Manual\manual.aux)
-(C:\Users\Kyle\git\COMP4Coursework3\Evaluation\evaluation.aux))
+ (U:\git\COMP4Coursework5\coursework.aux
+(U:\git\COMP4Coursework5\Analysis\analysis.aux)
+(U:\git\COMP4Coursework5\Design\design.aux)
+(U:\git\COMP4Coursework5\Testing\testing.aux)
+(U:\git\COMP4Coursework5\Maintenance\maintenance.aux)
+(U:\git\COMP4Coursework5\Manual\manual.aux)
+(U:\git\COMP4Coursework5\Evaluation\evaluation.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 19.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 19.
 Package rerunfilecheck Info: File `coursework.out' has not changed.
@@ -1938,13 +1924,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 19.
  ) 
 Here is how much of TeX's memory you used:
- 10390 strings out of 493921
- 152020 string characters out of 3144879
- 293011 words of memory out of 3000000
- 13209 multiletter control sequences out of 15000+200000
+ 10389 strings out of 493705
+ 151440 string characters out of 3142200
+ 297025 words of memory out of 3000000
+ 13236 multiletter control sequences out of 15000+200000
  10876 words of font info for 39 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 37i,12n,45p,1588b,548s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 1025 hyphenation exceptions out of 8191
+ 37i,12n,45p,1577b,548s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
@@ -1956,7 +1942,7 @@ iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files
 6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmu10.pfb>
-Output written on coursework.pdf (70 pages, 745097 bytes).
+Output written on coursework.pdf (70 pages, 745114 bytes).
 PDF statistics:
  1289 PDF objects out of 1440 (max. 8388607)
  270 named destinations out of 1000 (max. 500000)

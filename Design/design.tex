@@ -107,7 +107,7 @@ Below are the entity descriptions for the various entites in the proposed system
 
 
 \begin{flushleft}
-	\textbf{Client}(\underline{ClientID}, ClientTitle, ClientFirstName, ClientSurname, ClientAddrLine1, ClientAddrLine2, ClientAddrLine3, ClientAddrLine4, ClientEmail, ClientPhoneNumber, \emph{PlastererID})
+	\textbf{Client}(\underline{ClientID}, ClientTitle, ClientFirstName, ClientSurname, ClientAddrLine1, ClientAddrLine2, ClientAddrLine3, ClientAddrLine4, ClientEmail, ClientPhoneNumber)
 \end{flushleft}
 
 
@@ -119,7 +119,7 @@ Below are the entity descriptions for the various entites in the proposed system
 
 
 \begin{flushleft}
-\textbf{Job}(\underline{JobID}, \emph{ClientID}, \emph{PlastererID}, JobDescription, JobAddrLine1, JobAddrLine2, JobAddrLine3, JobAddrLine4, JobDaysWorked,  JobComplete, JobPaid, \emph{InvoiceID})
+\textbf{Job}(\underline{JobID}, \emph{ClientID}, \emph{PlastererID}, JobDescription, JobAddrLine1, JobAddrLine2, JobAddrLine3, JobAddrLine4, JobDaysWorked,  JobComplete, \emph{InvoiceID})
 \end{flushleft}
 
 
@@ -134,13 +134,13 @@ Below are the entity descriptions for the various entites in the proposed system
 
 
 \begin{flushleft}
-\textbf{Invoice}(\underline{InvoiceID}, \emph{ClientID}, \emph{JobID}, \emph{PlastererID} InvoiceAmountPreTax, InvoiceAmountAfterTax, InvoiceReceived, InvoiceDate, InvoiceText)
+\textbf{Invoice}(\underline{InvoiceID}, \emph{JobID}, InvoiceAmountPreTax, InvoiceAmountAfterTax, InvoiceReceived, InvoiceDate, InvoiceText, InvoicePaid)
 \end{flushleft}
 
 
 
 \begin{flushleft}
-\textbf{Appointment}(\underline{AppointmentID}, \emph{ClientID}, \emph{PlastererID}, AppointmentDate, AppointmentTime, AppointmentAddrLine1, AppointmentAddrLine2, AppointmentAddrLine3, AppointmentAddrLine4)
+\textbf{Appointment}(\underline{AppointmentID}, \emph{JobID} AppointmentDate, AppointmentTime)
 \end{flushleft}
 
 \subsubsection{1NF to 3NF}
