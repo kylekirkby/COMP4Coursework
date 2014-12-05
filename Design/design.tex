@@ -309,19 +309,323 @@ This shows what the user interface will look and behave like when the clients bu
 \label{fig:FlowChartClientsMenu}
 \end{figure}
 
+\textbf{Clients Menu to New Client UI}
+\begin{flushleft}
+This User Interface diagram shows what happens in the proposed system when the users adds a new client.
+\end{flushleft}
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./Design/images/UI-NewClient.pdf}
+    \caption{This is the New Client User Interface.} 
+\label{fig:FlowChartNewClient}
+\end{figure}
+
 \section{Hardware Specification}
 
 \section{Program Structure}
 
 \subsection{Top-down design structure charts}
 
+
+
+
 \subsection{Algorithms in pseudo-code for each data transformation process}
 
+\pagebreak
 \subsection{Object Diagrams}
+\begin{flushleft}
+This Diagram shows the relationship between the objects in the system.
+\end{flushleft}
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./Design/images/ObjectDiagram.pdf}
+    \caption{Object Relationships} 
+\label{fig:ObjectDiagram}
+\end{figure}
 
+
+
+\pagebreak
 \subsection{Class Definitions}
 
+\begin{flushleft}
+\textbf{Key:}
+\begin{tabular}{|p{4cm}|}
+	\hline
+	Label \\ \hline
+	Attributes \\ \hline	
+	Behavious \\ \hline
+\end{tabular}
+
+
+\end{flushleft}
+
+\begin{tabular}{|p{4cm}|}
+	\hline
+	\textbf{Member} \\ \hline
+	MemberID \\
+	MemberTitle \\
+	MembeFirstName \\
+	MemberSurname \\
+	MemberAddrLine1 \\
+	MemberAddrLine2 \\
+	MemberAddrLine3 \\
+	MemberAddrLine4 \\
+	MemberEmail \\
+	MemberPhoneNumber \\ \hline	
+		AddMemberTitle \\
+		AddMemberFirstName \\
+		AddMemberSurname \\
+		AddMemberAddrLine1 \\
+		AddMemberAddrLine2 \\
+		AddMemberAddrLine3 \\
+		AddMemberAddrLine4 \\
+		AddMemberEmail \\
+		AddMemberPhoneNumber \\ 
+		EditMemberTitle \\
+		EditMemberFirstName \\
+		EditMemberSurname \\
+		EditMemberAddrLine1 \\
+		EditMemberAddrLine2 \\
+		EditMemberAddrLine3 \\
+		EditMemberAddrLine4 \\
+		EditMemberEmail \\
+		EditMemberPhoneNumber \\ \hline
+\end{tabular}
+
+\begin{tabular}{|p{5cm}|}
+	\hline
+	\textbf{Client:} extends \textbf{Member} \\ \hline
+		 \\ \hline
+		 \\ \hline
+\end{tabular}
+
+
+\begin{tabular}{|p{5cm}|}
+	\hline
+	\textbf{Plasterer:} extends \textbf{Member} \\ \hline
+		PlastererDailyRate \\ \hline
+		AddPlastererDailyRate \\
+		EditPlastererDailyRate \\ \hline
+\end{tabular}
+
+\begin{tabular}{|p{5cm}|}
+	\hline
+	\textbf{Job:} \\ \hline
+		JobID \\
+		ClientID \\
+		PlastererID \\
+		JobDescription \\
+		JobAddrLine1 \\
+		JobAddrLine2 \\
+		JobAddrLine3 \\
+		JobAddrLine4 \\
+		JobDaysWorked \\
+		JobComplete \\
+		JobPaid \\ 
+		InvoiceID \\ \hline
+		AddJobDescription\\
+		AddJobAddrLine1 \\
+		AddJobAddrLine2 \\
+		AddJobAddrLine3 \\
+		AddJobAddrLine4 \\
+		AddJobDaysWorked \\
+		EditJobComplete \\
+		EditJobPaid \\
+		EditJobDescription\\
+		EditJobAddrLine1 \\
+		EditJobAddrLine2 \\
+		EditJobAddrLine3 \\
+		EditJobAddrLine4 \\
+		EditJobDaysWorked \\ \hline
+\end{tabular}
+
+\begin{tabular}{|p{5cm}|}
+	\hline
+	\textbf{Material:} \\ \hline
+		MaterialID \\
+		MaterialName \\
+		MaterialPrice \\ \hline
+		AddMaterialName\\
+		AddMaterialPrice \\ \hline	
+		EditMaterialName \\
+		EditMaterialPrice \\ \hline
+\end{tabular}
+
+\begin{tabular}{|p{5cm}|}
+	\hline
+	\textbf{Document:} \\ \hline
+		DocumentID \\
+		DocumentDate \\
+		DocumentTime \\
+		DocumentText \\ \hline
+		AddDocumentDate \\
+		AddDocumentTime \\
+		AddDocumentText \\
+		EditDocumentDate \\
+		EditDocumentTime \\
+		EditDocumentText \\ \hline
+		
+\end{tabular}
+
+
+\begin{tabular}{|p{5cm}|}
+	\hline
+	\textbf{Invoice:} extends \textbf{Document} \\ \hline
+		ClientID \\
+		JobID \\
+		PlastererID\\
+		InvoiceAmountPreTax \\
+		InvoiceAmountAfterTax \\
+		InvoiceReceived \\ \hline
+		AddInvoiceAmountPreTax \\ 
+		AddInvoiceAmountAfterTax \\
+		AddInvoiceReceived \\
+		EditInvoiceAmountPreTax \\ 
+		EditInvoiceAmountAfterTax \\
+		EditInvoiceReceived \\ \hline
+		
+\end{tabular}
+
+\begin{tabular}{|p{5cm}|}
+	\hline
+	\textbf{Appointment:} extends \textbf{Document} \\ \hline
+		ClientID \\
+		PlastererID \\
+		AppointmentAddrLine1 \\
+		AppointmentAddrLine2 \\
+		AppointmentAddrLine3 \\
+		AppointmentAddrLine4 \\ \hline
+		AddAppointmentAddrLine1 \\
+		AddAppointmentAddrLine2 \\
+		AddAppointmentAddrLine3 \\
+		AddAppointmentAddrLine4 \\
+		EditAppointmentAddrLine1 \\
+		EditAppointmentAddrLine2 \\
+		EditAppointmentAddrLine3 \\
+		EditAppointmentAddrLine4 \\ \hline
+
+\end{tabular}
+
 \section{Prototyping}
+
+\textbf{PyQt4 Printing Prototyping}
+\begin{flushleft}
+I researched and developed a small printing prototype using PyQt4 and Python3. I found information on printing with PyQt4 in the book \emph{Rapid GUI Programming with Python and Qt} By \emph{Mark Summerfield}. The book described how you can print using a QTextDocument, QPrinter and HTML formatting. Below is the code for this prototype.
+\end{flushleft}
+\begin{python}
+from PyQt4.QtGui import *
+from PyQt4.QtCore import *
+import sys
+
+
+class MainWindow(QMainWindow):
+    """ This is a test for the printing function """
+
+    def __init__(self):
+        super().__init__()
+
+
+        self.setWindowTitle("Printing Test")
+        self.printer = QPrinter()
+        self.printer.setPageSize(QPrinter.Letter)
+        self.mainLayout()
+
+        
+    def mainLayout(self):
+
+        self.layout = QHBoxLayout()
+        self.printButton = QPushButton("Print")
+
+        self.layout.addWidget(self.printButton)
+
+        self.mainWidget = QWidget()
+        self.mainWidget.setLayout(self.layout)
+
+        self.setCentralWidget(self.mainWidget)
+
+        self.printButton.clicked.connect(self.printViaHtml)
+
+    def getCurrentDate(self,dateFormat):
+        date = QDate.currentDate().toString(dateFormat)
+        return date
+
+    def statementHtml(self):
+
+        companyName = "DnA Plastering"
+        date = self.getCurrentDate("dd.MM.yyyy")
+
+        jobItems = [["25KG Plaster","30.00","5","150.00"],["Angle Beading 3M","7.00","5","35.00"]]
+
+        invoiceId = "4564"
+        amountDue = 0.0
+        for each in jobItems:
+            price = float(each[3])
+            amountDue += price
+        amountAfterTax = amountDue * 1.2
+        address = ["15 The Glebe","Haverhill","Suffolk","CB9 0DL"]
+        
+            
+            
+        
+        html = u""
+        html += ("<h1 align='center'>{0}</h1>"
+                 "<table width='30%' align='left' cellpadding='10px'>").format(companyName)
+
+        for each in address:
+            html += ("<tr><td>{0}</td></tr>").format(each)
+
+
+        html += ("</table>"
+                 "<table width='30%' border='1' align='right' cellpadding='10px'>"
+                 "<tr><td><b>Invoice</b> #</td><td>{0}</td></tr>"
+                 "<tr><td><b>Date</b></td><td>{1}</td></tr>"
+                 "<tr><td><b>Amount Due</b></td><td>{2}</td></tr>"
+                 "</table>"
+                 "<br><hr/>"
+                 "<table width='100%' border='1' cellpadding='10px'>"
+                 "<tr><td><b>Material/Item</b></td><td><b>Unit Cost</b></td><td><b>Quantity</b></td><td><b>Price</b></td></tr>").format(invoiceId,date,amountDue)
+
+        for item in jobItems:
+            html += ("<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td></tr>").format(item[0],item[1],item[2],item[3])
+
+        html += ("<tr><td></td><td></td><td><b>Sub Total</b></td><td>{0}</td></tr>"
+                 "<tr><td></td><td></td><td><b>Total (20% VAT added)</b></td><td>{1}</td></tr>").format(amountDue,amountAfterTax)
+
+        html += ("</table>"
+                 "<br>"
+                 "<hr/>"
+                 "<p align='center'>{0}</p>").format(companyName)
+
+
+        return html
+
+        
+
+    def printViaHtml(self):
+
+        html = self.statementHtml()
+
+        dialog = QPrintDialog(self.printer, self)
+        if dialog.exec_():
+            document = QTextDocument()
+            document.setHtml(html)
+            document.print_(self.printer)
+        else:
+            print("The print process has failed!")
+
+        print(html)
+        
+
+
+if __name__ == "__main__":
+
+    app = QApplication(sys.argv)
+    window = MainWindow()
+    window.show()
+    window.raise_()
+    app.exec_()
+
+
+\end{python}
 
 \section{Definition of Data Requirements}
 
