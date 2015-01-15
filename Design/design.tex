@@ -897,6 +897,8 @@ AppointmentAddrLine4 & String & 6 - 7 Chars & Length and Format Check & CB2 5HD 
 
 \begin{flushleft}
 In the proposed system the secondary storage required to run the application will only need to be basic as there is not too much data being stored. In the Analysis section the volumetrics of the proposed system suggested that the system would only require around 10MB. But with additional clients, jobs, materials, invoices, appointments etc the databse will increase in size and more storage would be required; Dan's computer has around 800GB free hard disk space so this is more than enough to run the proposed system for the forseeable future.
+
+An external hard drive dan also has will suit as appropriate storage media for back ups of the data. This is because the external hard drive has 1TB of storage which is plenty for the amount of data the proposed system will produce. Using this External HDD, Dan will be able to make regular back ups of the data keeping the vital databases of client and job data secure.
 \end{flushleft}
 
 \pagebreak
@@ -1211,11 +1213,16 @@ In order to abide to these guidlines I must ensure that the database is encrypte
 
 The proposed system will allow the user to delete records from all tables so that if the data needs to be removed to conform to the data protection act then it can be.
 
+Referential Integrity, which is the ability to perform the same actions to all related pieces of data in the database, will ensure the data is accurate and when, for example, a record is deleted the table entries containing related data is also deleted. This means that the database will behave as expected and not throw errors to the user when they delete a value of a primary key that is also a foreign key elsewhere etc.
+
 \end{flushleft}
 \subsection{System Security}
 
 \begin{flushleft}
 The access restrictions that will be put in place consists of a login screen where the user enters a strong password which is stored in the database hashed and salted in order to get access to the system.
+
+These restrictions will be put in place in order to keep the personal client data belonging to living individuals secure. The Data Protection Act legislates that all personal data must be stored securely and by developing an integrated login system only an authenticated end user will be able to gain access.
+
 \end{flushleft}
 
 \section{Validation}
