@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.9.11)  5 DEC 2014 00:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.9.11)  15 JAN 2015 16:50
 entering extended mode
 **C:/Users/Kyle/git/COMP4Coursework3/coursework.tex
 (C:/Users/Kyle/git/COMP4Coursework3/coursework.tex
@@ -650,6 +650,15 @@ LaTeX Warning: Label `fig:FlowChartSearchClients' multiply defined.
 LaTeX Warning: Label `fig:FlowChartNewClient' multiply defined.
 
 
+LaTeX Warning: Label `fig:FlowChartNewClient' multiply defined.
+
+
+LaTeX Warning: Label `fig:FlowChartNewClient' multiply defined.
+
+
+LaTeX Warning: Label `fig:FlowChartNewClient' multiply defined.
+
+
 LaTeX Warning: Label `fig:Entity_Relationship_Diagram' multiply defined.
 
 ) (C:\Users\Kyle\git\COMP4Coursework3\Testing\testing.aux)
@@ -793,7 +802,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
 
-<./Analysis/images/signature.jpg, id=738, 93.34875pt x 60.97781pt>
+<./Analysis/images/signature.jpg, id=748, 93.34875pt x 60.97781pt>
 File: ./Analysis/images/signature.jpg Graphic file (type jpg)
 
 <use ./Analysis/images/signature.jpg>
@@ -904,14 +913,14 @@ Overfull \hbox (44.43304pt too wide) in paragraph at lines 132--214
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 224.
  [11] [12]
-<./Analysis/images/key.pdf, id=776, 597.23125pt x 845.1575pt>
+<./Analysis/images/key.pdf, id=786, 597.23125pt x 845.1575pt>
 File: ./Analysis/images/key.pdf Graphic file (type pdf)
 
 <use ./Analysis/images/key.pdf>
 Package pdftex.def Info: ./Analysis/images/key.pdf used on input line 305.
 (pdftex.def)             Requested size: 298.61488pt x 422.57771pt.
 
-<./Analysis/images/ClientInformation.pdf, id=777, 597.23125pt x 845.1575pt>
+<./Analysis/images/ClientInformation.pdf, id=787, 597.23125pt x 845.1575pt>
 File: ./Analysis/images/ClientInformation.pdf Graphic file (type pdf)
 
 <use ./Analysis/images/ClientInformation.pdf>
@@ -925,7 +934,7 @@ line 310.
                                                   \fi \fi 
 l.313 
        <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/key.pdf>]
-<./Analysis/images/AppointmentDFD.pdf, id=793, 597.23125pt x 845.1575pt>
+<./Analysis/images/AppointmentDFD.pdf, id=803, 597.23125pt x 845.1575pt>
 File: ./Analysis/images/AppointmentDFD.pdf Graphic file (type pdf)
 
 <use ./Analysis/images/AppointmentDFD.pdf>
@@ -940,7 +949,7 @@ e 315.
 l.318 
        <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/ClientInformation.pd
 f>]
-<./Analysis/images/GettingMeasurements.pdf, id=808, 597.23125pt x 845.1575pt>
+<./Analysis/images/GettingMeasurements.pdf, id=818, 597.23125pt x 845.1575pt>
 File: ./Analysis/images/GettingMeasurements.pdf Graphic file (type pdf)
 
 <use ./Analysis/images/GettingMeasurements.pdf>
@@ -954,7 +963,7 @@ t line 320.
                                                   \fi \fi 
 l.323 
        <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/AppointmentDFD.pdf>]
-<./Analysis/images/GeneratingQuote.pdf, id=823, 597.23125pt x 845.1575pt>
+<./Analysis/images/GeneratingQuote.pdf, id=833, 597.23125pt x 845.1575pt>
 File: ./Analysis/images/GeneratingQuote.pdf Graphic file (type pdf)
 
 <use ./Analysis/images/GeneratingQuote.pdf>
@@ -969,7 +978,7 @@ ne 326.
 l.329 
        <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/GettingMeasurements.
 pdf>]
-<./Analysis/images/GettingQuoteFromBuildersMerchant.pdf, id=838, 597.23125pt x 
+<./Analysis/images/GettingQuoteFromBuildersMerchant.pdf, id=848, 597.23125pt x 
 845.1575pt>
 File: ./Analysis/images/GettingQuoteFromBuildersMerchant.pdf Graphic file (type
  pdf)
@@ -986,7 +995,7 @@ Package pdftex.def Info: ./Analysis/images/GettingQuoteFromBuildersMerchant.pdf
 l.334 
        <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/GeneratingQuote.pdf>
 ]
-<./Analysis/images/GivingAnInvoiceToClient.pdf, id=853, 597.23125pt x 845.1575p
+<./Analysis/images/GivingAnInvoiceToClient.pdf, id=863, 597.23125pt x 845.1575p
 t>
 File: ./Analysis/images/GivingAnInvoiceToClient.pdf Graphic file (type pdf)
  <use ./Analysis/images/GivingAnInvoiceToClient.pdf>
@@ -1007,7 +1016,7 @@ er (name{figure.1.7}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.351 
        <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/GivingAnInvoiceToCli
-ent.pdf>] <./Analysis/images/workbookPage.jpg, id=883, 542.025pt x 963.6pt>
+ent.pdf>] <./Analysis/images/workbookPage.jpg, id=893, 542.025pt x 963.6pt>
 File: ./Analysis/images/workbookPage.jpg Graphic file (type jpg)
 
 <use ./Analysis/images/workbookPage.jpg>
@@ -1015,7 +1024,7 @@ Package pdftex.def Info: ./Analysis/images/workbookPage.jpg used on input line
 354.
 (pdftex.def)             Requested size: 216.80615pt x 385.43317pt.
 
-<./Analysis/images/invoice.jpg, id=884, 542.025pt x 963.6pt>
+<./Analysis/images/invoice.jpg, id=894, 542.025pt x 963.6pt>
 File: ./Analysis/images/invoice.jpg Graphic file (type jpg)
 
 <use ./Analysis/images/invoice.jpg>
@@ -1028,7 +1037,7 @@ Package pdftex.def Info: ./Analysis/images/invoice.jpg used on input line 359.
                                                   \fi \fi 
 l.362 
        <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/workbookPage.jpg>]
-<./Analysis/images/invoice2.jpg, id=891, 542.025pt x 963.6pt>
+<./Analysis/images/invoice2.jpg, id=901, 542.025pt x 963.6pt>
 File: ./Analysis/images/invoice2.jpg Graphic file (type jpg)
 
 <use ./Analysis/images/invoice2.jpg>
@@ -1042,7 +1051,7 @@ Package pdftex.def Info: ./Analysis/images/invoice2.jpg used on input line 364.
                                                   \fi \fi 
 l.367 
        <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/invoice.jpg>]
-<./Analysis/images/invoice3.jpg, id=897, 542.025pt x 963.6pt>
+<./Analysis/images/invoice3.jpg, id=907, 542.025pt x 963.6pt>
 File: ./Analysis/images/invoice3.jpg Graphic file (type jpg)
 
 <use ./Analysis/images/invoice3.jpg>
@@ -1156,7 +1165,7 @@ Overfull \hbox (72.8858pt too wide) in alignment at lines 422--439
  []
 
 [24]
-<./Analysis/images/proposedSystemGainingClientInfo.pdf, id=915, 597.23125pt x 8
+<./Analysis/images/proposedSystemGainingClientInfo.pdf, id=925, 597.23125pt x 8
 45.1575pt>
 File: ./Analysis/images/proposedSystemGainingClientInfo.pdf Graphic file (type 
 pdf)
@@ -1176,7 +1185,7 @@ Overfull \vbox (15.5658pt too high) has occurred while \output is active []
 l.450 
        <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/proposedSystemGainin
 gClientInfo.pdf>]
-<./Analysis/images/proposedSystemGettingMeasurements.pdf, id=935, 597.23125pt x
+<./Analysis/images/proposedSystemGettingMeasurements.pdf, id=945, 597.23125pt x
  845.1575pt>
 File: ./Analysis/images/proposedSystemGettingMeasurements.pdf Graphic file (typ
 e pdf)
@@ -1185,7 +1194,7 @@ Package pdftex.def Info: ./Analysis/images/proposedSystemGettingMeasurements.pd
 f used on input line 453.
 (pdftex.def)             Requested size: 345.0pt x 488.2186pt.
 
-<./Analysis/images/proposedSystemGivingClientAppointmentTime.pdf, id=936, 597.2
+<./Analysis/images/proposedSystemGivingClientAppointmentTime.pdf, id=946, 597.2
 3125pt x 845.1575pt>
 File: ./Analysis/images/proposedSystemGivingClientAppointmentTime.pdf Graphic f
 ile (type pdf)
@@ -1202,7 +1211,7 @@ tTime.pdf used on input line 459.
 l.462 
        <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/proposedSystemGettin
 gMeasurements.pdf>]
-<./Analysis/images/proposedSystemGettingQuoteFromBuildersMerchant.pdf, id=951, 
+<./Analysis/images/proposedSystemGettingQuoteFromBuildersMerchant.pdf, id=961, 
 597.23125pt x 845.1575pt>
 File: ./Analysis/images/proposedSystemGettingQuoteFromBuildersMerchant.pdf Grap
 hic file (type pdf)
@@ -1220,7 +1229,7 @@ rsMerchant.pdf used on input line 465.
 l.468 
        <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/proposedSystemGiving
 ClientAppointmentTime.pdf>]
-<./Analysis/images/proposedSystemGeneratingQuoteForClient.pdf, id=966, 597.2312
+<./Analysis/images/proposedSystemGeneratingQuoteForClient.pdf, id=976, 597.2312
 5pt x 845.1575pt>
 File: ./Analysis/images/proposedSystemGeneratingQuoteForClient.pdf Graphic file
  (type pdf)
@@ -1491,7 +1500,7 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 565.
 
-[33] [34] <./Analysis/images/ERDiagram.pdf, id=1013, 597.23125pt x 845.1575pt>
+[33] [34] <./Analysis/images/ERDiagram.pdf, id=1023, 597.23125pt x 845.1575pt>
 File: ./Analysis/images/ERDiagram.pdf Graphic file (type pdf)
 
 <use ./Analysis/images/ERDiagram.pdf>
@@ -1510,7 +1519,7 @@ Overfull \vbox (33.85742pt too high) has occurred while \output is active []
 l.681 
        <C:/Users/Kyle/git/COMP4Coursework3/Analysis/images/ERDiagram.pdf>]
 [38]
-<./Analysis/images/relationshipDiagramObjectAnalysis.pdf, id=1040, 597.23125pt 
+<./Analysis/images/relationshipDiagramObjectAnalysis.pdf, id=1050, 597.23125pt 
 x 845.1575pt>
 File: ./Analysis/images/relationshipDiagramObjectAnalysis.pdf Graphic file (typ
 e pdf)
@@ -1697,7 +1706,7 @@ Chapter 2.
 
 
 ] [50] [51] [52]
-<./Design/images/key.pdf, id=1108, 597.23125pt x 845.1575pt>
+<./Design/images/key.pdf, id=1118, 597.23125pt x 845.1575pt>
 File: ./Design/images/key.pdf Graphic file (type pdf)
 
 <use ./Design/images/key.pdf>
@@ -1711,7 +1720,7 @@ Package pdftex.def Info: ./Design/images/key.pdf used on input line 114.
 l.120 \textbf
              {Main Menu Flow Chart} <C:/Users/Kyle/git/COMP4Coursework3/Design/
 images/key.pdf>]
-<./Design/images/FlowChartMainMenu.pdf, id=1121, 597.23125pt x 845.1575pt>
+<./Design/images/FlowChartMainMenu.pdf, id=1131, 597.23125pt x 845.1575pt>
 File: ./Design/images/FlowChartMainMenu.pdf Graphic file (type pdf)
 
 <use ./Design/images/FlowChartMainMenu.pdf>
@@ -1726,7 +1735,7 @@ ne 125.
 l.131 \underline
                 {\textbf{Client Flow Charts}} <C:/Users/Kyle/git/COMP4Coursewor
 k3/Design/images/FlowChartMainMenu.pdf>]
-<./Design/images/FlowChartClientMenu.pdf, id=1135, 597.23125pt x 845.1575pt>
+<./Design/images/FlowChartClientMenu.pdf, id=1145, 597.23125pt x 845.1575pt>
 File: ./Design/images/FlowChartClientMenu.pdf Graphic file (type pdf)
 
 <use ./Design/images/FlowChartClientMenu.pdf>
@@ -1741,7 +1750,7 @@ line 140.
 l.145 \textbf
              {New Client Flow Chart} <C:/Users/Kyle/git/COMP4Coursework3/Design
 /images/FlowChartClientMenu.pdf>]
-<./Design/images/FlowChartNewClient.pdf, id=1148, 597.23125pt x 845.1575pt>
+<./Design/images/FlowChartNewClient.pdf, id=1158, 597.23125pt x 845.1575pt>
 File: ./Design/images/FlowChartNewClient.pdf Graphic file (type pdf)
 
 <use ./Design/images/FlowChartNewClient.pdf>
@@ -1756,7 +1765,7 @@ ine 150.
 l.156 \textbf
              {Current Clients Flow Chart} <C:/Users/Kyle/git/COMP4Coursework3/D
 esign/images/FlowChartNewClient.pdf>]
-<./Design/images/FlowChartCurrentClients.pdf, id=1161, 597.23125pt x 845.1575pt
+<./Design/images/FlowChartCurrentClients.pdf, id=1171, 597.23125pt x 845.1575pt
 >
 File: ./Design/images/FlowChartCurrentClients.pdf Graphic file (type pdf)
  <use ./Design/images/FlowChartCurrentClients.pdf>
@@ -1771,7 +1780,7 @@ put line 161.
 l.167 \textbf
              {Search Clients Flow Chart} <C:/Users/Kyle/git/COMP4Coursework3/De
 sign/images/FlowChartCurrentClients.pdf>]
-<./Design/images/FlowChartSearchClients.pdf, id=1174, 597.23125pt x 845.1575pt>
+<./Design/images/FlowChartSearchClients.pdf, id=1184, 597.23125pt x 845.1575pt>
 File: ./Design/images/FlowChartSearchClients.pdf Graphic file (type pdf)
 <use ./Design/images/FlowChartSearchClients.pdf>
 Package pdftex.def Info: ./Design/images/FlowChartSearchClients.pdf used on inp
@@ -1785,7 +1794,7 @@ ut line 172.
 l.178 \textbf
              {Manage Clients Flow Chart} <C:/Users/Kyle/git/COMP4Coursework3/De
 sign/images/FlowChartSearchClients.pdf>]
-<./Design/images/FlowChartManageClients.pdf, id=1187, 597.23125pt x 845.1575pt>
+<./Design/images/FlowChartManageClients.pdf, id=1197, 597.23125pt x 845.1575pt>
 File: ./Design/images/FlowChartManageClients.pdf Graphic file (type pdf)
 <use ./Design/images/FlowChartManageClients.pdf>
 Package pdftex.def Info: ./Design/images/FlowChartManageClients.pdf used on inp
@@ -1799,7 +1808,7 @@ ut line 184.
 l.193 \underline
                 {\textbf{Plasterer Flow Charts}} <C:/Users/Kyle/git/COMP4Course
 work3/Design/images/FlowChartManageClients.pdf>]
-<./Design/images/FlowChartPlastererMenu.pdf, id=1200, 597.23125pt x 845.1575pt>
+<./Design/images/FlowChartPlastererMenu.pdf, id=1210, 597.23125pt x 845.1575pt>
 File: ./Design/images/FlowChartPlastererMenu.pdf Graphic file (type pdf)
 <use ./Design/images/FlowChartPlastererMenu.pdf>
 Package pdftex.def Info: ./Design/images/FlowChartPlastererMenu.pdf used on inp
@@ -1813,7 +1822,7 @@ ut line 205.
 l.212 \textbf
              {Adding a New Plasterer} <C:/Users/Kyle/git/COMP4Coursework3/Desig
 n/images/FlowChartPlastererMenu.pdf>]
-<./Design/images/FlowChartNewPlasterer.pdf, id=1214, 597.23125pt x 845.1575pt>
+<./Design/images/FlowChartNewPlasterer.pdf, id=1224, 597.23125pt x 845.1575pt>
 File: ./Design/images/FlowChartNewPlasterer.pdf Graphic file (type pdf)
 
 <use ./Design/images/FlowChartNewPlasterer.pdf>
@@ -1828,7 +1837,7 @@ t line 218.
 l.225 \textbf
              {Current Plasterers} <C:/Users/Kyle/git/COMP4Coursework3/Design/im
 ages/FlowChartNewPlasterer.pdf>]
-<./Design/images/FlowChartCurrentPlasterers.pdf, id=1227, 597.23125pt x 845.157
+<./Design/images/FlowChartCurrentPlasterers.pdf, id=1237, 597.23125pt x 845.157
 5pt>
 File: ./Design/images/FlowChartCurrentPlasterers.pdf Graphic file (type pdf)
  <use ./Design/images/FlowChartCurrentPlasterers.pdf>
@@ -1843,7 +1852,7 @@ Package pdftex.def Info: ./Design/images/FlowChartCurrentPlasterers.pdf used on
 l.238 \textbf
              {Manage Plasterers} <C:/Users/Kyle/git/COMP4Coursework3/Design/ima
 ges/FlowChartCurrentPlasterers.pdf>]
-<./Design/images/FlowChartManagePlasterers.pdf, id=1240, 597.23125pt x 845.1575
+<./Design/images/FlowChartManagePlasterers.pdf, id=1250, 597.23125pt x 845.1575
 pt>
 File: ./Design/images/FlowChartManagePlasterers.pdf Graphic file (type pdf)
  <use ./Design/images/FlowChartManagePlasterers.pdf>
@@ -1858,7 +1867,7 @@ input line 243.
 l.249 \textbf
              {Search Plasterers} <C:/Users/Kyle/git/COMP4Coursework3/Design/ima
 ges/FlowChartManagePlasterers.pdf>]
-<./Design/images/FlowChartSearchPlasterers.pdf, id=1253, 597.23125pt x 845.1575
+<./Design/images/FlowChartSearchPlasterers.pdf, id=1263, 597.23125pt x 845.1575
 pt>
 File: ./Design/images/FlowChartSearchPlasterers.pdf Graphic file (type pdf)
  <use ./Design/images/FlowChartSearchPlasterers.pdf>
@@ -1873,7 +1882,7 @@ input line 254.
 l.262 \underline
                 {\textbf{Jobs Flow Charts}} <C:/Users/Kyle/git/COMP4Coursework3
 /Design/images/FlowChartSearchPlasterers.pdf>]
-<./Design/images/FlowChartJobMenu.pdf, id=1266, 597.23125pt x 845.1575pt>
+<./Design/images/FlowChartJobMenu.pdf, id=1276, 597.23125pt x 845.1575pt>
 File: ./Design/images/FlowChartJobMenu.pdf Graphic file (type pdf)
 
 <use ./Design/images/FlowChartJobMenu.pdf>
@@ -1888,7 +1897,7 @@ e 271.
 l.277 \textbf
              {New Job Flow Chart} <C:/Users/Kyle/git/COMP4Coursework3/Design/im
 ages/FlowChartJobMenu.pdf>]
-<./Design/images/FlowChartNewJob.pdf, id=1279, 597.23125pt x 845.1575pt>
+<./Design/images/FlowChartNewJob.pdf, id=1289, 597.23125pt x 845.1575pt>
 File: ./Design/images/FlowChartNewJob.pdf Graphic file (type pdf)
 
 <use ./Design/images/FlowChartNewJob.pdf>
@@ -1903,7 +1912,7 @@ Package pdftex.def Info: ./Design/images/FlowChartNewJob.pdf used on input line
 l.289 \textbf
              {Manage Jobs Flow Chart} <C:/Users/Kyle/git/COMP4Coursework3/Desig
 n/images/FlowChartNewJob.pdf>]
-<./Design/images/FlowChartManageJobs.pdf, id=1293, 597.23125pt x 845.1575pt>
+<./Design/images/FlowChartManageJobs.pdf, id=1303, 597.23125pt x 845.1575pt>
 File: ./Design/images/FlowChartManageJobs.pdf Graphic file (type pdf)
 
 <use ./Design/images/FlowChartManageJobs.pdf>
@@ -1915,10 +1924,10 @@ line 294.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.303 \begin{flushleft}
-                        <C:/Users/Kyle/git/COMP4Coursework3/Design/images/FlowC
-hartManageJobs.pdf>]
-<./Design/images/UI-ClientsMenu.pdf, id=1306, 597.23125pt x 845.1575pt>
+l.301 \section
+              {User Interface Designs} <C:/Users/Kyle/git/COMP4Coursework3/Desi
+gn/images/FlowChartManageJobs.pdf>]
+<./Design/images/UI-ClientsMenu.pdf, id=1316, 597.23125pt x 845.1575pt>
 File: ./Design/images/UI-ClientsMenu.pdf Graphic file (type pdf)
 
 <use ./Design/images/UI-ClientsMenu.pdf>
@@ -1930,49 +1939,94 @@ Package pdftex.def Info: ./Design/images/UI-ClientsMenu.pdf used on input line
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.313 \begin{flushleft}
-                        <C:/Users/Kyle/git/COMP4Coursework3/Design/images/UI-Cl
-ientsMenu.pdf>]
-<./Design/images/UI-NewClient.pdf, id=1319, 597.23125pt x 845.1575pt>
+l.313 \textbf
+             {Clients Menu to New Client UI} <C:/Users/Kyle/git/COMP4Coursework
+3/Design/images/UI-ClientsMenu.pdf>]
+<./Design/images/UI-NewClient.pdf, id=1329, 597.23125pt x 845.1575pt>
 File: ./Design/images/UI-NewClient.pdf Graphic file (type pdf)
 
 <use ./Design/images/UI-NewClient.pdf>
 Package pdftex.def Info: ./Design/images/UI-NewClient.pdf used on input line 31
-7.
+8.
 (pdftex.def)             Requested size: 298.61488pt x 422.57771pt.
  [69pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 17}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.331 \subsection
-                 {Object Diagrams} <C:/Users/Kyle/git/COMP4Coursework3/Design/i
-mages/UI-NewClient.pdf>] [70]
-<./Design/images/ObjectDiagram.pdf, id=1336, 597.23125pt x 845.1575pt>
-File: ./Design/images/ObjectDiagram.pdf Graphic file (type pdf)
+l.324 \textbf
+             {Clients Menu to Current Clients UI} <C:/Users/Kyle/git/COMP4Cours
+ework3/Design/images/UI-NewClient.pdf>]
+<./Design/images/UI-CurrentClients.pdf, id=1342, 597.23125pt x 845.1575pt>
+File: ./Design/images/UI-CurrentClients.pdf Graphic file (type pdf)
 
-<use ./Design/images/ObjectDiagram.pdf>
-Package pdftex.def Info: ./Design/images/ObjectDiagram.pdf used on input line 3
-36.
+<use ./Design/images/UI-CurrentClients.pdf>
+Package pdftex.def Info: ./Design/images/UI-CurrentClients.pdf used on input li
+ne 329.
 (pdftex.def)             Requested size: 298.61488pt x 422.57771pt.
- [71pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [70pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 18}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.344 \subsection
+l.335 \textbf
+             {Current Clients Menu to Search Clients UI} <C:/Users/Kyle/git/COM
+P4Coursework3/Design/images/UI-CurrentClients.pdf>]
+<./Design/images/UI-SearchClients.pdf, id=1355, 597.23125pt x 845.1575pt>
+File: ./Design/images/UI-SearchClients.pdf Graphic file (type pdf)
+
+<use ./Design/images/UI-SearchClients.pdf>
+Package pdftex.def Info: ./Design/images/UI-SearchClients.pdf used on input lin
+e 340.
+(pdftex.def)             Requested size: 298.61488pt x 422.57771pt.
+ [71pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+19}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.351 \section
+              {Hardware Specification} <C:/Users/Kyle/git/COMP4Coursework3/Desi
+gn/images/UI-SearchClients.pdf>] [72]
+<./Design/images/TopDownChart.pdf, id=1378, 597.23125pt x 845.1575pt>
+File: ./Design/images/TopDownChart.pdf Graphic file (type pdf)
+
+<use ./Design/images/TopDownChart.pdf>
+Package pdftex.def Info: ./Design/images/TopDownChart.pdf used on input line 38
+3.
+(pdftex.def)             Requested size: 238.88826pt x 338.057pt.
+ [73pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+20}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.393 \subsection
+                 {Algorithms in pseudo-code for each data transformation pro...
+ <C:/Users/Kyle/git/COMP4Coursework3/Design/images/TopDownChart.pdf>] [74]
+<./Design/images/ObjectDiagram.pdf, id=1396, 597.23125pt x 845.1575pt>
+File: ./Design/images/ObjectDiagram.pdf Graphic file (type pdf)
+
+<use ./Design/images/ObjectDiagram.pdf>
+Package pdftex.def Info: ./Design/images/ObjectDiagram.pdf used on input line 4
+40.
+(pdftex.def)             Requested size: 298.61488pt x 422.57771pt.
+ [75pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+21}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.448 \subsection
                  {Class Definitions} <C:/Users/Kyle/git/COMP4Coursework3/Design
 /images/ObjectDiagram.pdf>]
-Overfull \hbox (3.32813pt too wide) in paragraph at lines 379--380
+Overfull \hbox (3.32813pt too wide) in paragraph at lines 483--484
 []\OT1/cmr/m/n/10 AddMemberPhoneNumber| 
  []
 
 
-Overfull \hbox (3.7448pt too wide) in paragraph at lines 388--388
+Overfull \hbox (3.7448pt too wide) in paragraph at lines 492--492
 []\OT1/cmr/m/n/10 EditMemberPhoneNumber| 
  []
 
-[72] [73] [74]
+[76] [77] [78]
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
@@ -1980,171 +2034,616 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 512.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 616.
 
-Overfull \hbox (26.69928pt too wide) in paragraph at lines 542--544
+Overfull \hbox (26.69928pt too wide) in paragraph at lines 646--648
 [][][][][][][][][][][][][][][][][][]  
  []
 
-[75]
-Overfull \hbox (40.39929pt too wide) in paragraph at lines 568--570
+[79]
+Overfull \hbox (40.39929pt too wide) in paragraph at lines 672--674
 [][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 
-Overfull \hbox (32.99927pt too wide) in paragraph at lines 577--578
+Overfull \hbox (32.99927pt too wide) in paragraph at lines 681--682
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 
-Overfull \hbox (51.89923pt too wide) in paragraph at lines 582--584
+Overfull \hbox (51.89923pt too wide) in paragraph at lines 686--688
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (399.4986pt too wide) in paragraph at lines 582--584
+Overfull \hbox (399.4986pt too wide) in paragraph at lines 686--688
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-[76]
-Overfull \hbox (386.89862pt too wide) in paragraph at lines 585--587
+[80]
+Overfull \hbox (386.89862pt too wide) in paragraph at lines 689--691
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][]  
  []
 
 
-Overfull \hbox (204.19897pt too wide) in paragraph at lines 588--590
+Overfull \hbox (204.19897pt too wide) in paragraph at lines 692--694
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][]  
  []
 
 
-Overfull \hbox (59.29926pt too wide) in paragraph at lines 593--596
+Overfull \hbox (59.29926pt too wide) in paragraph at lines 697--700
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-[77] [78] <./Design/images/ERDiagram.pdf, id=1493, 597.23125pt x 845.1575pt>
+[81]
+Underfull \hbox (badness 10000) in paragraph at lines 757--757
+[]|\OT1/cmr/m/n/10 The ti-tle of the plas-terer
+ []
+
+
+Overfull \hbox (2.22112pt too wide) in paragraph at lines 765--765
+[]|\OT1/cmr/m/n/10 PlastererPhoneNumber| 
+ []
+
+
+Underfull \hbox (badness 4168) in paragraph at lines 766--766
+[]|\OT1/cmr/m/n/10 The plas-ter-ers daily work-ing
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 766
+ []
+
+
+Overfull \hbox (5.99892pt too wide) in paragraph at lines 783--783
+[]|\OT1/cmr/m/n/10 InvoiceAmountAfterTax| 
+ []
+
+[82] [83]
+Underfull \hbox (badness 10000) in paragraph at lines 825--825
+[]|\OT1/cmr/bx/n/10 Data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 825--825
+[]|\OT1/cmr/bx/n/10 Example
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 832--832
+[]|\OT1/cmr/m/n/10 Austin,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 833--833
+[]|\OT1/cmr/m/n/10 15 Crow-ley
+ []
+
+
+Underfull \hbox (badness 6675) in paragraph at lines 836--836
+[]|\OT1/cmr/m/n/10 Length and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 836--836
+\OT1/cmr/m/n/10 For-mat
+ []
+
+
+Underfull \hbox (badness 6675) in paragraph at lines 837--837
+[]|\OT1/cmr/m/n/10 Length and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 837--837
+[]|\OT1/cmr/m/n/10 dan@
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 838--838
+[]|\OT1/cmr/m/n/10 07809 726
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 844--844
+[]|\OT1/cmr/m/n/10 Austin,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 845--845
+[]|\OT1/cmr/m/n/10 15 Long
+ []
+
+
+Underfull \hbox (badness 6675) in paragraph at lines 848--848
+[]|\OT1/cmr/m/n/10 Length and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 848--848
+\OT1/cmr/m/n/10 For-mat
+ []
+
+
+Underfull \hbox (badness 6675) in paragraph at lines 849--849
+[]|\OT1/cmr/m/n/10 Length and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 849--849
+\OT1/cmr/m/n/10 For-mat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 849--849
+[]|\OT1/cmr/m/n/10 dan@
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 850--850
+[]|\OT1/cmr/m/n/10 07710 300
+ []
+
+
+Overfull \hbox (99.73122pt too wide) in alignment at lines 823--850
+ [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 850
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 856--856
+[]|\OT1/cmr/m/n/10 10 - 1000
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 856--856
+\OT1/cmr/m/n/10 3m Liv-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 856--856
+[]|\OT1/cmr/m/n/10 Description
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 857--857
+[]|\OT1/cmr/m/n/10 15 Long
+ []
+
+
+Underfull \hbox (badness 6675) in paragraph at lines 860--860
+[]|\OT1/cmr/m/n/10 Length and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 860--860
+\OT1/cmr/m/n/10 For-mat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 862--862
+[]|\OT1/cmr/m/n/10 Presence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 862--862
+[]|\OT1/cmr/m/n/10 TRUE,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 863--863
+[]|\OT1/cmr/m/n/10 Presence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 863--863
+[]|\OT1/cmr/m/n/10 TRUE,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 877--877
+[]|\OT1/cmr/m/n/10 140, 890,
+ []
+
+
+Overfull \hbox (3.15347pt too wide) in paragraph at lines 878--878
+[]|\OT1/cmr/m/n/10 InvoiceAmountAfterTax| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 879--879
+[]|\OT1/cmr/m/n/10 Presence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 879--879
+[]|\OT1/cmr/m/n/10 TRUE,
+ []
+
+
+Overfull \hbox (1.07095pt too wide) in paragraph at lines 880--880
+[]|\OT1/cmr/m/n/10 DateTime| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--880
+[]|\OT1/cmr/m/n/10 Presence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--880
+[]|\OT1/cmr/m/n/10 14/12/2013
+ []
+
+
+Overfull \hbox (99.73122pt too wide) in alignment at lines 850--880
+ [] [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 881--881
+[]|\OT1/cmr/m/n/10 5 Days
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 886--886
+[]|\OT1/cmr/m/n/10 Presence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 887--887
+[]|\OT1/cmr/m/n/10 Presence
+ []
+
+
+Overfull \hbox (1.9035pt too wide) in paragraph at lines 888--888
+[]|\OT1/cmr/m/n/10 AppointmentAddrLine1| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 888--888
+[]|\OT1/cmr/m/n/10 15 Long
+ []
+
+
+Overfull \hbox (1.9035pt too wide) in paragraph at lines 889--889
+[]|\OT1/cmr/m/n/10 AppointmentAddrLine2| 
+ []
+
+
+Overfull \hbox (1.9035pt too wide) in paragraph at lines 890--890
+[]|\OT1/cmr/m/n/10 AppointmentAddrLine3| 
+ []
+
+
+Overfull \hbox (1.9035pt too wide) in paragraph at lines 891--891
+[]|\OT1/cmr/m/n/10 AppointmentAddrLine4| 
+ []
+
+
+Underfull \hbox (badness 6675) in paragraph at lines 891--891
+[]|\OT1/cmr/m/n/10 Length and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 891--891
+\OT1/cmr/m/n/10 For-mat
+ []
+
+
+Overfull \hbox (99.73122pt too wide) in alignment at lines 880--893
+ [] [] [] [] [] [] 
+ []
+
+[84] [85] [86]
+<./Design/images/ERDiagram.pdf, id=1571, 597.23125pt x 845.1575pt>
 File: ./Design/images/ERDiagram.pdf Graphic file (type pdf)
 
 <use ./Design/images/ERDiagram.pdf>
-Package pdftex.def Info: ./Design/images/ERDiagram.pdf used on input line 647.
-(pdftex.def)             Requested size: 345.0pt x 488.2186pt.
-
-Overfull \vbox (3.5658pt too high) has occurred while \output is active []
-
-
-[79pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-9}) has been already used, duplicate ignored
+Package pdftex.def Info: ./Design/images/ERDiagram.pdf used on input line 910.
+(pdftex.def)             Requested size: 238.88826pt x 338.057pt.
+ [87pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+22}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.650 
-       <C:/Users/Kyle/git/COMP4Coursework3/Design/images/ERDiagram.pdf>]
-Overfull \hbox (8.43306pt too wide) in alignment at lines 701--723
+l.916 \subsubsection
+                    {Entity Descriptions} <C:/Users/Kyle/git/COMP4Coursework3/D
+esign/images/ERDiagram.pdf>]
+Overfull \hbox (8.43306pt too wide) in alignment at lines 966--988
  [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 723
+Underfull \vbox (badness 10000) detected at line 988
  []
 
 
-Overfull \hbox (8.43306pt too wide) in alignment at lines 723--744
+Overfull \hbox (8.43306pt too wide) in alignment at lines 988--1009
  [] 
  []
 
-[80]
-Overfull \hbox (8.43306pt too wide) in alignment at lines 744--752
- [] 
- []
-
-
-Overfull \hbox (8.43306pt too wide) in alignment at lines 756--778
+[88]
+Overfull \hbox (8.43306pt too wide) in alignment at lines 1009--1017
  [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 778
- []
-
-
-Overfull \hbox (8.43306pt too wide) in alignment at lines 778--801
- [] 
- []
-
-[81]
-Overfull \hbox (8.43306pt too wide) in alignment at lines 801--814
+Overfull \hbox (8.43306pt too wide) in alignment at lines 1021--1043
  [] 
  []
 
 
-Overfull \hbox (8.43306pt too wide) in alignment at lines 817--839
+Underfull \vbox (badness 10000) detected at line 1043
+ []
+
+
+Overfull \hbox (8.43306pt too wide) in alignment at lines 1043--1066
+ [] 
+ []
+
+[89]
+Overfull \hbox (8.43306pt too wide) in alignment at lines 1066--1079
  [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 839
- []
-
-
-Overfull \hbox (8.43306pt too wide) in alignment at lines 839--862
- [] 
- []
-
-[82]
-Overfull \hbox (8.43306pt too wide) in alignment at lines 862--887
+Overfull \hbox (8.43306pt too wide) in alignment at lines 1082--1104
  [] 
  []
 
 
-Overfull \hbox (8.43306pt too wide) in alignment at lines 887--890
+Underfull \vbox (badness 10000) detected at line 1104
+ []
+
+
+Overfull \hbox (8.43306pt too wide) in alignment at lines 1104--1127
  [] 
  []
 
-[83] [84]
-Underfull \hbox (badness 10000) in paragraph at lines 922--922
+[90]
+Overfull \hbox (8.43306pt too wide) in alignment at lines 1127--1152
+ [] 
+ []
+
+
+Overfull \hbox (8.43306pt too wide) in alignment at lines 1152--1155
+ [] 
+ []
+
+[91] [92] ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+) [93]
+Underfull \hbox (badness 1946) in paragraph at lines 1230--1230
+\OT1/cmr/m/n/10 fi-cient length and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1233--1233
+[]|\OT1/cmr/m/n/10 Makes sure that
+ []
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 1233--1233
+\OT1/cmr/m/n/10 a suf-fi-cient length
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1235--1235
+[]|\OT1/cmr/m/n/10 Makes sure that
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1235--1235
+\OT1/cmr/m/n/10 the post-code is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1236--1236
+[]|\OT1/cmr/m/n/10 kylekirkby
+ []
+
+
+Overfull \hbox (3.69748pt too wide) in paragraph at lines 1237--1237
+[]|\OT1/cmr/m/n/10 ClientPhoneNumber| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1237--1237
+[]|\OT1/cmr/m/n/10 Checks that the
+ []
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 1241--1241
+\OT1/cmr/m/n/10 fi-cient length and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1244--1244
+[]|\OT1/cmr/m/n/10 Makes sure that
+ []
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 1244--1244
+\OT1/cmr/m/n/10 a suf-fi-cient length
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1246--1246
+[]|\OT1/cmr/m/n/10 Makes sure that
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1246--1246
+\OT1/cmr/m/n/10 the post-code is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1247--1247
+[]|\OT1/cmr/m/n/10 danielaustin133
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1248--1248
+[]|\OT1/cmr/m/n/10 Plasterer Pho-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1248--1248
+[]|\OT1/cmr/m/n/10 Checks that the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1249--1249
+[]|\OT1/cmr/m/n/10 Checks that the
+ []
+
+
+Overfull \hbox (44.43304pt too wide) in alignment at lines 1227--1249
+ [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1249
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1252
+[]|\OT1/cmr/m/n/10 Makes sure that
+ []
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 1252--1252
+\OT1/cmr/m/n/10 a suf-fi-cient length
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1254--1254
+[]|\OT1/cmr/m/n/10 Makes sure that
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1254--1254
+\OT1/cmr/m/n/10 the post-code is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1255--1255
+[]|\OT1/cmr/m/n/10 Makes sure the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1255--1255
+\OT1/cmr/m/n/10 num-ber of days
+ []
+
+
+Underfull \hbox (badness 3623) in paragraph at lines 1260--1260
+[]|\OT1/cmr/m/n/10 Makes sure it is
+ []
+
+
+Underfull \hbox (badness 1874) in paragraph at lines 1260--1260
+\OT1/cmr/m/n/10 present be-fore in-
+ []
+
+
+Overfull \hbox (10.41975pt too wide) in paragraph at lines 1262--1262
+[]|\OT1/cmr/m/n/10 JobMaterialsQuantity| 
+ []
+
+
+Overfull \hbox (12.58638pt too wide) in paragraph at lines 1264--1264
+[]|\OT1/cmr/m/n/10 InvoiceAmountPreTax| 
+ []
+
+
+Underfull \hbox (badness 4060) in paragraph at lines 1264--1264
+\OT1/cmr/m/n/10 Float Data Type
+ []
+
+
+Overfull \hbox (20.2253pt too wide) in paragraph at lines 1265--1265
+[]|\OT1/cmr/m/n/10 InvoiceAmountAfterTax| 
+ []
+
+
+Underfull \hbox (badness 4060) in paragraph at lines 1265--1265
+\OT1/cmr/m/n/10 Float Data Type
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1269--1269
+[]|\OT1/cmr/m/n/10 Presence Check
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 1269--1269
+\OT1/cmr/m/n/10 and Time For-mat
+ []
+
+
+Overfull \hbox (44.43304pt too wide) in alignment at lines 1249--1272
+ [] [] [] [] 
+ []
+
+[94] [95] [96] [97]
+Underfull \hbox (badness 10000) in paragraph at lines 1292--1292
 []|\OT1/cmr/bx/n/10 Purpose of
  []
 
 
-Underfull \hbox (badness 5475) in paragraph at lines 922--922
+Underfull \hbox (badness 5475) in paragraph at lines 1292--1292
 []|\OT1/cmr/bx/n/10 Test Data
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 922--922
+Underfull \hbox (badness 10000) in paragraph at lines 1292--1292
 \OT1/cmr/bx/n/10 mal/ Er-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 922--922
+Underfull \hbox (badness 10000) in paragraph at lines 1292--1292
 \OT1/cmr/bx/n/10 ro-neous/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 922--922
+Underfull \hbox (badness 10000) in paragraph at lines 1292--1292
 []|\OT1/cmr/bx/n/10 Expected
  []
 
 
-Overfull \hbox (15.4704pt too wide) in alignment at lines 920--924
+Overfull \hbox (15.4704pt too wide) in alignment at lines 1290--1294
  [] [] [] [] [] [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 924
+Underfull \vbox (badness 10000) detected at line 1294
  []
 
-[85
+[98
 
 ]) (C:\Users\Kyle\git\COMP4Coursework3\Testing\testing.tex
 Chapter 3.
-[86
+[99
 
 
 
@@ -2217,13 +2716,14 @@ Overfull \hbox (15.4704pt too wide) in alignment at lines 39--43
 Underfull \vbox (badness 10000) detected at line 43
  []
 
-[87
+[100
 
-] [88]) [89
+] [101]) [102
 
-] (C:\Users\Kyle\git\COMP4Coursework3\Maintenance\maintenance.tex
+]
+(C:\Users\Kyle\git\COMP4Coursework3\Maintenance\maintenance.tex
 Chapter 4.
-Excluding 'comment' comment. [90
+Excluding 'comment' comment. [103
 
 
 
@@ -2231,12 +2731,12 @@ Excluding 'comment' comment. [90
 Overfull \vbox (349.24393pt too high) has occurred while \output is active []
 
 
-[91] Excluding 'comment' comment. [92
+[104] Excluding 'comment' comment. [105
 
 ])
 (C:\Users\Kyle\git\COMP4Coursework3\Manual\manual.tex
 Chapter 5.
-) [93
+) [106
 
 
 
@@ -2245,9 +2745,9 @@ Chapter 5.
 Overfull \vbox (248.63841pt too high) has occurred while \output is active []
 
 
-[94] (C:\Users\Kyle\git\COMP4Coursework3\Evaluation\evaluation.tex
+[107] (C:\Users\Kyle\git\COMP4Coursework3\Evaluation\evaluation.tex
 Chapter 6.
-) [95
+) [108
 
 
 
@@ -2255,7 +2755,7 @@ Chapter 6.
 Overfull \vbox (6.61086pt too high) has occurred while \output is active []
 
 
-[96]
+[109]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 18.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 18.
  (C:\Users\Kyle\git\COMP4Coursework3\coursework.aux
@@ -2268,7 +2768,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 18.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 18.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 18.
 Package rerunfilecheck Info: File `coursework.out' has not changed.
-(rerunfilecheck)             Checksum: BB4E36EABE22D5064CA924468AEF76DC;9616.
+(rerunfilecheck)             Checksum: 89026CC61374F1913C089023C4D3328F;9747.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2276,11 +2776,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 18.
  ) 
 Here is how much of TeX's memory you used:
- 11268 strings out of 493921
- 164342 string characters out of 3144879
- 315364 words of memory out of 3000000
- 13905 multiletter control sequences out of 15000+200000
- 11044 words of font info for 40 fonts, out of 3000000 for 9000
+ 11577 strings out of 493921
+ 168662 string characters out of 3144879
+ 317447 words of memory out of 3000000
+ 14173 multiletter control sequences out of 15000+200000
+ 11345 words of font info for 41 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  37i,12n,45p,1588b,2482s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
@@ -2296,9 +2796,9 @@ iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmu10.pfb>
-Output written on coursework.pdf (97 pages, 1203027 bytes).
+Output written on coursework.pdf (110 pages, 1337675 bytes).
 PDF statistics:
- 1724 PDF objects out of 1728 (max. 8388607)
- 427 named destinations out of 1000 (max. 500000)
- 1287 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1838 PDF objects out of 2073 (max. 8388607)
+ 456 named destinations out of 1000 (max. 500000)
+ 1318 words of extra memory for PDF output out of 10000 (max. 10000000)
 

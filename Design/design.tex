@@ -297,7 +297,7 @@ This shows the manage jobs section of the application.
 \end{figure}
 
 
-
+\pagebreak
 \section{User Interface Designs}
 \textbf{Main Menu To Clients Menu UI}
 \begin{flushleft}
@@ -309,6 +309,7 @@ This shows what the user interface will look and behave like when the clients bu
 \label{fig:FlowChartClientsMenu}
 \end{figure}
 
+\pagebreak
 \textbf{Clients Menu to New Client UI}
 \begin{flushleft}
 This User Interface diagram shows what happens in the proposed system when the users adds a new client.
@@ -319,16 +320,116 @@ This User Interface diagram shows what happens in the proposed system when the u
 \label{fig:FlowChartNewClient}
 \end{figure}
 
+\pagebreak
+\textbf{Clients Menu to Current Clients UI}
+\begin{flushleft}
+This User Interface diagram shows what happens in the proposed system when the clicks current clients in the client menu.
+\end{flushleft}
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./Design/images/UI-CurrentClients.pdf}
+    \caption{This is the Current Clients User Interface.} 
+\label{fig:FlowChartNewClient}
+\end{figure}
+
+\pagebreak
+\textbf{Current Clients Menu to Search Clients UI}
+\begin{flushleft}
+This User Interface diagram shows what happens in the proposed system when the clicks search clients in the current clients menu.
+\end{flushleft}
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./Design/images/UI-SearchClients.pdf}
+    \caption{This is the Search Clients UI} 
+\label{fig:FlowChartNewClient}
+\end{figure}
+
+
+
+
+
+
+\pagebreak
 \section{Hardware Specification}
 
+\begin{flushleft}
+	Dan currently has a Toshiba Laptop with the following hardware components:
+	
+	\begin{itemize}
+		\item 6GB DDR3 RAM
+		\item Intel 2.0ghz Dual Core Processor
+		\item High Resolution 1920 x 1080 Display
+		\item 1 TB HDD
+		\item Intel Onboard Integrated Graphics
+	\end{itemize}
+
+	The specification of Dan's laptop is more than powerful enough and has enough RAM to run the proposed python application alongside multiple other programs that he regularly uses (such as a Web Browser and Media Player). The hard drive has enough storage space to install the application (which will only be around 10MB) so storage is not a problem. The only possible complication when it comes to hardware may be the screen resolution as the application will have to keep within the resolution and be optimized for this screen size and many more to keep the software versatile.
+\end{flushleft}
+
+\subsection{Software}
+
+\begin{flushleft}
+	Dan is running the Windows 8 operating system on his laptop which does not have Python 3 installed. The proposed system will need to be able to run on this operating system therefore it is a software constraint that will need to be addressed. This could be achieved by building an installer for the python application so it can be installed on Windows 8 as pythons libraries are included.
+
+\end{flushleft}
+
+
+\pagebreak
 \section{Program Structure}
-
 \subsection{Top-down design structure charts}
+\textbf{Top Down System Structure Chart}
+\begin{flushleft}
+The structure chart below shows the proposed systems structure from a top down approach.
+\end{flushleft}
+\begin{figure}[H]
+\includegraphics[scale=0.4]{./Design/images/TopDownChart.pdf}
+    \caption{Top Down Chart} 
+\label{fig:FlowChartNewClient}
+\end{figure}
 
 
 
 
+
+\pagebreak
 \subsection{Algorithms in pseudo-code for each data transformation process}
+
+\textbf{Algorithm for Generating an Invoice from Job Details}
+\begin{flushleft}
+This algorithm shows how the data transforms from one medium to another in regards to generating an invoice for the client. The algoritm takes the data stored for the job from the JobMaterials Table, the plasterers daily rate and number of days worked on the job then uses this information to calculate the total cost of the job to be displayed on the invoice.
+\end{flushleft}
+\begin{algorithm}[H]
+\label{fig:generating_an_invoice_example}
+\caption{Genreating an Invoice Algorithm}
+\begin{algorithmic}[1]
+\Function{$GenerateInvoice$}{$JobID$}
+	\SET{$Total$}{$0$}
+	\State
+	\SET{$DailyRate$}{GetDailyRate(JobID)}
+	\SET{$DaysWorked$}{GetDaysWorked(JobID)}
+	\SET{$JobMaterials$}{GetJobMaterialsList(JobID)}
+	\State
+	\For{$count$}{$0$}{$len(JobMaterials)$}
+		\SET{$Price$}{JobMaterials[count]["Price"]}
+		\SET{$Quantity$}{JobMaterials[count]["Quantity"]}
+		\State
+		\SET{$MaterialCost$}{Price * Quantity}
+		\State
+		\SET{$Total$}{Total + MaterialCost}
+	\EndFor
+	\State
+	\SET{$PlastererWage$}{DailyRate * DaysWorked}
+	\SET{$Total$}{Total + PlasterersWage}
+	\State
+	\Return{$Total$}
+\EndFunction
+
+
+
+
+\end{algorithmic}
+\end{algorithm}
+
+
+
 
 \pagebreak
 \subsection{Object Diagrams}
@@ -627,30 +728,191 @@ if __name__ == "__main__":
 
 \end{python}
 
+\pagebreak
 \section{Definition of Data Requirements}
 
 \subsection{Identification of all data input items}
 
+\begin{flushleft}
+Below are all of the data input items in the proposed system. The values are entered by the proposed systems end user through 
+the applications user interface.
+
+\end{flushleft}
+
+
+\begin{flushleft}
+
+\begin{longtable}{|p{3.5cm}|p{5cm}|} \hline
+\textbf{Data} & \textbf{Description} \\ \hline
+ClientTitle & The title of the client (Mr,Mrs, etc). \\ \hline
+ClientFirstName & The clients first name \\ \hline
+ClientSurname & The clients surname. \\ \hline
+ClientAddrLine1 & The clients street. \\ \hline
+ClientAddrLine2 & The clients town/city. \\ \hline
+ClientAddrLine3 & The clients county. \\ \hline
+ClientAddrLine4 & The clients post code. \\ \hline
+ClientEmail & The clients email address. \\ \hline
+ClientPhoneNumber & The clients phone number. \\ \hline \hline
+
+PlastererTitle & The title of the plasterer (Mr,Mrs etc) \\ \hline
+PlastererFirstName & The surname of the plasterer. \\ \hline
+PlastererSurname & The surname of the plasterer. \\ \hline
+PlastererAddrLine1 & The plasterers street. \\ \hline
+PlastererAddrLine2 & The plasterers town/city. \\ \hline
+PlastererAddrLine3 & The plasterers county. \\ \hline
+PlastererAddrLine4 & The plasterers post code. \\ \hline
+PlastererEmail & The plasterers email. \\ \hline
+PlastererPhoneNumber & The plasterers phone number. \\ \hline
+PlastererDailyRate & The plasterers daily working rate. \\ \hline \hline
+
+
+JobDescription & A brief description of the job. \\ \hline
+JobAddrLine1 & The Jobs street. \\ \hline
+JobAddrLine2 & The Jobs town/city. \\ \hline
+JobAddrLine3 & The Jobs county. \\ \hline
+JobAddrLine4 & The Jobs post code. \\ \hline
+JobDaysWorked & The number of days the plasterer worked on this job. \\ \hline
+JobComplete & A boolean value to show whether the job is complete or not. \\ \hline \hline
+
+MaterialName & The Name of the material \\ \hline
+MaterialPrice & The cost of the material \\ \hline
+JobMaterialsQuantity & The number of this material used \\ \hline \hline
+
+InvoiceDate & The date the invoice is sent \\ \hline
+InvoiceAmountPreTax & The invoice amount before VAT is added \\ \hline
+InvoiceAmountAfterTax & The invoice amount after VAT is added \\ \hline
+InvoiceReceived & A boolean to show whether the invoice has been received \\ \hline
+InvoiceText & Text Description to go on the invoice \\ \hline 
+InvoicePaid & A boolean to show whether the job has been paid for \\ \hline \hline
+
+AppointmentTime & The time of the appointment \\ \hline
+AppointmentDate & The date of the appointment \\ \hline 
+
+\end{longtable}
+
+\end{flushleft}
+
+
 \subsection{Identification of all data output items}
+\begin{flushleft}
+The data outputs in the proposed system these are listed below.
+\end{flushleft}
+\begin{itemize}
+\item Invoices (Print or Email)
+\item Appointments (Email)
+\end{itemize}
 
 \subsection{Explanation of how data output items are generated}
 
+\textbf{Apppointment}
+\begin{flushleft}
+The appointment ouput in the proposed system is generated by taking the AppointmentDate and AppointmentTime that the user enters and then forming a text document that can be sent to the clients stored email address.
+\end{flushleft}
+
+\textbf{Invoices}
+\begin{flushleft}
+The invoices collect the records for a job from the JobMaterials table and then calculates accordingly the cost of the materials involved. Once this has been done then the number of days worked is multiplied by the plasterers daily rate. All of this is put into HTML format and will then be ready to print or send to the clients email.
+\end{flushleft}
+
+
+\pagebreak
 \subsection{Data Dictionary}
+
+
+\begin{flushleft}
+\begin{longtable}{|p{3.6cm}|p{1.5cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+\hline
+\textbf{Name} & \textbf{Data Type} & \textbf{Length} & \textbf{Validation} & \textbf{Example Data} & \textbf{Comment} \\ \hline
+
+
+
+ClientID & Integer & 1 - 1000 & Range & 1, 200, 45 & Primary Key \\ \hline
+ClientTitle & String & 2 - 10 Chars & Length & Mr,Mrs,Sir &  \\ \hline 
+ClientFirstName & String & 3 - 25 Chars & Length & Dan, kyle &  \\ \hline 
+ClientSurname & String & 3 - 35 Chars & Length & Austin, Kirkby &  \\ \hline 
+ClientAddrLine1 & String & 5 - 30 Chars & Length & 15 Crowley Road &  Street name \\ \hline 
+ClientAddrLine2 & String & 5 - 30 Chars & Length & Haverhill & Town / City \\ \hline 
+ClientAddrLine3 & String & 5 - 30 Chars & Length & Suffolk & County  \\ \hline 
+ClientAddrLine4 & String & 6 - 7 Chars & Length and Format Check & CB9 0DJ & Post Code\\ \hline 
+ClientEmail & String & 7 - 50 Chars & Length and format check & dan@ gmail.com &  \\ \hline 
+ClientPhoneNumber & String & 11 Chars & Length & 07809 726 812 &  \\ \hline \hline
+
+
+
+PlastererID & Integer & 1 - 50  & Range  & 1, 2, 45 & Primary Key \\ \hline
+PlastererFirstName & String & 3 - 30 Chars & Length & Dan, Kyle & \\ \hline
+PlastererSurname & String & 3 - 30 Chars & Length & Austin, Kirkby & \\ \hline
+PlastererAddrLine1 & String & 5 - 30 Chars & Length & 15 Long Road & Street Name \\ \hline
+PlastererAddrLine2 & String & 5 - 30 Chars & Length & Cambridge & Town / City \\ \hline
+PlastererAddrLine3 & String & 5 - 30 Chars & Length & Essex & County \\ \hline
+PlastererAddrLine4 & String & 6 - 7 Chars & Length and Format Check & CB2 5HD & Post Code \\ \hline
+PlastererEmail & String & 7 - 50 Chars & Length and Format Check & dan@ gmail.com  &  \\ \hline
+PlastererPhoneNumber & String & 11 Chars & Length & 07710 300 678 & \\ \hline
+PlastererDailyRate & Currency & 40 - 250 & Range Check & 70, 150, 200 & \\ \hline \hline
+
+
+
+JobID & Integer & 1 - 2000 & Range Check & 1, 3, 5 & Primary Key \\ \hline
+JobDescription & Text & 10 - 1000 Chars & Range Check & 5m x 4m x 3m Living Room to be plastered. & Description of job. \\ \hline
+JobAddrLine1 & String & 5 - 30 Chars & Length & 15 Long Road & Street Name \\ \hline
+JobAddrLine2 & String & 5 - 30 Chars & Length & Cambridge & Town / City \\ \hline
+JobAddrLine3 & String & 5 - 30 Chars & Length & Essex & County \\ \hline
+JobAddrLine4 & String & 6 - 7 Chars & Length and Format Check & CB2 5HD & Post Code \\ \hline
+JobDaysWorked & Integer & 0 - 30 & Range Check & 1, 7 14 &  \\ \hline
+JobComplete & Boolean &  & Presence Check & TRUE, FALSE &  \\ \hline
+JobPaid & Boolean &  & Presence Check & TRUE, FALSE &  \\ \hline \hline
+
+
+
+MaterialID & Integer & 1 - 50 & Range Check & 3, 4, 29 & Primary Key \\ \hline
+MaterialName & String & 3 - 50 & Length & Angle Beading &  \\ \hline  
+MaterialPrice & Currency & 1 - 1000 & Range Check & 1, 3, 20 &  \\ \hline \hline
+
+
+JobMaterialsID & Integer & 1 - 4000 & Range Check & 1, 300, 3563 & Primary Key \\ \hline
+JobMaterialsQuantity & Integer & 1 - 500 & Range Check & 59, 245, 309 & \\ \hline \hline 
+
+
+InvoiceID & Integer & 1 - 2000 & Range Check & 1, 2, 45 & Primary Key \\ \hline
+InvoiceAmountPreTax & Currency & 50 - 7000 & Range Check & 140, 890, 1050 &  \\ \hline
+InvoiceAmountAfterTax & Currency & 50 - 7000 & Range Check & 100, 800, 900 &  \\ \hline
+InvoiceReceived & Boolean &  & Presence Check & TRUE, FALSE &  \\ \hline
+InvoiceDate & DateTime &  & Presence Check & 14/12/2013 14:20 &  \\ \hline
+InvoiceText & Text & 1 - 1000 & Length & 5 Days Worked &  \\ \hline \hline
+
+
+
+AppointmentID & Integer & 1 - 2500 & Range Check & 1, 2, 45 & Primary Key \\ \hline
+AppointmentDate & Date & & Presence Check  & 07/12/2013  & \\ \hline
+AppointmentTime & Time &  & Presence Check  & 16:10 & \\ \hline
+AppointmentAddrLine1 & String & 5 - 30 Chars & Length & 15 Long Road & Street Name \\ \hline
+AppointmentAddrLine2 & String & 5 - 30 Chars & Length & Cambridge & Town / City \\ \hline
+AppointmentAddrLine3 & String & 5 - 30 Chars & Length & Essex & County \\ \hline
+AppointmentAddrLine4 & String & 6 - 7 Chars & Length and Format Check & CB2 5HD & Post Code \\ \hline
+
+\end{longtable}
+\end{flushleft}
 
 \subsection{Identification of appropriate storage media}
 
+\begin{flushleft}
+In the proposed system the secondary storage required to run the application will only need to be basic as there is not too much data being stored. In the Analysis section the volumetrics of the proposed system suggested that the system would only require around 10MB. But with additional clients, jobs, materials, invoices, appointments etc the databse will increase in size and more storage would be required; Dan's computer has around 800GB free hard disk space so this is more than enough to run the proposed system for the forseeable future.
+\end{flushleft}
+
+\pagebreak
 \section{Database Design}
 
 \subsection{Normalisation}
 
-\pagebreak
 \subsubsection{ER Diagrams}
 
 \begin{figure}[H]
-    \includegraphics[width=\textwidth]{./Design/images/ERDiagram.pdf}
+    \includegraphics[scale=0.4]{./Design/images/ERDiagram.pdf}
     \caption{This is the entity relationship diagram for the sqlite3 database.} \label{fig:Entity_Relationship_Diagram}
 \end{figure}
 
+
+\pagebreak
 \subsubsection{Entity Descriptions}
 
 \begin{flushleft}
@@ -796,7 +1058,7 @@ Below are the entity descriptions for the various entites in the proposed system
 			JobID (Primary Key) \\ 
 			MaterialName \\
 			MaterialPrice \\
-			JobMaterialsQuantity \\
+			JobMaterialsQuantity \\ \hline
 
 			\textbf{Group} \\ \hline
 			PersonID (Primary Key) \\
@@ -896,13 +1158,118 @@ Below are the entity descriptions for the various entites in the proposed system
 
 
 
+\pagebreak
+\subsection{SQL Queries}
+\begin{flushleft}
+Below are some of the most important SQL Queries that will be used in the proposed system.
+\end{flushleft}
+
+
+\textbf{Getting JobMaterials for Invoice Calculation}
+\begin{flushleft}
+This query selects all the JobMaterials entries for a specific job so that it can be used in the calculation for the entire cost of the job. This cost is then used in the invoice to tell the client how much is due to be paid.
+\end{flushleft}
+
+\begin{sql}
+SELECT MaterialID,JobMaterialQuantity FROM JobMaterials WHERE JobID = ? 
+\end{sql}
+
+
+\textbf{Get Clients by Search Term}
+\begin{flushleft}
+This query selects all the clients from the Clients table to be displayed in the results table when searching for clients by a specific search term in the ClientFirstName,ClientSurname and ClientAddrLine2 fields.
+\begin{sql}
+SELECT * FROM Client WHERE CONTAINS(ClientFirstName, "%?%") OR 
+CONTAINS(ClientSurname,"%?%") OR CONTAINS(ClientAddrLine2, "%?%")    
+\end{sql}
+\end{flushleft}
+
+\textbf{Order Clients Table by Town and Alphabetically}
+\begin{flushleft}
+This SQL Query selects all the clients from the Clients Table and then orders them by the Town/City Alphabetically.
+\begin{sql}
+SELECT * FROM Client ORDER BY ClientAddrLine2 ASC    
+\end{sql}
+\end{flushleft}
+
 \section{Security and Integrity of the System and Data}
 
 \subsection{Security and Integrity of Data}
 
+\begin{flushleft}
+
+The proposed system will need to protected to the standards put in place by government legislation. The Data Protection Act states the all data must conform to the following rules:
+
+\begin{itemize}
+\item Data must be kept up to date.
+\item Data must not be kept longer than required.
+\item Data must be used in an adequate and relevant manner.
+\item Data must be kept safe and secure.
+\end{itemize}
+
+In order to abide to these guidlines I must ensure that the database is encrypted so that the accidental loss/theft of the data will not render it dangerous to those it is relevant to.
+
+The proposed system will allow the user to delete records from all tables so that if the data needs to be removed to conform to the data protection act then it can be.
+
+\end{flushleft}
 \subsection{System Security}
 
+\begin{flushleft}
+The access restrictions that will be put in place consists of a login screen where the user enters a strong password which is stored in the database hashed and salted in order to get access to the system.
+\end{flushleft}
+
 \section{Validation}
+
+\begin{flushleft}
+Below is a table showing the validation techniques used for the data items in the proposed system.
+\end{flushleft}
+
+\begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
+\hline \textbf{Item} & \textbf{Example} & \textbf{Validation} &\textbf{Justification} \\ \hline
+ClientTitle & Mr & Presence Check and Matches Title Formats  & Makes sure that the title exists. \\ \hline
+ClientFirstName & Kyle & Presence Check and Length Check & Makes sure that the first name is of sufficient length and exists. \\ \hline
+ClientSurname & Kirkby & Presence Check and Length Check & Makes sure that the surname is of sufficient length and exists. \\ \hline
+ClientAddrLine1 & 15 The Glebe & Presence Check & Makes sure that the street entered. \\ \hline
+ClientAddrLine2 & Haverhill & Presence Check and Length Check & Makes sure that the town/city is of a sufficient length and exists. \\ \hline
+ClientAddrLine3 & Suffolk & Presence Check and Length Check & Makes sure that the county is of sufficient length and exists. \\ \hline
+ClientAddrLine4 & CB9 0DL & Presence Check and PostCode RegEx & Makes sure that the postcode is correctly formatted and that it exists. \\ \hline
+ClientEmail & kylekirkby @googlemail.com & Presence Check and RegEx Email Format & Makes sure that the email is in the correct format. \\ \hline
+ClientPhoneNumber & 07809726811 & Length Check of 11 digits & Checks that the phone number is 11 digits long. \\ \hline \hline
+
+
+PlastererTitle & Mr & Presence Check and Matches Title Formats  & Makes sure that the title exists. \\ \hline
+PlastererFirstName & Daniel & Presence Check and Length Check & Makes sure that the first name is of sufficient length and exists. \\ \hline
+PlastererSurname & Austin & Presence Check and Length Check & Makes sure that the surname is of sufficient length and exists. \\ \hline
+PlastererAddrLine1 & 17 Manor Grove & Presence Check & Makes sure that the street entered. \\ \hline
+PlastererAddrLine2 & Thurlow & Presence Check and Length Check & Makes sure that the town/city is of a sufficient length and exists. \\ \hline
+PlastererAddrLine3 & Suffolk & Presence Check and Length Check & Makes sure that the county is of sufficient length and exists. \\ \hline
+PlastererAddrLine4 & CB7 0JL & Presence Check and PostCode RegEx & Makes sure that the postcode is correctly formatted and that it exists. \\ \hline
+PlastererEmail & danielaustin133 @gmail.com & Presence Check and RegEx Email Format & Makes sure that the email is in the correct format. \\ \hline
+Plasterer PhoneNumber & 07809726811 & Length Check of 11 digits & Checks that the phone number is 11 digits long. \\ \hline
+PlastererDailyRate & 200.00 & Check it is a float and Presence Check & Checks that the phone number is 11 digits long. \\ \hline \hline
+
+JobAddrLine1 & 17 Manor Grove & Presence Check & Makes sure that the street entered. \\ \hline
+JobAddrLine2 & Thurlow & Presence Check and Length Check & Makes sure that the town/city is of a sufficient length and exists. \\ \hline
+JobAddrLine3 & Suffolk & Presence Check and Length Check & Makes sure that the county is of sufficient length and exists. \\ \hline
+JobAddrLine4 & CB7 0JL & Presence Check and PostCode RegEx & Makes sure that the postcode is correctly formatted and that it exists. \\ \hline
+JobDaysWorked & 5 & Check it is an integer & Makes sure the number of days worked is a whole number. \\ \hline
+JobComplete & False & Boolean Data Type & Makes sure it is either True Or False \\ \hline \hline
+
+
+MaterialName & Plasterboard & Presence Check and Length Check & Makes sure it exists and that it is more than 4 characters etc. \\ \hline
+MaterialPrice & 12.00 & Presence Check and Check it is a float & Makes sure it is present before inserted to database and make sure it is a float data type. \\ \hline
+
+JobMaterialsQuantity & 4 & Presence Check and Data Type Check & Makes sure it exists and is an integer \\ \hline \hline
+
+InvoiceAmountPreTax & 100.00 & Presence Check and Float Data Type Check & Makes sure it exists and that it is a float \\ \hline 
+InvoiceAmountAfterTax & 120.00 & Presence Check and Float Data Type Check & Makes sure it exists and that it is a float \\ \hline 
+InvoiceDate & 14th June 2015 & Presence Check and Date Format Check & Ensures the date is in the correct format and that it exists \\ \hline \hline
+
+AppointmentDate & 19th August 2016 & Presence Check and Date Format Check & Ensures the date is in the correct format and that it exists \\ \hline 
+AppointmentTime & 15:20 & Presence Check and Time Format Check & Ensures the time is in the correct format and that it exists \\ \hline 
+
+
+\end{longtable}
 
 \section{Testing}
 
@@ -912,7 +1279,7 @@ Below are the entity descriptions for the various entites in the proposed system
 \begin{center}
     \begin{tabular}{|p{2cm}|p{5cm}|p{5cm}|p{4cm}|}
         \hline
-        \textbf{Test Series} & \textbf{Purpose of Test Series} & \textbf{Testing Strategy} & \textbf{Strategy Rationale}\\ \hline
+        \textbf{Test Series} & \textbf{Purpose of Test Series} & \textbf{Testing Strategy} & \textbf{St3rategy Rationale}\\ \hline
         Example & Example & Example & Example \\ \hline
     \end{tabular}
 \end{center}
