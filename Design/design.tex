@@ -343,9 +343,76 @@ This User Interface diagram shows what happens in the proposed system when the c
 \end{figure}
 
 
+\pagebreak
+\textbf{Main Menu to Jobs Menu UI}
+\begin{flushleft}
+This User Interface diagram shows what happens in the proposed system when the clicks jobs in the main menu.
+\end{flushleft}
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./Design/images/JobsMenu.pdf}
+    \caption{This is the Jobs Menu UI} 
+\label{fig:FlowChartJobsMenu}
+\end{figure}
+
+
+\pagebreak
+\textbf{Jobs Menu to Add Job UI}
+\begin{flushleft}
+This User Interface diagram shows what happens in the proposed system when the clicks add job in the jobs menu.
+\end{flushleft}
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./Design/images/NewJob.pdf}
+    \caption{This is the Add Job UI} 
+\label{fig:FlowChartAddJob}
+\end{figure}
+
+
+\pagebreak
+\textbf{Manage Jobs UI Design}
+\begin{flushleft}
+This User Interface diagram shows what happens in the proposed system when the clicks manage jobs in the jobs menu.
+\end{flushleft}
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./Design/images/ManageJobs.pdf}
+    \caption{This is the Manage Jobs UI} 
+\label{fig:FlowChartManageJobs}
+\end{figure}
 
 
 
+\pagebreak
+\textbf{Main Menu to Plasterers Menu UI}
+\begin{flushleft}
+This User Interface diagram shows what happens in the proposed system when the clicks plasterers in the main menu.
+\end{flushleft}
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./Design/images/PlasterersMenu.pdf}
+    \caption{This is the Plasterers Menu UI} 
+\label{fig:FlowChartPlasterersMenu}
+\end{figure}
+
+
+\pagebreak
+\textbf{Add Plasterer UI}
+\begin{flushleft}
+This User Interface diagram shows what happens in the proposed system when the clicks add plasterer in the plasterers menu.
+\end{flushleft}
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./Design/images/NewPlasterer.pdf}
+    \caption{This is the New Plasterer UI} 
+\label{fig:FlowChartNewPlasterer}
+\end{figure}
+
+\pagebreak
+\textbf{Manage Plasterer UI Design}
+\begin{flushleft}
+This User Interface diagram shows what happens in the proposed system when the clicks manage plasterers in the plasterers menu.
+\end{flushleft}
+\begin{figure}[H]
+\includegraphics[scale=0.5]{./Design/images/ManagePlasterers.pdf}
+    \caption{This is the Manage Plasterers UI} 
+\label{fig:FlowChartManagePlasterers}
+\end{figure}
 
 \pagebreak
 \section{Hardware Specification}
@@ -379,11 +446,13 @@ This User Interface diagram shows what happens in the proposed system when the c
 \begin{flushleft}
 The structure chart below shows the proposed systems structure from a top down approach.
 \end{flushleft}
+
 \begin{figure}[H]
 \includegraphics[scale=0.4]{./Design/images/TopDownChart.pdf}
     \caption{Top Down Chart} 
 \label{fig:FlowChartNewClient}
 \end{figure}
+
 
 
 
@@ -421,14 +490,64 @@ This algorithm shows how the data transforms from one medium to another in regar
 	\State
 	\Return{$Total$}
 \EndFunction
-
-
-
-
 \end{algorithmic}
 \end{algorithm}
 
+\pagebreak
+\textbf{Algorithm for calculating pay for plasterer in time period.}
+\begin{flushleft}
+This algorithm shows how the proposed system will generate the necessary data for displaying graphs about the amount of money a plasterer has earned within a given time period. The algorithm is a function which takes a start and end date along with a plasterer id. It then proceeds to collect the pay details of jobs that the plasterer has done.
+\end{flushleft}
+\begin{algorithm}[H]
+\label{fig:calculating_plasterer_pay}
+\caption{Calculating Plasterer Pay}
+\begin{algorithmic}[1]
+\Function{$CalculatePay$}{$PlastererID$,$StartDate$,$EndDate$}
 
+	\SET{$Total$}{$0$}
+	\State
+	\SET{$AllJobsList$}{GetAllJobs(PlastererID)}
+	\State
+	\For{$count$}{$0$}{$len(AllJobsList)$}
+		\If{$AllJobsList[count]["JobDate"]$ "LESS THAN OR EQUAL TO" $EndDate$ AND $AllJobsList[count]["JobDate"]$ "GREATER THAN OR EQUAL TO" $StartDate$}
+			\State
+			\SET{$Price$}{AllJobsList[count]["InvoiceTotal"]}
+			\State
+			\SET{$Total$}{Total + Price}
+		\EndIf
+	\EndFor
+	\State
+	\Return{$Total$}
+\EndFunction
+\end{algorithmic}
+\end{algorithm}
+
+\pagebreak
+\textbf{Algorithm for printing an invoice.}
+\begin{flushleft}
+This algorithm shows how the proposed system will gather the invoice details and print the invoice by the job id specified.
+\end{flushleft}
+\begin{algorithm}[H]
+\label{fig:printing_an_invoice}
+\caption{Printing an Invoice}
+\begin{algorithmic}[1]
+\Function{$PrintInvoice$}{$JobID$}
+	\State
+	\SET{$JobInvoices$}{GetJobInvoice(JobId)}
+	\State
+	\If{$len(JobInvoices) == 0$}
+		\SET{$Invoice$}{$GenerateInvoice(JobID)$}
+	\Else
+		\SET{$Invoice$}{$JobInvoices$}
+	\State
+	\EndIf
+	\State
+	\SET{$Printed$}{$PrintWithQPrinter(Invoice)$}
+	\State
+	\Return{$Printed$}
+\EndFunction
+\end{algorithmic}
+\end{algorithm}
 
 
 \pagebreak
@@ -800,6 +919,7 @@ The data outputs in the proposed system these are listed below.
 \begin{itemize}
 \item Invoices (Print or Email)
 \item Appointments (Email)
+\item Graphs
 \end{itemize}
 
 \subsection{Explanation of how data output items are generated}
@@ -812,6 +932,11 @@ The appointment ouput in the proposed system is generated by taking the Appointm
 \textbf{Invoices}
 \begin{flushleft}
 The invoices collect the records for a job from the JobMaterials table and then calculates accordingly the cost of the materials involved. Once this has been done then the number of days worked is multiplied by the plasterers daily rate. All of this is put into HTML format and will then be ready to print or send to the clients email.
+\end{flushleft}
+
+\textbf{Graphs}
+\begin{flushleft}
+The graphs in the proposed system will allow the end user the ability to track their earnings over the past few months from jobs that they have done. This may be done for individual plasterers to see what they have paid in tax and earned during a user defined time period.
 \end{flushleft}
 
 
@@ -1186,11 +1311,45 @@ CONTAINS(ClientSurname,"%?%") OR CONTAINS(ClientAddrLine2, "%?%")
 \end{sql}
 \end{flushleft}
 
-\textbf{Order Clients Table by Town and Alphabetically}
+\textbf{Creating the Job Table}
 \begin{flushleft}
-This SQL Query selects all the clients from the Clients Table and then orders them by the Town/City Alphabetically.
+This query is an example of an SQL query that will create the Job table in the proposed systems database. This query uses foreign keys to reference primary keys in other related tables.
 \begin{sql}
-SELECT * FROM Client ORDER BY ClientAddrLine2 ASC    
+CREATE TABLE Job(
+JobID integer,
+ClientID integer,
+PlastererID integer,
+InvoiceID integer,
+JobDescription text,
+JobAddrLine1 text,
+JobAddrLine2 text,
+JobAddrLine3 text,
+JobAddrLine4 text,
+JobDaysWorked integer,
+JobComplete text,
+Primary Key(JobID),
+Foreign Key (ClientID) references Job(JobID),
+Foreign Key (PlastererID) references Plasterer(PlastererID),
+Foreign Key (InvoiceID) references Invoice(InvoiceID));
+\end{sql}
+\end{flushleft}
+
+\textbf{Updating the plasterer table by ID}
+\begin{flushleft}
+This is an example of an SQL query that will be used to update the plasterers info based on the unique primary key that each plasterer has. The :values will be binded to the SQL statement for improved security from SQL injections.
+\begin{sql}
+UPDATE Plasterer SET 
+PlastererTitle = :plastererTitle,
+PlastererFirstName = :plastererFirstName,
+PlastererSurname = :plastererSurname,
+PlastererAddrLine1 = :plastererStreet,
+PlastererAddrLine2 = :plastererTown,
+PlastererAddrLine3 = :plastererCounty,
+PlastererAddrLine4 = :plastererPostCode,
+PlastererEmail = :plastererEmail,
+PlastererPhoneNumber = :plastererPhoneNumber,
+PlastererDailyRate = :plastererDailyRate
+WHERE PlastererID = :plastererID;  
 \end{sql}
 \end{flushleft}
 
@@ -1284,11 +1443,15 @@ AppointmentTime & 15:20 & Presence Check and Time Format Check & Ensures the tim
 \subsection{Outline Plan}
 
 \begin{center}
-    \begin{tabular}{|p{2cm}|p{5cm}|p{5cm}|p{4cm}|}
-        \hline
-        \textbf{Test Series} & \textbf{Purpose of Test Series} & \textbf{Testing Strategy} & \textbf{St3rategy Rationale}\\ \hline
-        Example & Example & Example & Example \\ \hline
-    \end{tabular}
+\begin{tabular}{|p{2cm}|p{5cm}|p{5cm}|p{4cm}|}
+\hline
+\textbf{Test Series} & \textbf{Purpose of Test Series} & \textbf{Testing Strategy} & \textbf{Strategy Rationale}\\ \hline
+1 & User Interface Flow & Top Down Testing & Top Down testing has been chosen due to the structure of the user interface and a top down approach would suit this the best. \\ \hline
+2 & User Input Validation & Bottom Up Testing & This test series needs a bottom up approach as the data must be entered and the validation of this data tested so that the system will function accordingly. \\ \hline
+3 & Test Data Input into Database & White box testing & White Box Testing has been chosen as I will need a backend view of the database that the user will not be able to do. This needs to be done to verify that the data being inputted is stored correctly in the database. \\ \hline
+4 & Test Data Output Functions & Black box testing & Black Box Testing has been chosen as I will need to test the functions that output data in the proposed system from an end users perspective without having a "behind the scenes" view. \\ \hline
+5 & Specification Tests & Acceptance Testing & This acceptance test is needed to ensure that the end product meets the initial proposed specifications. \\ \hline
+\end{tabular}
 \end{center}
 
 \subsection{Detailed Plan}
@@ -1297,7 +1460,46 @@ AppointmentTime & 15:20 & Presence Check and Time Format Check & Ensures the tim
     \begin{longtable}{|p{1.5cm}|p{2.5cm}|p{2.5cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
         \hline
         \textbf{Test Series} & \textbf{Purpose of Test} & \textbf{Test Description} & \textbf{Test Data} & \textbf{Test Data Type (Normal/ Erroneous/ Boundary)} & \textbf{Expected Result} & \textbf{Actual Result} & \textbf{Evidence}\\ \hline
-        Example & Example & Example & Example & Example & Example & Example & Example \\ \hline
+
+
+        1.01 & Test the flow of control for the client ui. & The page buttons should navigate to their respective linked pages. & Click the Add Client and Manage Clients Buttons & Normal & Clicking the buttons should change the ui to a different layout to add or manage clients. & & \\ \hline
+		1.02 & Test the flow of control for the plasterers ui. & The buttons on the plasterers menu should change the ui to different layouts to add or manage the plasterers. & Click the Add Plasterer and Manage Plasterers Buttons & Normal & Pressing the Buttons should change the ui of the application so the user can add or manage the plasterers. & & \\ \hline
+		1.03 & Test the flow of control for the jobs ui. & The Buttons on the Jobs Menu should change the ui so the end user can add a job and manage jobs & Click the New Job and Manage Jobs Buttons. & Normal & UI should change so the user can add or manage jobs & & \\ \hline
+
+		1.04 & Test the flow of control for loading or creating a database & The Buttons when the application is loaded that will allow the user to Open or Create a Database should change the ui accordingly. & Click the New and Open Database buttons & Normal & Clicking New Database should shows the user a file dialog and then load the main program and open database button should open an existing db and then show the main program ui. & & \\ \hline \hline
+
+
+
+	2.01 & Adding a client data validation & Testing the add client form to see if the data inputs are validated correctly. &  Enter usual data for all fields in the adding client form. & Normal & All fields should be highlighted green to show data entry is valid & & \\ \hline
+	2.02 & Adding a client erroneous data validation & Testing the add client form by entering erroneous data into form fields & Entering data that should not be accepted in the field. Text in an integer only field for example. & Erroneous & Fields should be highlighted red to show that the data entered is not valid & & \\ \hline
+	2.03 & Adding a client boundary data validation & Testing the add client form fields with boundary data input & Entering data into the form fields that is borderline accpetable in the field. & Boundary & These values depending on whether they are in or out the boundaries should highlight the field green if valid and red if not & & \\ \hline
+	2.04 & Editing a client data validation & Testing the edit client ui form by entering normal data & Normal Different data should be entered into the edit client form fields & Normal & Form fields should highlight green to show that the data that was entered was valid & & \\ \hline
+	2.05 & Editing a client erroneous data validation & Testing the edit client ui form by entering erroneous data & Erroneous values should be typed entered into the edit client form fields & Erroneous & The form fields should highlight red to show that the data entered has not been accepted as valid & & \\ \hline
+	2.06 & Editing a client boundary data validation & Testing the edit client ui form by entering boundary data & Boundary data (borderline acceptable values) should be entered into the edit client form fields & Boundary & The forms should highlight according to whether or not the data is in or outside the boundary set for that particular form field & & \\ \hline
+	2.07 & Adding a plasterer data validation & Testing the add plasterer form with normal data & Normal data should be entered into the add plasterer form & Normal & The add plasterer form fields should be highlighted green to show the data entered was valid & & \\ \hline
+	2.08 & Adding a plasterer erroneous data validation & Testing the add plasterer form with erroneous data & Erroneous data should be entered into each of the form fields on the add plasterer ui. & Erroneous & The form fields should highlight red to show that the data has not been accepted as valid & & \\ \hline
+	2.09 & Adding a plasterer boundary data validation & Testing the add plasterer form with boundary data & Boundary values should be entered into the add plasterer form fields & Boundary & The form fields should highlight green or red depending on whether the data is in or outside the boundary set for that field & & \\ \hline
+	2.10 & Editing a plasterer data validation & Testing the Edit Plasterer UI with Normal Data & Normal data will be entered into the edit plasterer form fields & Normal & The form fields should highlight green to show the new data is valid & & \\ \hline
+	2.11 & Editing a plasterer erroneous data validation & Testing the Edit Plasterer Form with Erroneous Data & Erroneous values should be entered into the form fields & Erroneous & The form fields should highlight red to show the unacceptable data is not valid. & & \\ \hline
+	2.12 & Editing a plasterer boundary data validation & Testing the Edit Plasterer Form with Boundary Data & Boundary values should be entered into the form fields & Boundary & The form fields should highlight green or red depending on whether they were in or out the boundary set for that field. & & \\ \hline
+	2.13 & Creating a New Job Data Validation & Testing the New Job form with Normal Data & Entering Normal New Job data into the new job form fields & Normal & The New Job form fields should be highlighted greent to show the data enterd is valid. & & \\ \hline
+	2.14 & Creating a New Job Erroneous Data Validation & Testing the New Job form with Erroneous Data & Enter erroneous values into the new job form fields & Erroneous & The new job form fields should be highlighted red to show the data entered is invalid. & & \\ \hline
+	2.15 & Creating a New Job Boundary Data Validation & Testing the New Job form with Boundary Data & Enter boundary values into the new job form & Boundary & The new job form fields should be highlighted green if the boundary data entered was inside the boundary set for that field. & & \\ \hline \hline
+
+
+3.01 & Adding New Client Data to Database & Testing whether or not the data is entered into the database correctly. & Valid New Client Data should be entered into the new client form & Normal & The Data should be in the correct columns in the Client table in the database & & \\ \hline
+3.02 & Editing a New Client Data Entry to Database & Testing the Edit Client form to see if the data is added to the database correctly & Modified data should be entered into the Edit client form & Normal & The modified client info should be in the correct fields in the Client Table of the database & & \\ \hline
+3.03 & Adding New Plasterer Data to Database & Testing the data entry of adding a new plasterer to the database & New plasterer data should be entered into the new plasterer form & Normal & The new plasterer data should be in the correct fields of the plasterer table. & & \\ \hline
+3.04 & Editing Plasterer Data Entry to Database & Testing the edit plasterer form data entry to the database to make sure data is stored correctly & Plasterer data should be entered into to the edit plasterer form & Normal & All the data entered should be in the correct position in the plasterer table of the database & & \\ \hline
+3.05 & Add a New Job Data Entry to Database & Testing the new job form data entry to the database to ensure data is stored correctly & New job data should be entered into the new job form & Normal & The database should store the new job data correctly in the job table. & & \\ \hline
+3.06 & Editing a Jobs Data Entry to Database & Testing the edit job form to see if the data is entered into the database correctly & The Edit form should be completed with valid data. & Normal & The database should stored the modified job data correctly & & \\ \hline  \hline
+
+4.01 & Testing Printing Invoices & An Invoice will be printed to test its functionality works as expected & Click the Print Invoice button on the Manage Jobs UI for a specific job & Normal & The print preview should be displayed and the invoice should be printed. & & \\ \hline
+4.02 & Testing Emailing Invoices & An Invoice will be emailed to test this feature works correctly. & Click the Email Invoice button on the manage jobs ui for a specific job & Normal & Check the recipient email inbox for a invoice email & & \\ \hline
+4.03 & Test Pay Graph & Testing the pay graph feature of the application & Click the show pay graph button on a specific manage plasterer ui. & Normal & A graph should be displayed for the selected plasterer & & \\ \hline \hline
+
+
+5.01 & Check Specification is met & Checking the application against the proposed specifications & Going through the application comparing the proposed system against the implemented system & Normal & System should meet specified requirements & & \\ \hline 
     \end{longtable}
 \end{center}
 \end{landscape}
